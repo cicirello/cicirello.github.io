@@ -100,6 +100,11 @@ article {
 	padding: 6px;
 }
 
+article li {
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
 #publications li, section.publist li, section.courselist li {
 	margin-bottom: 15px;
 }
