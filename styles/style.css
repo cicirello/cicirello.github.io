@@ -113,6 +113,20 @@ article li {
 	margin-bottom: 30px;
 }
 
+#pubyears {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+}
+
+#pubyears li {
+	float: left;
+	margin: 0px 8px 8px 0px;
+}
+
+
+
 section.courselist ul {
 	list-style-type: none;
 }
