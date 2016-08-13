@@ -1,2 +1,2 @@
-User-agent: *
+User-agent: Googlebot-Image
 Disallow: /images/addr.png
