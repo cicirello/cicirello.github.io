@@ -1,2 +1,3 @@
 User-agent: Googlebot-Image
 Disallow: /images/addr.png
+Sitemap: http://www.cicirello.org/sitemap.xml
