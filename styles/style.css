@@ -1,15 +1,14 @@
 header, nav, footer, article, aside, section {display:block;}
 
-footer {clear:both;}
+footer {clear:both; padding: 8px;}
 
 body {
 	background-color: #f6f0bb;
 	margin: 10px;
-	/*font-family: Verdana, Geneva, sans-serif;*/
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-#siteheader, aside, footer, #siteheader nav ul {
+#siteheader, aside, footer {
 	background-color: #bfd9bf;
 }
 
@@ -36,17 +35,11 @@ h1, h2, h3, h4, h5, h6, #courses strong {
 }
 
 a {
-	color: #4CAF50; /*#305030;*/
-	/*font-weight: bold;*/
+	color: #4CAF50; 
 }
 
-/* consider changing this */
 a:visited {
 	color: #862d2d;
-}
-
-aside h4 {
-	display: inline;
 }
 
 header nav ul {
@@ -69,7 +62,7 @@ header nav li a {
 	border-radius: 12px 12px 0px 0px;
 	color: #666;
     text-align: center;
-    padding: 8px 16px; /* 14px 16px; */
+    padding: 8px 16px;
     text-decoration: none;
 }
 
@@ -77,7 +70,6 @@ header nav li a:visited {
 	color: #666;
 }
 
-/* Change the link color on hover */
 header nav li a:hover:not(.active) {
     background-color: #305030; 
 	color: white; 
@@ -92,6 +84,10 @@ aside {
 	width: 235px;
 	padding: 6px;
 	margin-bottom: 5px;
+}
+
+aside h4 {
+	display: inline;
 }
 
 article {
@@ -109,8 +105,12 @@ article li {
 	margin-bottom: 15px;
 }
 
-#publications ul, section.publist, section.courselist ul {
+#publications ul, section.publist ul, section.courselist ul {
 	margin-bottom: 30px;
+}
+
+section.courselist ul {
+	list-style-type: none;
 }
 
 #pubyears {
@@ -126,15 +126,6 @@ article li {
 }
 
 
-
-section.courselist ul {
-	list-style-type: none;
-}
-
-footer {
-	padding: 8px;
-}
-
 #copyright {
 	text-align: center;
 	color: #862d2d;
@@ -146,12 +137,6 @@ footer {
 }
 
 @media screen and (max-width: 600px){
-    /*header nav ul li.right,
-    header nav ul li {float: none; border: 1px solid #4CAF50; border-left: 2px solid #4CAF50; border-right: 2px solid #4CAF50; */
-	/* border-bottom: 1px solid #bbb; border-right: none; */ /*}*/
-	/* header nav li:last-child {border-bottom: none; border-right: none;} */
-	/*header nav li:last-child {border-bottom: 2px solid #4CAF50;}
-	header nav li:first-child {border-top: 2px solid #4CAF50;}*/
 	aside {clear: both;}
 	article {clear: both; width: calc(100% - 16px);}
 }
