@@ -25,7 +25,7 @@ body {
 	padding: 12px;
 }
 
-h1, h2, h3, h4, h5, h6, #courses strong {
+h1, h2, h3, h4, h5, h6, strong {
 	color: #862d2d;
 	font-weight: bold;
 }
@@ -101,16 +101,16 @@ article li {
 	margin-top: 8px;
 }
 
-#publications li, section.publist li, section.courselist li {
+.publist li {
 	margin-bottom: 15px;
 }
 
-#publications ul, section.publist ul, section.courselist ul {
+.publist ul {
 	margin-bottom: 30px;
 }
 
-section.courselist ul {
-	list-style-type: none;
+section {
+	margin-top: 30px;
 }
 
 #pubyears {
