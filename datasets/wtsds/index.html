@@ -123,9 +123,9 @@ alt="Valid CSS!" >
 </a>
 </div>
 <div id="copyright">Copyright &copy; 1998-<span id="year"></span> Vincent A. Cicirello.</div>
-<script src="/js/year.js"></script>
-<script src="/js/resp.js"></script>
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </footer>
+<script>function toggleMenu() { var x = document.getElementById("topNav"); x.className = (x.className === "") ? "open" : x.className = ""; }</script>
 </body>
 </html>
 
