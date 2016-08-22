@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# 8-27-2016, version 0.1
+
+CACHE:
+/styles/style.css
+/images/addr.png
+
+NETWORK:
+*
