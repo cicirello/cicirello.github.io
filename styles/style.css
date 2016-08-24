@@ -26,11 +26,9 @@ section { margin-top: 30px; }
 #pubyears li { float: left; margin: 0px 8px 8px 0px; }
 #copyright { text-align: center; }
 #w3css { text-align: right; }
-#searchbox { margin-top: 8px; width: 400px; }
 @media screen and (max-width:600px){
 	aside { clear: both; }
 	article { clear:both; width:calc(100% - 20px); }
 	header nav li a:not(.active) { display: none; }
 	header nav li a.menu-icon, header nav.open li a { display: block; }
-	#searchbox { width: auto; }
 }
