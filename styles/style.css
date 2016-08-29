@@ -3,18 +3,18 @@ footer { clear: both; }
 body { background-color: #f6f0bb; font-family: Arial, Helvetica, sans-serif; }
 #siteheader, aside, footer { background-color: #bfd9bf; }
 #siteheader, aside, footer, article { border: 2px solid #4CAF50; border-radius: 25px; margin-bottom: 5px; padding: 8px; }
-h1, h2, h3, h4, h5, h6, strong, #copyright { color: #862d2d; font-weight: bold; }
+h1, h2, h3, h4, h5, h6, strong { color: #862d2d; }
 #siteheader h2 { font-size: 2em; }
 a { color: #4CAF50; }
 a:visited { color:#862d2d; }
-header nav ul { list-style-type: none; margin: 0px; padding: 0; overflow: hidden; }
-header nav li { float: left; margin-right: 5px; }
-header nav li a { display: block; background-color: #f6f0bb; border: 2px solid #4CAF50; text-decoration: none; text-align: center; color: #666; }
-header nav li a:not(.menu-icon) { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 8px 16px; }
-header nav li a.menu-icon { display: none; padding: 0px 4px 1px 4px; border-radius: 4px; }
-header nav li a:visited { color: #666; }
-header nav li a:hover:not(.active) { background-color: #305030; color: white; }
-header nav li a.active { background-color: #4CAF50; }
+nav ul { list-style-type: none; margin: 0px; padding: 0; overflow: hidden; }
+nav li { float: left; margin-right: 8px; }
+nav li a { display: block; background-color: #f6f0bb; border: 2px solid #4CAF50; text-decoration: none; text-align: center; color: #666; }
+nav li a:not(.menu-icon) { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 12px; }
+nav li a.menu-icon { display: none; }
+nav li a:visited { color: #666; }
+nav li a:hover:not(.active) { background-color: #305030; color: white; }
+nav li a.active { background-color: #4CAF50; }
 aside { float: left; width: 235px; }
 aside h4 { display: inline; }
 article { float: right; width: calc(100% - 280px); }
@@ -24,11 +24,10 @@ article li { margin-bottom: 8px; margin-top: 8px; }
 section { margin-top: 30px; }
 #pubyears { list-style-type: none; margin: 0px; padding: 0px; overflow: auto; }
 #pubyears li { float: left; margin: 0px 8px 8px 0px; }
-#copyright { text-align: center; }
-#w3css { text-align: right; }
+#copyright { text-align: center; color: #862d2d; }
 @media screen and (max-width:600px){
-	aside { clear: both; }
-	article { clear:both; width:calc(100% - 20px); }
-	header nav li a:not(.active) { display: none; }
-	header nav li a.menu-icon, header nav.open li a { display: block; }
+	article, aside { clear:both; width:calc(100% - 20px); }
+	nav li a:not(.active) { display: none; }
+	nav li a.menu-icon { display: block; padding: 0px 4px 1px 4px; border-radius: 4px; }
+	nav.open li a { display: block; }
 }
