@@ -80,15 +80,15 @@ nav:not(.open) li a:not(.active) { display: none; }
 </ul>
 </nav>
 </header>
-<article>
+<article itemscope itemtype="http://schema.org/ScholarlyArticle">
 <header>
-<h2><a href="/publications/gecco2000-cicirello.pdf">Modeling GA Performance for Control Parameter Optimization</a></h2>
-<h3><a href="/">Vincent A. Cicirello</a> and Stephen F. Smith</h3>
-<h4>In <i>GECCO-2000: Proceedings of the Genetic and Evolutionary Computation Conference</i>, pages 235-242. Morgan Kaufmann Publishers, July 2000.</h4>
+<h2><a href="/publications/gecco2000-cicirello.pdf"><span itemprop="name">Modeling GA Performance for Control Parameter Optimization</span></a></h2>
+<h3><a href="/"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Vincent A. Cicirello</span></span></a> and <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Stephen F. Smith</span></span></h3>
+<h4><span itemprop="isPartOf" itemscope itemtype="http://schema.org/Book">In <i><span itemprop="name">GECCO-2000: Proceedings of the Genetic and Evolutionary Computation Conference</span></i></span>, pages <span itemprop="pageStart">235</span>-<span itemprop="pageEnd">242</span>. <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Morgan Kaufmann Publishers</span></span>, <time datetime="2000-07" itemprop="datePublished">July 2000</time>.</h4>
 </header>
-<p><a href="/publications/gecco2000-cicirello.pdf">[PDF]</a> <a href="/publications/cicirello2000gecco.bib">[BIB]</a> <a href="http://dl.acm.org/citation.cfm?id=2933750">[PUB]</a></p>
+<p><a itemprop="url" href="/publications/gecco2000-cicirello.pdf">[PDF]</a> <a href="/publications/cicirello2000gecco.bib">[BIB]</a> <a itemprop="sameAs" href="http://dl.acm.org/citation.cfm?id=2933750">[PUB]</a></p>
 <h4>Abstract</h4>
-<p>The optimization of the control parameters of genetic algorithms is often a
+<div itemprop="description"><p>The optimization of the control parameters of genetic algorithms is often a
 time consuming and tedious task. In this work we take the meta-level genetic
 algorithm approach to control parameter optimization. We enhance this process
 by incorporating a neural network for fitness evaluation. This neural network
@@ -99,7 +99,7 @@ describe a genetic algorithm for the largest common subgraph problem that we
 develop using this neural network enhanced meta-level genetic algorithm. The
 resulting genetic algorithm significantly outperforms a hand-tuned variant and
 is shown to be competitive with a hill-climbing algorithm used in practical
-applications.</p>
+applications.</p></div>
 </article>
 
 <aside>

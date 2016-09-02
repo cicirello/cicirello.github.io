@@ -77,15 +77,15 @@ nav:not(.open) li a:not(.active) { display: none; }
 </ul>
 </nav>
 </header>
-<article>
+<article itemscope itemtype="http://schema.org/ScholarlyArticle">
 <header>
-<h2><a href="/publications/SIAM2002.pdf">WHISTLING: Wasp Behavior Inspired Stochastic Sampling</a></h2>
-<h3><a href="/">Vincent A. Cicirello</a> and Stephen F. Smith</h3>
-<h4>In <i>The 2002 SIAM Annual Meeting and SIAM 50th Anniversary, Final Program and Abstracts</i>, pages 228. SIAM, July 2002.</h4>
+<h2><a href="/publications/SIAM2002.pdf"><span itemprop="name">WHISTLING: Wasp Behavior Inspired Stochastic Sampling</span></a></h2>
+<h3><a href="/"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Vincent A. Cicirello</span></span></a> and <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Stephen F. Smith</span></span></h3>
+<h4><span itemprop="isPartOf" itemscope itemtype="http://schema.org/Book">In <i><span itemprop="name">The 2002 SIAM Annual Meeting and SIAM 50th Anniversary, Final Program and Abstracts</span></i></span>, pages <span itemprop="pagination">228</span>. <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">SIAM</span></span>, <time datetime="2002-07" itemprop="datePublished">July 2002</time>.</h4>
 </header>
-<p><a href="/publications/SIAM2002.pdf">[PDF]</a> <a href="/publications/cicirello2002siam.bib">[BIB]</a></p>
+<p><a itemprop="url" href="/publications/SIAM2002.pdf">[PDF]</a> <a href="/publications/cicirello2002siam.bib">[BIB]</a></p>
 <h4>Abstract</h4>
-<p>We present a stochastic search algorithm called Wasp beHavior Inspired
+<div itemprop="description"><p>We present a stochastic search algorithm called Wasp beHavior Inspired
 STochastic SampLING (WHISTLING). Dispatch scheduling policies often provide
 good decision-making baselines for scheduling problems, but are not infallible
 and can make suboptimal decisions. Hence, instead of unconditionally following
@@ -93,7 +93,7 @@ its decisions, we use the dispatch policy to bias a stochastic selection
 process. WHISTLING provides a fast and effective method for sampling from a
 stochastic neighborhood of a heuristic solution given a dispatch policy. We
 have specifically focused our experimentation on a weighted tardiness
-scheduling problem with sequence-dependent setups.</p>
+scheduling problem with sequence-dependent setups.</p></div>
 </article>
 
 <aside>

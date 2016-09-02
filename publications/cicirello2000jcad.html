@@ -86,15 +86,17 @@ nav:not(.open) li a:not(.active) { display: none; }
 </ul>
 </nav>
 </header>
-<article>
+<article itemscope itemtype="http://schema.org/ScholarlyArticle">
 <header>
-<h2><a href="/publications/CADpaper.pdf">Managing Digital Libraries for Computer-Aided Design</a></h2>
-<h3>William C. Regli and <a href="/">Vincent A. Cicirello</a></h3>
-<h4><i>Computer-Aided Design</i>, 32(2):119-132, February 2000.</h4>
+<h2><a href="/publications/CADpaper.pdf"><span itemprop="name">Managing Digital Libraries for Computer-Aided Design</span></a></h2>
+<h3><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">William C. Regli</span></span> and <a href="/"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Vincent A. Cicirello</span></span></a></h3>
+<h4><span itemprop="isPartOf" itemscope itemtype="http://schema.org/Periodical"><i><span itemprop="name">Computer-Aided Design</span></i></span>,
+<span itemprop="isPartOf" itemscope itemtype="http://schema.org/PublicationVolume"><span itemprop="volumeNumber">32</span></span>(<span itemprop="isPartOf" itemscope itemtype="http://schema.org/PublicationIssue"><span itemprop="issueNumber">2</span></span>):<span itemprop="pageStart">119</span>-<span itemprop="pageEnd">132</span>,
+<time datetime="2000-02" itemprop="datePublished">February 2000</time>.</h4>
 </header>
-<p><a href="/publications/CADpaper.pdf">[PDF]</a> <a href="/publications/cicirello2000jcad.bib">[BIB]</a> <a href="http://dx.doi.org/10.1016/S0010-4485(99)00095-0">[DOI]</a></p>
+<p><a itemprop="url" href="/publications/CADpaper.pdf">[PDF]</a> <a href="/publications/cicirello2000jcad.bib">[BIB]</a> <a itemprop="sameAs" href="http://dx.doi.org/10.1016/S0010-4485(99)00095-0">[DOI]</a></p>
 <h4>Abstract</h4>
-<p>This paper describes our initial efforts to deploy a digital library to support
+<div itemprop="description"><p>This paper describes our initial efforts to deploy a digital library to support
 computer-aided collaborative design. At present, this experimental testbed, The
 Engineering Design Knowledge Repository, is an effort to collect and archive
 public domain engineering data for use by researchers and engineering
@@ -108,7 +110,7 @@ reasoning about complex geometric and engineering information. In particular,
 we focus on archival and reuse of design and manufacturing data for mechatronic
 systems. This paper presents a description of the research problems, an
 overview of the initial architecture of the testbed and a description of some
-of our preliminary results on conceptual design and design retrieval.</p>
+of our preliminary results on conceptual design and design retrieval.</p></div>
 </article>
 
 <aside>

@@ -79,16 +79,18 @@ nav:not(.open) li a:not(.active) { display: none; }
 </ul>
 </nav>
 </header>
-<article>
+<article itemscope itemtype="http://schema.org/ScholarlyArticle">
 <header>
-<h2><a href="/publications/GECCO2006.pdf">Non-Wrapping Order Crossover: An Order Preserving Crossover Operator that Respects Absolute Position</a></h2>
-<h3><a href="/">Vincent A. Cicirello</a></h3>
-<h4>In <i>Proceedings of the Genetic and Evolutionary Computation Conference (GECCO'06)</i>, volume 2, pages 1125-1131. ACM Press, July 2006.</h4>
+<h2><a href="/publications/GECCO2006.pdf"><span itemprop="name">Non-Wrapping Order Crossover: An Order Preserving Crossover Operator that Respects Absolute Position</span></a></h2>
+<h3><a href="/"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Vincent A. Cicirello</span></span></a></h3>
+<h4><span itemprop="isPartOf" itemscope itemtype="http://schema.org/Book">In <i><span itemprop="name">Proceedings of the Genetic and Evolutionary Computation Conference (GECCO'06)</span></i>,
+<span itemprop="hasPart" itemscope itemtype="http://schema.org/PublicationVolume">volume
+<span itemprop="volumeNumber">2</span></span></span>, pages <span itemprop="pageStart">1125</span>-<span itemprop="pageEnd">1131</span>. <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">ACM Press</span></span>, <time datetime="2006-07" itemprop="datePublished">July 2006</time>.</h4>
 <h4><strong>Nominated for the Genetic Algorithms Track Best Paper Award</strong>.</h4>
 </header>
-<p><a href="/publications/GECCO2006.pdf">[PDF]</a> <a href="/publications/cicirello2006gecco.bib">[BIB]</a> <a href="http://dx.doi.org/10.1145/1143997.1144177">[DOI]</a></p>
+<p><a itemprop="url" href="/publications/GECCO2006.pdf">[PDF]</a> <a href="/publications/cicirello2006gecco.bib">[BIB]</a> <a itemprop="sameAs" href="http://dx.doi.org/10.1145/1143997.1144177">[DOI]</a></p>
 <h4>Abstract</h4>
-<p>In this paper, we introduce a new crossover operator for the permutation
+<div itemprop="description"><p>In this paper, we introduce a new crossover operator for the permutation
 representation of a GA. This new operator, Non-Wrapping Order Crossover (NWOX),
 is a variation of the well-known Order Crossover (OX) operator. It strongly
 preserves relative order, as does the original OX, but also respects the
@@ -97,7 +99,7 @@ experimentally compared to several other permutation crossover operators on an
 NP-Hard problem known as weighted tardiness scheduling with sequence-dependent
 setups. A GA using this NWOX operator finds new best known solutions for
 several benchmark problem instances and proves to be superior to the previous
-best performing metaheuristic for the problem.</p>
+best performing metaheuristic for the problem.</p></div>
 </article>
 
 <aside>

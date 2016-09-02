@@ -86,16 +86,18 @@ nav:not(.open) li a:not(.active) { display: none; }
 </ul>
 </nav>
 </header>
-<article>
+<article itemscope itemtype="http://schema.org/ScholarlyArticle">
 <header>
-<h2><a href="/publications/AAAI2005.pdf">The Max K-Armed Bandit: A New Model of Exploration Applied to Search Heuristic Selection</a></h2>
-<h3><a href="/">Vincent A. Cicirello</a> and Stephen F. Smith</h3>
-<h4>In <i>The Proceedings of the Twentieth National Conference on Artificial Intelligence</i>, volume 3, pages 1355-1361. AAAI Press, July 2005.</h4>
+<h2><a href="/publications/AAAI2005.pdf"><span itemprop="name">The Max K-Armed Bandit: A New Model of Exploration Applied to Search Heuristic Selection</span></a></h2>
+<h3><a href="/"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Vincent A. Cicirello</span></span></a> and <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Stephen F. Smith</span></span></h3>
+<h4><span itemprop="isPartOf" itemscope itemtype="http://schema.org/Book">In <i><span itemprop="name">The Proceedings of the Twentieth National Conference on Artificial Intelligence</span></i>,
+<span itemprop="hasPart" itemscope itemtype="http://schema.org/PublicationVolume">volume
+<span itemprop="volumeNumber">3</span></span></span>, pages <span itemprop="pageStart">1355</span>-<span itemprop="pageEnd">1361</span>. <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">AAAI Press</span></span>, <time datetime="2005-07" itemprop="datePublished">July 2005</time>.</h4>
 <h4><strong>Winner of the 2005 AAAI Outstanding Paper Award</strong>.</h4>
 </header>
-<p><a href="/publications/AAAI2005.pdf">[PDF]</a> <a href="/publications/cicirello2005aaai.bib">[BIB]</a> <a href="http://www.aaai.org/Library/AAAI/2005/aaai05-215.php">[PUB]</a></p>
+<p><a itemprop="url" href="/publications/AAAI2005.pdf">[PDF]</a> <a href="/publications/cicirello2005aaai.bib">[BIB]</a> <a itemprop="sameAs" href="http://www.aaai.org/Library/AAAI/2005/aaai05-215.php">[PUB]</a></p>
 <h4>Abstract</h4>
-<p>The multiarmed bandit is often used as an analogy for the tradeoff between
+<div itemprop="description"><p>The multiarmed bandit is often used as an analogy for the tradeoff between
 exploration and exploitation in search problems. The classic problem involves
 allocating trials to the arms of a multiarmed slot machine to maximize the
 expected sum of rewards. We pose a new variation of the multiarmed bandit, the
@@ -111,7 +113,7 @@ temperature parameter. We compare this exploration policy to policies that
 allocate trials to the observed best arm at rates faster (and slower) than
 double exponentially. The results confirm, for two scheduling domains, that the
 double exponential increase in the rate of allocations to the observed best
-heuristic outperforms the other approaches.</p>
+heuristic outperforms the other approaches.</p></div>
 </article>
 
 <aside>
