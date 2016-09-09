@@ -50,7 +50,7 @@ nav:not(.open) li a:not(.active) { display: none; }
 </head>
 <body>
 <header itemprop="hasPart" itemscope itemtype="http://schema.org/WPHeader" id="siteheader">
-<h2><a href="/">Vincent Cicirello, Ph.D. - Professor of Computer Science</a></h2>
+<h2 itemprop="author" itemscope itemtype="http://schema.org/Person"><a itemprop="mainEntityOfPage" href="/"><span itemprop="name">Vincent Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span> - <span itemprop="jobTitle">Professor of Computer Science</span></a></h2>
 <nav itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement" id="topNav">
 <ul>
 <li><a href="javascript:void(0);" onclick="toggleMenu()" id="menu-icon">&#9776;</a></li>
@@ -65,31 +65,41 @@ nav:not(.open) li a:not(.active) { display: none; }
 </ul>
 </nav>
 </header>
-<article>
-<h2>Vincent A. Cicirello, Ph.D.</h2>
+<article itemprop="mainEntity" itemscope itemtype="http://schema.org/Person">
+<h2><span itemprop="name">Vincent Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span></h2>
 <section>
 <h3>Brief Bio:</h3>
-<p>Vincent Cicirello is a Professor of Computer Science and Information Systems at Stockton University; and is also associated with Stockton's
-Computational Science program as well as its Behavioral Neuroscience program. He received a Ph.D. in Robotics from Carnegie Mellon University in 2003,
-a M.S./B.S. in Computer Science from Drexel University in 1999 (dual M.S./B.S. program), and a B.S. in Mathematics from Drexel University also in
+<p><span itemprop="honorificPrefix">Dr.</span> <span itemprop="alternateName">Vincent A. Cicirello</span> is a
+<span itemprop="jobTitle">Professor</span> of
+<span itemprop="worksFor" itemscope itemtype="http://schema.org/CollegeOrUniversity"><span itemprop="department" itemscope itemtype="http://schema.org/EducationalOrganization"><span itemprop="name">Computer Science and Information Systems</span></span> at
+<span itemprop="name">Stockton University</span></span>; and is also associated with Stockton University's
+Computational Science program as well as its Behavioral Neuroscience program.
+He received a Ph.D. in Robotics from
+<span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity"><span itemprop="name">Carnegie Mellon University</span></span> in 2003,
+a M.S./B.S. in Computer Science from
+<span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity"><span itemprop="name">Drexel University</span></span> in 1999 (dual M.S./B.S. program),
+and a B.S. in Mathematics from
+<span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity"><span itemprop="name">Drexel University</span></span> also in
 1999. His research interests include artificial intelligence, evolutionary computation, swarm intelligence, and computer science education. He was
-designated an ACM Senior member in 2011, received the 2005 AAAI Outstanding Paper award, and was nominated for the 2006 GECCO Best Genetic Algorithm
-Track award. He received a U.S. Patent in 2010, and has published over 50 journal and conference publications. He is a member of AAAI (Life member),
-ACM (Senior Member), ACM SIGCSE, ACM SIGAI, ACM SIGEVO, CCSC, IEEE, IEEE Computer Society, IEEE Computational Intelligence Society, and SIAM.</p>
+designated an ACM Senior Member in 2011,
+received the 2005 AAAI Outstanding Paper award, and was nominated for the 2006 GECCO Best Genetic Algorithm
+Track award. He received a U.S. Patent in 2010, and has published over 50 journal and conference publications.
+He is a member of AAAI (Life member), ACM (Senior Member), ACM SIGCSE, ACM SIGAI, ACM SIGEVO,
+CCSC, IEEE, IEEE Computer Society, IEEE Computational Intelligence Society, and SIAM.</p>
 </section>
 <section>
 <h3>Current Affiliations:</h3>
-<ul><li><a href="http://www.stockton.edu">Stockton University</a>
-<ul><li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=150&pageID=90">Computer Science and Information Systems</a></li>
-<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=163&pageID=47">Behavioral Neuroscience</a></li>
-<li><a href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=73&pageID=282">Computational Science</a></li>
+<ul><li itemscope itemtype="http://schema.org/CollegeOrUniversity"><a itemprop="url" href="http://www.stockton.edu"><span itemprop="name">Stockton University</span></a>
+<ul><li itemprop="department" itemscope itemtype="http://schema.org/EducationalOrganization"><a itemprop="url" href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=150&pageID=90"><span itemprop="name">Computer Science and Information Systems</span></a></li>
+<li itemprop="department" itemscope itemtype="http://schema.org/EducationalOrganization"><a itemprop="url" href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=163&pageID=47"><span itemprop="name">Behavioral Neuroscience</span></a></li>
+<li itemprop="department" itemscope itemtype="http://schema.org/EducationalOrganization"><a itemprop="url" href="http://intraweb.stockton.edu/eyos/page.cfm?siteID=73&pageID=282"><span itemprop="name">Computational Science</span></a></li>
 </ul></li>
 </ul>
 </section>
 <section>
 <h3>Awards and Honors:</h3>
-<ul><li>Designated an <a href="http://awards.acm.org/award_winners/cicirello_4953956.cfm">ACM Senior Member</a> in 2011</li>
-<li>Awarded the 2005 <a href="http://www.aaai.org/Awards/paper.php">AAAI Outstanding Paper Award</a></li>
+<ul><li>Designated an <a href="http://awards.acm.org/award_winners/cicirello_4953956.cfm"><span itemprop="award">ACM Senior Member</span></a> in 2011</li>
+<li>Awarded the 2005 <a href="http://www.aaai.org/Awards/paper.php"><span itemprop="award">AAAI Outstanding Paper Award</span></a></li>
 <li>Nominated for the 2006 GECCO Best Genetic Algorithm Track award</li></ul>
 </section>
 <section>
@@ -108,17 +118,17 @@ including full-text of articles and bibliographic data from a variety of sources
 </section>
 <section>
 <h3>Professional Society Memberships:</h3>
-<ul><li><a href="http://www.aaai.org">AAAI</a> Lifetime Member</li>
-<li><a href="http://www.acm.org">ACM</a> Senior Member
-<ul><li><a href="http://sigai.acm.org/">ACM SIGAI</a></li>
-<li><a href="http://www.sigcse.org">ACM SIGCSE</a></li>
-<li><a href="http://sig.sigevo.org">ACM SIGEVO</a></li></ul></li>
-<li><a href="http://www.ccsc.org">CCSC</a>
-<ul><li>Member of the <a href="http://www.ccsc-eastern.org/about-us/steering">CCSC Eastern Region Steering Committee</a> since 2012</li></ul></li>
-<li><a href="http://www.ieee.org">IEEE</a>
-<ul><li><a href="http://www.computer.org">IEEE Computer Society</a></li>
-<li><a href="http://cis.ieee.org/">IEEE Computational Intelligence Society</a></li></ul></li>
-<li><a href="http://www.siam.org">SIAM</a></li></ul>
+<ul><li itemprop="memberOf" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://www.aaai.org"><span itemprop="name">AAAI</span></a> Lifetime Member</li>
+<li itemprop="memberOf" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://www.acm.org"><span itemprop="name">ACM</span></a> Senior Member
+<ul><li itemprop="subOrganization" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://sigai.acm.org/"><span itemprop="name">ACM SIGAI</span></a></li>
+<li itemprop="subOrganization" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://www.sigcse.org"><span itemprop="name">ACM SIGCSE</span></a></li>
+<li itemprop="subOrganization" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://sig.sigevo.org"><span itemprop="name">ACM SIGEVO</span></a></li></ul></li>
+<li><span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://www.ccsc.org"><span itemprop="name">CCSC</span></a></span>
+<ul><li itemprop="memberOf" itemscope itemtype="http://schema.org/Organization">Member of the <a itemprop="url" href="http://www.ccsc-eastern.org/about-us/steering"><span itemprop="name">CCSC Eastern Region Steering Committee</span></a> since 2012</li></ul></li>
+<li itemprop="memberOf" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://www.ieee.org"><span itemprop="name">IEEE</span></a>
+<ul><li itemprop="subOrganization" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://www.computer.org"><span itemprop="name">IEEE Computer Society</span></a></li>
+<li itemprop="subOrganization" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://cis.ieee.org/"><span itemprop="name">IEEE Computational Intelligence Society</span></a></li></ul></li>
+<li itemprop="memberOf" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://www.siam.org"><span itemprop="name">SIAM</span></a></li></ul>
 </section>
 </article>
 <aside itemprop="hasPart" itemscope itemtype="http://schema.org/WPSideBar">
