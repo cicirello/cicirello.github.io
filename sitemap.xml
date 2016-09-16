@@ -10,6 +10,9 @@
 <loc>http://www.cicirello.org/datasets/wtsds/</loc>
 </url>
 <url>
+<loc>http://www.cicirello.org/datasets/wtsds/wtsds-instances.zip</loc>
+</url>
+<url>
 <loc>http://www.cicirello.org/past/</loc>
 </url>
 <url>
@@ -580,7 +583,13 @@
 <loc>http://www.cicirello.org/research/swarms/</loc>
 </url>
 <url>
+<loc>http://www.cicirello.org/search/</loc>
+</url>
+<url>
 <loc>http://www.cicirello.org/software/</loc>
+</url>
+<url>
+<loc>http://www.cicirello.org/software/WeightedTardinessProblemGenerator.zip</loc>
 </url>
 <url>
 <loc>http://www.cicirello.org/teaching/</loc>
