@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=en itemscope itemtype="http://schema.org/WebPage">
+<html lang=en itemscope itemtype="http://schema.org/WebPage" itemref="pageAuthor topNav">
 <head>
 <meta charset=utf-8>
 <link rel="canonical" href="http://www.cicirello.org/publications/cicirello2004faabs.html">
@@ -81,7 +81,8 @@ nav:not(.open) li a:not(.active) { display: none; }
 </head>
 <body>
 <header itemprop="hasPart" itemscope itemtype="http://schema.org/WPHeader" id="siteheader">
-<h2 itemscope itemtype="http://schema.org/Person"><a itemprop="mainEntityOfPage" href="/"><span itemprop="name">Vincent Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span> - <span itemprop="jobTitle">Professor of Computer Science</span></a></h2>
+<div itemscope>
+<h2 id="pageAuthor" itemprop="author" itemscope itemtype="http://schema.org/Person"><a itemprop="mainEntityOfPage url" href="/"><span itemprop="name">Vincent Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span> - <span itemprop="jobTitle">Professor of Computer Science</span></a></h2>
 <nav itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement" id="topNav">
 <ul>
 <li><a href="javascript:void(0);" onclick="toggleMenu()" id="menu-icon">&#9776;</a></li>
@@ -95,6 +96,7 @@ nav:not(.open) li a:not(.active) { display: none; }
 <li><a href="/search/">Site Search</a></li>
 </ul>
 </nav>
+</div>
 </header>
 <article itemprop="mainEntity" itemscope itemtype="http://schema.org/ScholarlyArticle">
 <header>
