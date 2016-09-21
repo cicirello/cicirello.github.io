@@ -51,7 +51,7 @@ nav:not(.open) li a:not(.active) { display: none; }
 <body>
 <header itemprop="hasPart" itemscope itemtype="http://schema.org/WPHeader" id="siteheader">
 <div itemscope>
-<h2 id="pageAuthor" itemprop="author" itemscope itemtype="http://schema.org/Person"><a itemprop="mainEntityOfPage url" href="/"><span itemprop="name">Vincent Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span> - <span itemprop="jobTitle">Professor of Computer Science</span></a></h2>
+<h2 id="pageAuthor" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="vacData"><a itemprop="mainEntityOfPage url" href="/"><span itemprop="name">Vincent Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span> - <span itemprop="jobTitle">Professor of Computer Science</span></a></h2>
 <nav itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement" id="topNav">
 <ul>
 <li><a href="javascript:void(0);" onclick="toggleMenu()" id="menu-icon">&#9776;</a></li>
@@ -67,11 +67,11 @@ nav:not(.open) li a:not(.active) { display: none; }
 </nav>
 </div>
 </header>
-<article itemprop="mainEntity" itemscope itemtype="http://schema.org/Person">
+<article itemprop="mainEntity" itemscope itemtype="http://schema.org/Person" itemref="vacData">
 <h2><span itemprop="name">Vincent Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span></h2>
 <section>
 <h3>Brief Bio:</h3>
-<p><span itemprop="honorificPrefix">Dr.</span> <span itemprop="alternateName">Vincent A. Cicirello</span> is a
+<p><span itemprop="honorificPrefix">Dr.</span> Vincent A. Cicirello is a
 <span itemprop="jobTitle">Professor</span> of
 <span itemprop="worksFor" itemscope itemtype="http://schema.org/CollegeOrUniversity"><span itemprop="department" itemscope itemtype="http://schema.org/EducationalOrganization"><span itemprop="name">Computer Science and Information Systems</span></span> at
 <span itemprop="name">Stockton University</span></span>; and is also associated with Stockton University's
@@ -113,7 +113,7 @@ including full-text of articles and bibliographic data from a variety of sources
 </li>
 <li><a href="http://dl.acm.org/author_page.cfm?id=81100638594" itemprop="sameAs">My ACM Digital Library author profile</a>
 </li>
-<li><a href="https://www.researchgate.net/profile/Vincent_Cicirello" itemprop="sameAs">My ResearchGate profile</a>
+<li><a href="https://www.researchgate.net/profile/Vincent_Cicirello">My ResearchGate profile</a>
 </li>
 <li><a href="http://dblp.org/pid/57/5754" itemprop="sameAs">The DBLP Computer Science Bibliography</a></li>
 </ul>
@@ -134,7 +134,8 @@ including full-text of articles and bibliographic data from a variety of sources
 </section>
 </article>
 <aside itemprop="hasPart" itemscope itemtype="http://schema.org/WPSideBar">
-<h3>Vincent A. Cicirello, Ph.D.</h3>
+<div itemscope><div id="vacData">
+<h3><span itemprop="alternateName">Vincent A. Cicirello</span>, Ph.D.</h3>
 <h4>Current Position:</h4><br>
 Professor of Computer Science and Information Systems<br><br>
 <h4>Mailing Address:</h4><br>
@@ -148,8 +149,9 @@ Galloway, NJ 08205<br><br>
 <h4>Phone:</h4>
 (609) 626-3526<br><br>
 <h4>Social Media:</h4><br>
-<a href="http://www.linkedin.com/in/vacicirello"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" alt="View Vincent A. Cicirello's profile on LinkedIn"></a>
-<a href="https://www.researchgate.net/profile/Vincent_Cicirello?cp=shp"><img alt="Follow me on ResearchGate" src="https://www.researchgate.net/images/public/profile_share_badge.png" width="100"></a>
+<a itemprop="sameAs" href="http://www.linkedin.com/in/vacicirello"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" alt="View Vincent A. Cicirello's profile on LinkedIn"></a>
+<a itemprop="sameAs" href="https://www.researchgate.net/profile/Vincent_Cicirello"><img alt="Follow me on ResearchGate" src="https://www.researchgate.net/images/public/profile_share_badge.png" width="100"></a>
+</div></div>
 </aside>
 <footer itemprop="hasPart" itemscope itemtype="http://schema.org/WPFooter">
 <div>
