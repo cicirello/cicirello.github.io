@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://www.cicirello.org/</loc>
-<lastmod>2016-10-03T11:23:28-04:00</lastmod>
+<lastmod>2016-10-03T11:46:36-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/datasets/</loc>
@@ -731,6 +731,10 @@
 <url>
 <loc>http://www.cicirello.org/publications/sm99-paper.pdf</loc>
 <lastmod>2016-09-14T15:10:02-04:00</lastmod>
+</url>
+<url>
+<loc>http://www.cicirello.org/publications/survey-1999.pdf</loc>
+<lastmod>null</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/wtsbenchmarks.pdf</loc>
