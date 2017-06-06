@@ -1,3 +1,9 @@
 User-agent: Googlebot-Image
 Disallow: /images/addr.png
+Disallow: /presentations/
+
+User-agent: *
+Disallow: /presentations/
+
 Sitemap: http://www.cicirello.org/sitemap.xml
+
