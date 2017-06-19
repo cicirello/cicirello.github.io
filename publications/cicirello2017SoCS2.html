@@ -5,48 +5,52 @@
 <link rel="canonical" href="http://www.cicirello.org/publications/cicirello2017SoCS2.html">
 <link itemprop="url" href="http://www.cicirello.org/publications/cicirello2017SoCS2.html">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="title" content="Searching for a Permutation in a Haystack - International Symposium on Combinatorial Search - 2017">
-<meta itemprop="name" content="Searching for a Permutation in a Haystack - International Symposium on Combinatorial Search - 2017">
-<meta name="description" content="We provide an overview of the Permutation in a Haystack problem, which serves
-as a tool for fitness landscape analysis, as well as in search algorithm
-design. The Permutation in a Haystack enables defining a search landscape for
-permutation optimization problems that abstracts the permutation features,
-which impact solution fitness, such as absolute element positions, edges, and
-pairwise element precedences. In this way, it allows the local search algorithm
-designer to explore a wide variety of landscape characteristics in a problem
-independent manner. We introduced the Permutation in a Haystack problem in a
-paper recently published in IEEE Transactions on Evolutionary Computation
-(Cicirello, 2016). In that paper, we also introduced the Search Landscape
-Calculus, an analytical framework for analyzing the fitness landscape induced
-by a local search operator via local rates of change of fitness. We then
-applied the tools to an analysis of several common permutation mutation
-operators on a wide variety of permutation search landscapes, and validated the
-findings empirically using simulated annealing.">
-<meta itemprop="description" content="We provide an overview of the Permutation in a Haystack problem, which serves
-as a tool for fitness landscape analysis, as well as in search algorithm
-design. The Permutation in a Haystack enables defining a search landscape for
-permutation optimization problems that abstracts the permutation features,
-which impact solution fitness, such as absolute element positions, edges, and
-pairwise element precedences. In this way, it allows the local search algorithm
-designer to explore a wide variety of landscape characteristics in a problem
-independent manner. We introduced the Permutation in a Haystack problem in a
-paper recently published in IEEE Transactions on Evolutionary Computation
-(Cicirello, 2016). In that paper, we also introduced the Search Landscape
-Calculus, an analytical framework for analyzing the fitness landscape induced
-by a local search operator via local rates of change of fitness. We then
-applied the tools to an analysis of several common permutation mutation
-operators on a wide variety of permutation search landscapes, and validated the
-findings empirically using simulated annealing.">
-<meta name="citation_title" content="Searching for a Permutation in a Haystack">
+<meta name="title" content="Variable Annealing Length and Parallelism in Simulated Annealing - International Symposium on Combinatorial Search - 2017">
+<meta itemprop="name" content="Variable Annealing Length and Parallelism in Simulated Annealing - International Symposium on Combinatorial Search - 2017">
+<meta name="description" content="In this paper, we propose: (a) a restart schedule for an adaptive simulated
+annealer, and (b) parallel simulated annealing, with an adaptive and
+parameter-free annealing schedule. The foundation of our approach is the
+Modified Lam annealing schedule, which adaptively controls the temperature
+parameter to track a theoretically ideal rate of acceptance of neighboring
+states. A sequential implementation of Modified Lam simulated annealing is
+almost parameter-free. However, it requires prior knowledge of the annealing
+length. We eliminate this parameter using restarts, with an exponentially
+increasing schedule of annealing lengths. We then extend this restart schedule
+to parallel implementation, executing several Modified Lam simulated annealers
+in parallel, with varying initial annealing lengths, and our proposed parallel
+annealing length schedule. To validate our approach, we conduct experiments on
+an NP-Hard scheduling problem with sequence-dependent setup constraints. We
+compare our approach to fixed length restarts, both sequentially and in
+parallel. Our results show that our approach can achieve substantial
+performance gains, throughout the course of the run, demonstrating our approach
+to be an effective anytime algorithm.">
+<meta itemprop="description" content="In this paper, we propose: (a) a restart schedule for an adaptive simulated
+annealer, and (b) parallel simulated annealing, with an adaptive and
+parameter-free annealing schedule. The foundation of our approach is the
+Modified Lam annealing schedule, which adaptively controls the temperature
+parameter to track a theoretically ideal rate of acceptance of neighboring
+states. A sequential implementation of Modified Lam simulated annealing is
+almost parameter-free. However, it requires prior knowledge of the annealing
+length. We eliminate this parameter using restarts, with an exponentially
+increasing schedule of annealing lengths. We then extend this restart schedule
+to parallel implementation, executing several Modified Lam simulated annealers
+in parallel, with varying initial annealing lengths, and our proposed parallel
+annealing length schedule. To validate our approach, we conduct experiments on
+an NP-Hard scheduling problem with sequence-dependent setup constraints. We
+compare our approach to fixed length restarts, both sequentially and in
+parallel. Our results show that our approach can achieve substantial
+performance gains, throughout the course of the run, demonstrating our approach
+to be an effective anytime algorithm.">
+<meta name="citation_title" content="Variable Annealing Length and Parallelism in Simulated Annealing">
 <meta name="citation_author" content="Vincent A. Cicirello">
 <meta name="citation_publication_date" content="2017">
 <meta name="citation_date" content="2017">
 <meta name="citation_conference_title" content="Proceedings of the Tenth International Symposium on Combinatorial Search (SoCS 2017)">
-<meta name="citation_firstpage" content="177">
-<meta name="citation_lastpage" content="177">
-<meta name="citation_pdf_url" content="http://www.cicirello.org/publications/SoCS2017-PrevPub-Cicirello.pdf">
+<meta name="citation_firstpage" content="2">
+<meta name="citation_lastpage" content="10">
+<meta name="citation_pdf_url" content="http://www.cicirello.org/publications/SoCS2017-Cicirello.pdf">
 <meta name="citation_abstract_html_url" content="http://www.cicirello.org/publications/cicirello2017SoCS2.html">
-<title>Searching for a Permutation in a Haystack - International Symposium on Combinatorial Search - 2017</title>
+<title>Variable Annealing Length and Parallelism in Simulated Annealing - International Symposium on Combinatorial Search - 2017</title>
 <style>
 header, nav, footer, article, aside, section { display: block; }
 footer { clear: both; }
@@ -102,28 +106,29 @@ nav:not(.open) li a:not(.active) { display: none; }
 </header>
 <article itemprop="mainEntity" itemscope itemtype="http://schema.org/ScholarlyArticle">
 <header>
-<h2><a href="/publications/SoCS2017-PrevPub-Cicirello.pdf"><span itemprop="name headline">Searching for a Permutation in a Haystack</span></a></h2>
+<h2><a href="/publications/SoCS2017-Cicirello.pdf"><span itemprop="name headline">Variable Annealing Length and Parallelism in Simulated Annealing</span></a></h2>
 <h3><span itemprop="author" itemscope itemtype="http://schema.org/Person"><a itemprop="url mainEntityOfPage" href="/"><span itemprop="name">Vincent A. Cicirello</span></a></span></h3>
-<h4><span itemprop="isPartOf" itemscope itemtype="http://schema.org/Book">In <i><span itemprop="name">Proceedings of the Tenth International Symposium on Combinatorial Search (SoCS 2017)</span></i></span>, pages <span itemprop="pagination">177</span>. <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">AAAI Press</span></span>, <time datetime="2017-06" itemprop="datePublished">June 2017</time>.</h4>
-<h4>Previously Published Papers Track.</h4>
+<h4><span itemprop="isPartOf" itemscope itemtype="http://schema.org/Book">In <i><span itemprop="name">Proceedings of the Tenth International Symposium on Combinatorial Search (SoCS 2017)</span></i></span>, pages <span itemprop="pageStart">2</span>-<span itemprop="pageEnd">10</span>. <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">AAAI Press</span></span>, <time datetime="2017-06" itemprop="datePublished">June 2017</time>.</h4>
 </header>
-<p><a itemprop="url" href="/publications/SoCS2017-PrevPub-Cicirello.pdf">[PDF]</a> <a href="/publications/cicirello2017SoCS2.bib">[BIB]</a></p>
+<p><a itemprop="url" href="/publications/SoCS2017-Cicirello.pdf">[PDF]</a> <a href="/publications/cicirello2017SoCS2.bib">[BIB]</a> <a itemprop="sameAs" href="https://aaai.org/ocs/index.php/SOCS/SOCS17/paper/view/15784">[PUB]</a></p>
 <h4>Abstract</h4>
-<div itemprop="description"><p>We provide an overview of the Permutation in a Haystack problem, which serves
-as a tool for fitness landscape analysis, as well as in search algorithm
-design. The Permutation in a Haystack enables defining a search landscape for
-permutation optimization problems that abstracts the permutation features,
-which impact solution fitness, such as absolute element positions, edges, and
-pairwise element precedences. In this way, it allows the local search algorithm
-designer to explore a wide variety of landscape characteristics in a problem
-independent manner. We introduced the Permutation in a Haystack problem in a
-paper recently published in IEEE Transactions on Evolutionary Computation
-(Cicirello, 2016). In that paper, we also introduced the Search Landscape
-Calculus, an analytical framework for analyzing the fitness landscape induced
-by a local search operator via local rates of change of fitness. We then
-applied the tools to an analysis of several common permutation mutation
-operators on a wide variety of permutation search landscapes, and validated the
-findings empirically using simulated annealing.</p></div>
+<div itemprop="description"><p>In this paper, we propose: (a) a restart schedule for an adaptive simulated
+annealer, and (b) parallel simulated annealing, with an adaptive and
+parameter-free annealing schedule. The foundation of our approach is the
+Modified Lam annealing schedule, which adaptively controls the temperature
+parameter to track a theoretically ideal rate of acceptance of neighboring
+states. A sequential implementation of Modified Lam simulated annealing is
+almost parameter-free. However, it requires prior knowledge of the annealing
+length. We eliminate this parameter using restarts, with an exponentially
+increasing schedule of annealing lengths. We then extend this restart schedule
+to parallel implementation, executing several Modified Lam simulated annealers
+in parallel, with varying initial annealing lengths, and our proposed parallel
+annealing length schedule. To validate our approach, we conduct experiments on
+an NP-Hard scheduling problem with sequence-dependent setup constraints. We
+compare our approach to fixed length restarts, both sequentially and in
+parallel. Our results show that our approach can achieve substantial
+performance gains, throughout the course of the run, demonstrating our approach
+to be an effective anytime algorithm.</p></div>
 </article>
 <aside itemprop="hasPart" itemscope itemtype="http://schema.org/WPSideBar">
 <div itemscope><div id="vacData">
