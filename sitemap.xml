@@ -826,7 +826,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/software/</loc>
-<lastmod>2017-08-17T08:33:52-04:00</lastmod>
+<lastmod>2017-08-17T17:21:53-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/software/ClusterPerformanceTests.zip</loc>
@@ -835,6 +835,10 @@
 <url>
 <loc>http://www.cicirello.org/software/JImageEmbedder.zip</loc>
 <lastmod>2016-10-01T12:58:40-04:00</lastmod>
+</url>
+<url>
+<loc>http://www.cicirello.org/software/SitemapGenerator.zip</loc>
+<lastmod>2017-08-17T17:21:53-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/software/WeightedTardinessProblemGenerator.zip</loc>
