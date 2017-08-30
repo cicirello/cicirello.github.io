@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://www.cicirello.org/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/datasets/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/datasets/wtsds/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/datasets/wtsds/wtsds-instances.zip</loc>
@@ -18,15 +18,15 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/howto/</loc>
-<lastmod>2017-08-17T08:22:42-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/howto/pirack/</loc>
-<lastmod>2017-08-17T08:21:17-04:00</lastmod>
+<lastmod>2017-08-30T14:40:19-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/</loc>
-<lastmod>2017-08-22T10:37:14-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/AAAI04-150.pdf</loc>
@@ -214,7 +214,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello1998siam.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello1999drexel.bib</loc>
@@ -222,7 +222,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello1999drexel.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello1999sigxi.bib</loc>
@@ -230,7 +230,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello1999sigxi.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello1999sm.bib</loc>
@@ -238,7 +238,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello1999sm.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello1999thesis.bib</loc>
@@ -246,7 +246,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello1999thesis.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2000gecco.bib</loc>
@@ -254,7 +254,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2000gecco.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2000jcad.bib</loc>
@@ -262,7 +262,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2000jcad.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2000nsf.bib</loc>
@@ -270,7 +270,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2000nsf.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001aaaifa.bib</loc>
@@ -278,7 +278,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001aaaifa.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001agents.bib</loc>
@@ -286,7 +286,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001agents.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001cmu1.bib</loc>
@@ -294,7 +294,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001cmu1.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001cmu2.bib</loc>
@@ -302,7 +302,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001cmu2.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001isads.bib</loc>
@@ -310,7 +310,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001isads.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001sigman1.bib</loc>
@@ -318,7 +318,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001sigman1.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001sigman2.bib</loc>
@@ -326,7 +326,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001sigman2.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001smi.bib</loc>
@@ -334,7 +334,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2001smi.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2002aiedam.bib</loc>
@@ -342,7 +342,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2002aiedam.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2002cp.bib</loc>
@@ -350,7 +350,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2002cp.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2002nasa.bib</loc>
@@ -358,7 +358,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2002nasa.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2002siam.bib</loc>
@@ -366,7 +366,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2002siam.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2002wrac.bib</loc>
@@ -374,7 +374,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2002wrac.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2003aamas.bib</loc>
@@ -382,7 +382,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2003aamas.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2003cmu.bib</loc>
@@ -390,7 +390,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2003cmu.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2003mrs.bib</loc>
@@ -398,7 +398,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2003mrs.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2003thesis.bib</loc>
@@ -406,7 +406,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2003thesis.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004aaaidemo.bib</loc>
@@ -414,7 +414,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004aaaidemo.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004aamas.bib</loc>
@@ -422,7 +422,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004aamas.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004cp.bib</loc>
@@ -430,7 +430,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004cp.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004darpa.bib</loc>
@@ -438,7 +438,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004darpa.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004faabs.bib</loc>
@@ -446,7 +446,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004faabs.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004icaps.bib</loc>
@@ -454,7 +454,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004icaps.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004ieeeis.bib</loc>
@@ -462,7 +462,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004ieeeis.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004jaamas.bib</loc>
@@ -470,7 +470,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004jaamas.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004mass.bib</loc>
@@ -478,7 +478,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2004mass.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005aaai.bib</loc>
@@ -486,7 +486,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005aaai.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005aaaidemo.bib</loc>
@@ -494,7 +494,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005aaaidemo.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005aaaisp.bib</loc>
@@ -502,7 +502,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005aaaisp.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005ieeeis.bib</loc>
@@ -510,7 +510,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005ieeeis.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005jheur.bib</loc>
@@ -518,7 +518,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005jheur.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005mass1.bib</loc>
@@ -526,7 +526,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005mass1.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005mass2.bib</loc>
@@ -534,7 +534,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2005mass2.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2006gecco.bib</loc>
@@ -542,7 +542,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2006gecco.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2007cp.bib</loc>
@@ -550,7 +550,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2007cp.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2007icaps.bib</loc>
@@ -558,7 +558,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2007icaps.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2008ccsce.bib</loc>
@@ -566,7 +566,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2008ccsce.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2008ccscsc.bib</loc>
@@ -574,7 +574,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2008ccscsc.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2008rsc.bib</loc>
@@ -582,7 +582,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2008rsc.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2009asc.bib</loc>
@@ -590,7 +590,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2009asc.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2009ccscne1.bib</loc>
@@ -598,7 +598,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2009ccscne1.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2009ccscne2.bib</loc>
@@ -606,7 +606,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2009ccscne2.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2009sigcse.bib</loc>
@@ -614,7 +614,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2009sigcse.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2010flairs.bib</loc>
@@ -622,7 +622,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2010flairs.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2010patent.bib</loc>
@@ -630,7 +630,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2010patent.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2013cag.bib</loc>
@@ -638,7 +638,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2013cag.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2013ccscne1.bib</loc>
@@ -646,7 +646,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2013ccscne1.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2013ccscne2.bib</loc>
@@ -654,7 +654,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2013ccscne2.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2013flairs.bib</loc>
@@ -662,7 +662,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2013flairs.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2014bict.bib</loc>
@@ -670,7 +670,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2014bict.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2015bict.bib</loc>
@@ -678,7 +678,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2015bict.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2016evc.bib</loc>
@@ -686,7 +686,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2016evc.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2016hd.bib</loc>
@@ -694,7 +694,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2016hd.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2017SoCS1.bib</loc>
@@ -702,7 +702,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2017SoCS1.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2017SoCS2.bib</loc>
@@ -710,7 +710,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2017SoCS2.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2017arXiv.bib</loc>
@@ -718,7 +718,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2017arXiv.html</loc>
-<lastmod>2017-08-22T10:37:14-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2017ccsce.bib</loc>
@@ -726,7 +726,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello2017ccsce.html</loc>
-<lastmod>2017-08-18T15:42:35-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/publications/cicirello_tech_1.pdf</loc>
@@ -798,47 +798,47 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/research/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/research/adaptive/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/research/aicae/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/research/csedu/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/research/gaoperators/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/research/landscape/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/research/metaheuristics/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/research/multiagent/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/research/swarms/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/search/</loc>
-<lastmod>2017-08-04T12:18:19-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/software/</loc>
-<lastmod>2017-08-21T14:23:15-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/software/ClusterPerformanceTests.zip</loc>
@@ -862,7 +862,7 @@
 </url>
 <url>
 <loc>http://www.cicirello.org/teaching/</loc>
-<lastmod>2017-08-23T14:16:16-04:00</lastmod>
+<lastmod>2017-08-30T14:50:02-04:00</lastmod>
 </url>
 <url>
 <loc>http://www.cicirello.org/teaching/syllabi/CSIS2101.pdf</loc>
