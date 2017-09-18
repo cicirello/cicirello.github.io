@@ -1,7 +1,6 @@
 User-agent: Googlebot-Image
 Disallow: /images/addr.png
 Disallow: /presentations/
-Disallow: /images/vac.jpg
 
 User-agent: *
 Disallow: /presentations/
