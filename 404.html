@@ -42,6 +42,10 @@ article, aside { clear:both; width:calc(100% - 20px); }
 nav:not(.open) li a:not(.active) { display: none; }
 #menu-icon { display: block; padding: 0px 4px 1px 4px; border-radius: 4px; }
 }
+#tipue_search_input { max-width: 210px; padding: 8px; border: 2px solid #862d2d; outline: 0; margin: 0; }
+.tipue_search_icon { width: 24px; height: 24px; }
+.tipue_search_left { font-weight: bold; font-size: 1.5em;  color: #862d2d; float: left; padding: 0px 10px 10px 0px; }
+.tipue_search_right { float: left; }
 </style>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -71,25 +75,16 @@ ga('send', 'pageview');
 </nav>
 </div>
 </header>
-<main  itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
-<article>
+<article itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
 <h2>404</h2>
 <p><strong>File not found.</strong></p>
 <p>This site does not contain the requested page. Use the menu in the site header above, or the search box below, to find what you are looking for.</p>
-<script>
-(function() {
-var cx = '010279480414108422544:g3bfbybutra';
-var gcse = document.createElement('script');
-gcse.type = 'text/javascript';
-gcse.async = true;
-gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-var s = document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(gcse, s);
-})();
-</script>
-<gcse:searchbox-only></gcse:searchbox-only>
+<form action="/search/">
+<div class="tipue_search_left">&#x2315</div>
+<div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+<div style="clear: both;"></div>
+</form>
 </article>
-</main>
 <aside itemprop="hasPart" itemscope itemtype="http://schema.org/WPSideBar">
 <div itemscope><div id="vacData">
 <h3><span itemprop="alternateName">Vincent A. Cicirello</span>, Ph.D.</h3>
