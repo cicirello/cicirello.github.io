@@ -5,7 +5,7 @@ Disallow: /images/vac.jpg
 
 User-agent: *
 Disallow: /presentations/
-Disallow: /js/site_search.js
+Disallow: /js/search_index.js
 
 Sitemap: http://www.cicirello.org/sitemap.xml
 
