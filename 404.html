@@ -42,9 +42,9 @@ article, aside { clear:both; width:calc(100% - 20px); }
 nav:not(.open) li a:not(.active) { display: none; }
 #menu-icon { display: block; padding: 0px 4px 1px 4px; border-radius: 4px; }
 }
-#search_input { max-width: 210px; padding: 8px; border: 2px solid #862d2d; outline: 0; margin: 0;}
-.submit_button {margin-left:5px; font-weight:bold; font-size:1.4em; color:#862d2d; background-color: #f6f0bb; text-align:center; border: 2px solid #862d2d; padding: 0px 8px 2px 8px;}
-.submit_button:hover { background-color: #305030; color: white; }
+#search_input { max-width: 210px; padding: 8px; border: 2px solid #862d2d; outline: 0; margin: 0; vertical-align:bottom;}
+#submit_button {margin-left:5px; font-weight:bold; font-size:1.4em; color:#862d2d; background-color: #f6f0bb; text-align:center; border: 2px solid #862d2d; padding: 0px 8px 2px 8px; vertical-align:bottom;}
+#submit_button:hover { background-color: #305030; color: white; }
 </style>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -80,7 +80,7 @@ ga('send', 'pageview');
 <p>This site does not contain the requested page. Use the menu in the site header above, or the search box below, to find what you are looking for.</p>
 <form action="/search/">
 <input type="search" name="q" id="search_input" pattern=".{3,}" title="At least 3 characters" required>
-<input class="submit_button" type="submit" value="&#x2315">
+<input id="submit_button" type="submit" value="&#x2315">
 <div style="clear: both;"></div>
 </form>
 </article>
