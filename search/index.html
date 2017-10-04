@@ -45,9 +45,9 @@ nav:not(.open) li a:not(.active) { display: none; }
 }
 .search_content_title { font-size: 1.1em; font-weight: bold; }
 .search_content_bold, .search_related_bold { font-weight: bold; }
-#search_input { max-width: 210px; padding: 8px; border: 2px solid #862d2d; outline: 0; margin: 0;}
-.submit_button {margin-left:5px; font-weight:bold; font-size:1.4em; color:#862d2d; background-color: #f6f0bb; text-align:center; border: 2px solid #862d2d; padding: 0px 8px 2px 8px;}
-.submit_button:hover { background-color: #305030; color: white; }
+#search_input { max-width: 210px; padding: 8px; border: 2px solid #862d2d; outline: 0; margin: 0; vertical-align:bottom;}
+#submit_button {margin-left:5px; font-weight:bold; font-size:1.4em; color:#862d2d; background-color: #f6f0bb; text-align:center; border: 2px solid #862d2d; padding: 0px 8px 2px 8px; vertical-align:bottom;}
+#submit_button:hover { background-color: #305030; color: white; }
 #search_content { padding-top: 15px; margin: 0; }
 #search_warning { margin: 8px 0; }
 #search_warning a { color: #4CAF50; text-decoration: none; }
@@ -105,7 +105,7 @@ ga('send', 'pageview');
 <h2>Site Search</h2>
 <form action="/search/">
 <input type="search" name="q" id="search_input" pattern=".{3,}" title="At least 3 characters" required>
-<input class="submit_button" type="submit" value="&#x2315">
+<input id="submit_button" type="submit" value="&#x2315">
 <div style="clear: both;"></div>
 </form>
 <div id="search_content"></div>
