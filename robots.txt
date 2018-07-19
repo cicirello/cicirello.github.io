@@ -10,5 +10,3 @@ User-agent: *
 Disallow: /presentations/
 
 Sitemap: https://www.cicirello.org/sitemap.xml
-
-
