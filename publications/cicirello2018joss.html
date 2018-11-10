@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="http://schema.org/ItemPage" itemref="pageAuthor topNav">
+<head>
+<meta charset=utf-8>
+<link rel="canonical" href="https://www.cicirello.org/publications/cicirello2018joss.html">
+<link itemprop="url" href="https://www.cicirello.org/publications/cicirello2018joss.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="JavaPermutationTools: A Java Library of Permutation Distance Metrics - Journal of Open Source Software - 2018">
+<meta itemprop="name" content="JavaPermutationTools: A Java Library of Permutation Distance Metrics - Journal of Open Source Software - 2018">
+<meta name="description" content="Permutations can represent a wide variety of ordered data. For example, a
+permutation may represent an individual&#8217;s preferences (or ranking) of a
+collection of products such as books or music. Or perhaps a permutation may
+represent a route for delivering a set of packages. Permutations can also
+represent one-to-one mappings between sets (e.g., instructors to courses at a
+fixed time). There are applications where measuring the distance between a pair
+of permutations is necessary. For example, a recommender system may assess the
+similarity of two individuals&#8217; preferences for music to make song
+recommendations. Depending upon the application, the permutation features most
+important to distance calculation may be the absolute positions of the elements
+(e.g., one-to-one mappings), the adjacency of elements (e.g., the routing
+example), or general precedence of pairs of elements (e.g., music preferences).
+Thus, it is no surprise that ...">
+<meta itemprop="description" content="Permutations can represent a wide variety of ordered data. For example, a
+permutation may represent an individual&#8217;s preferences (or ranking) of a
+collection of products such as books or music. Or perhaps a permutation may
+represent a route for delivering a set of packages. Permutations can also
+represent one-to-one mappings between sets (e.g., instructors to courses at a
+fixed time). There are applications where measuring the distance between a pair
+of permutations is necessary. For example, a recommender system may assess the
+similarity of two individuals&#8217; preferences for music to make song
+recommendations. Depending upon the application, the permutation features most
+important to distance calculation may be the absolute positions of the elements
+(e.g., one-to-one mappings), the adjacency of elements (e.g., the routing
+example), or general precedence of pairs of elements (e.g., music preferences).
+Thus, it is no surprise that there are many permutation metrics in the research
+literature.   The motivation and origin of this library is our research on
+fitness landscape analysis for permutation optimization. In a permutation
+optimization problem, solutions are represented by permutations of some set,
+and the objective is to maximize or minimize some function. For example, a
+solution to a traveling salesperson problem is the permutation of the set of
+cities that corresponds to the minimal cost tour. During our research, we
+developed a Java library of permutation distance metrics. Most of the distance
+metrics in the literature are described mathematically with no source code
+available. Thus, our library offers convenient access to efficient
+implementations of a variety of metrics with a common programmatic interface.
+The library also provides metrics on sequences (strings and arrays of various
+types); where unlike a permutation, a sequence may contain multiple copies of
+the same element.   The source repository
+(https://github.com/cicirello/JavaPermutationTools) contains source code of the
+library, programs that provide example usage of key functionality, as well as
+programs that reproduce results from papers that have used the library. API
+documentation is hosted on the web (https://jpt.cicirello.org/).">
+<meta name="citation_title" content="JavaPermutationTools: A Java Library of Permutation Distance Metrics">
+<meta name="citation_author" content="Vincent A. Cicirello">
+<meta name="citation_publication_date" content="2018">
+<meta name="citation_date" content="2018">
+<meta name="citation_journal_title" content="Journal of Open Source Software">
+<meta name="citation_volume" content="3">
+<meta name="citation_issue" content="31">
+<meta name="citation_firstpage" content="950">
+<meta name="citation_lastpage" content="950">
+<meta name="citation_pdf_url" content="https://www.cicirello.org/publications/cicirello2018joss.pdf">
+<meta name="citation_abstract_html_url" content="https://www.cicirello.org/publications/cicirello2018joss.html">
+<title>JavaPermutationTools: A Java Library of Permutation Distance Metrics - Journal of Open Source Software - 2018</title>
+<style>
+header, nav, footer, article, aside, section { display: block; }
+footer { clear: both; }
+body { background-color: #f6f0bb; font-family: Arial, Helvetica, sans-serif; }
+#siteheader, aside, footer { background-color: #bfd9bf; }
+#siteheader, aside, footer, article { border: 2px solid #4CAF50; border-radius: 25px; margin-bottom: 5px; padding: 8px; }
+h1, h2, h3, h4, h5, h6, strong { color: #862d2d; }
+#siteheader h2 { font-size: 2em; }
+a { color: #4CAF50; }
+a:visited { color:#862d2d; }
+nav ul { list-style-type: none; margin: 0px; padding: 0; overflow: hidden; }
+nav li { float: left; margin-right: 8px; }
+nav li a { display: block; background-color: #f6f0bb; border: 2px solid #4CAF50; text-decoration: none; text-align: center; color: #666; }
+nav li:not(:first-child) a { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 12px; }
+#menu-icon { display: none; }
+nav li a:visited { color: #666; }
+nav li a:hover:not(.active) { background-color: #305030; color: white; }
+nav li a.active { background-color: #4CAF50; }
+aside { float: left; width: 235px; }
+aside h4 { display: inline; }
+article { float: right; width: calc(100% - 280px); }
+article li { margin-bottom: 8px; margin-top: 8px; }
+.publist li { margin-bottom: 16px; }
+.publist ul { margin-bottom: 32px; }
+section { margin-top: 30px; }
+#pubyears { list-style-type: none; margin: 0px; padding: 0px; overflow: auto; }
+#pubyears li { float: left; margin: 0px 8px 8px 0px; }
+#copyright { text-align: center; color: #862d2d; }
+@media screen and (max-width:600px){
+article, aside { clear:both; width:calc(100% - 20px); }
+nav:not(.open) li a:not(.active) { display: none; }
+#menu-icon { display: block; padding: 0px 4px 1px 4px; border-radius: 4px; }
+}
+</style>
+</head>
+<body>
+<header itemprop="hasPart" itemscope itemtype="http://schema.org/WPHeader" id="siteheader">
+<div itemscope>
+<h2 id="pageAuthor" itemprop="author copyrightHolder" itemscope itemtype="http://schema.org/Person" itemref="vacData"><a itemprop="mainEntityOfPage url" href="/"><span itemprop="name">Vincent Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span> - <span itemprop="jobTitle">Professor of Computer Science</span></a></h2>
+<nav itemprop="hasPart" itemscope itemtype="http://schema.org/SiteNavigationElement" id="topNav">
+<ul>
+<li><a href="javascript:void(0);" onclick="toggleMenu()" id="menu-icon">&#9776;</a></li>
+<li itemprop="hasPart" itemscope itemtype="http://schema.org/WebPage"><a itemprop="url" href="/"><span itemprop="name">Home</span></a></li>
+<li itemprop="hasPart" itemscope itemtype="http://schema.org/CollectionPage"><a itemprop="url" href="/publications/"><span itemprop="name">Publications</span></a></li>
+<li itemprop="hasPart" itemscope itemtype="http://schema.org/WebPage"><a itemprop="url" href="/research/"><span itemprop="name">Research</span></a></li>
+<li itemprop="hasPart" itemscope itemtype="http://schema.org/WebPage"><a itemprop="url" href="/datasets/"><span itemprop="name">Datasets</span></a></li>
+<li itemprop="hasPart" itemscope itemtype="http://schema.org/WebPage"><a itemprop="url" href="/software/"><span itemprop="name">Open Source Software</span></a></li>
+<li itemprop="hasPart" itemscope itemtype="http://schema.org/WebPage"><a itemprop="url" href="/teaching/"><span itemprop="name">Teaching</span></a></li>
+<li itemprop="hasPart" itemscope itemtype="http://schema.org/WebPage"><a itemprop="url" href="/howto/"><span itemprop="name">How To</span></a></li>
+<li itemprop="hasPart" itemscope itemtype="http://schema.org/WebPage"><a itemprop="url" href="/search/"><span itemprop="name">Site Search</span></a></li>
+</ul>
+</nav>
+</div>
+</header>
+<article itemprop="mainEntity" itemscope itemtype="http://schema.org/ScholarlyArticle">
+<header>
+<h2><a itemprop="url" href="/publications/cicirello2018joss.pdf"><span itemprop="name headline">JavaPermutationTools: A Java Library of Permutation Distance Metrics</span></a></h2>
+<h3><span itemprop="author" itemscope itemtype="http://schema.org/Person"><a itemprop="url mainEntityOfPage" href="/"><span itemprop="name">Vincent A. Cicirello</span></a></span></h3>
+<h4><span itemprop="isPartOf" itemscope itemtype="http://schema.org/Periodical"><i><span itemprop="name">Journal of Open Source Software</span></i></span>,
+<span itemprop="isPartOf" itemscope itemtype="http://schema.org/PublicationVolume"><span itemprop="volumeNumber">3</span></span>(<span itemprop="isPartOf" itemscope itemtype="http://schema.org/PublicationIssue"><span itemprop="issueNumber">31</span></span>):<span itemprop="pagination">950</span>,
+<time datetime="2018-11" itemprop="datePublished">November 2018</time>.</h4>
+</header>
+<p><span itemprop="encoding" itemscope itemtype="http://schema.org/MediaObject"><a itemprop="contentUrl" href="/publications/cicirello2018joss.pdf">[<span itemprop="encodingFormat">PDF</span>]</a></span> <a href="/publications/cicirello2018joss.bib">[BIB]</a> <a itemprop="sameAs" href="https://doi.org/10.21105/joss.00950">[PUB]</a></p>
+<h4>Abstract</h4>
+<div itemprop="description"><p>Permutations can represent a wide variety of ordered data. For example, a
+permutation may represent an individual&#8217;s preferences (or ranking) of a
+collection of products such as books or music. Or perhaps a permutation may
+represent a route for delivering a set of packages. Permutations can also
+represent one-to-one mappings between sets (e.g., instructors to courses at a
+fixed time). There are applications where measuring the distance between a pair
+of permutations is necessary. For example, a recommender system may assess the
+similarity of two individuals&#8217; preferences for music to make song
+recommendations. Depending upon the application, the permutation features most
+important to distance calculation may be the absolute positions of the elements
+(e.g., one-to-one mappings), the adjacency of elements (e.g., the routing
+example), or general precedence of pairs of elements (e.g., music preferences).
+Thus, it is no surprise that there are many permutation metrics in the research
+literature.</p> <p>The motivation and origin of this library is our research on
+fitness landscape analysis for permutation optimization. In a permutation
+optimization problem, solutions are represented by permutations of some set,
+and the objective is to maximize or minimize some function. For example, a
+solution to a traveling salesperson problem is the permutation of the set of
+cities that corresponds to the minimal cost tour. During our research, we
+developed a Java library of permutation distance metrics. Most of the distance
+metrics in the literature are described mathematically with no source code
+available. Thus, our library offers convenient access to efficient
+implementations of a variety of metrics with a common programmatic interface.
+The library also provides metrics on sequences (strings and arrays of various
+types); where unlike a permutation, a sequence may contain multiple copies of
+the same element.</p> <p>The source repository
+(https://github.com/cicirello/JavaPermutationTools) contains source code of the
+library, programs that provide example usage of key functionality, as well as
+programs that reproduce results from papers that have used the library. API
+documentation is hosted on the web (https://jpt.cicirello.org/).</p></div>
+</article>
+<aside itemprop="hasPart" itemscope itemtype="http://schema.org/WPSideBar">
+<div itemscope><div id="vacData">
+<h3><span itemprop="alternateName">Vincent A. Cicirello</span>, Ph.D.</h3>
+<h4>Current Position:</h4><br>
+Professor of Computer Science<br><br>
+<h4>Mailing Address:</h4><br>
+School of Business<br>
+Stockton University<br>
+101 Vera King Farris Dr<br>
+Galloway, NJ 08205<br><br>
+<h4>E-mail:</h4>
+<iframe src="/images/addr.html" width="177" height="19" style="display:inline;border-style:none;border:0px;margin:0px;padding:0px;">Contact Address</iframe>
+<br><br>
+<h4>Phone:</h4>
+(609) 626-3526<br><br>
+<h4>Social Media:</h4><br>
+<a itemprop="sameAs" href="https://www.linkedin.com/in/vacicirello"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" alt="View Vincent A. Cicirello's profile on LinkedIn"></a>
+<a itemprop="sameAs" href="https://www.researchgate.net/profile/Vincent_Cicirello"><img alt="Follow me on ResearchGate" src="https://www.researchgate.net/images/public/profile_share_badge.png" width="100"></a>
+</div></div>
+</aside>
+<footer itemprop="hasPart" itemscope itemtype="http://schema.org/WPFooter">
+<small>
+<a href="/policy/privacy/">Privacy Policy</a>
+</small>
+<div id="copyright"><small>Copyright &copy; 1996-<span id="year"></span> Vincent A. Cicirello.</small></div>
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+</footer>
+<script>function toggleMenu() { var x = document.getElementById("topNav"); x.className = (x.className === "") ? "open" : x.className = ""; }</script>
+</body>
+</html>
