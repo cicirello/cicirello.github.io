@@ -1,4 +1,4 @@
-name: Generate sitemap
+name: Generate sitemap 
 
 on:
   push:
