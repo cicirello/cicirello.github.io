@@ -14,16 +14,19 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 0 
+    
     - name: Generate the sitemap
       id: sitemap
-      uses: cicirello/generate-sitemap@development
+      uses: cicirello/generate-sitemap@v1.6.1
       with:
         base-url-path: https://www.cicirello.org/
+    
     - name: Output stats
       run: |
         echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
         echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
+    
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3.4.0
       with:
