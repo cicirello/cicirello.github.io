@@ -32,5 +32,20 @@ jobs:
         javac src/*.java -d .
         cd ..
         java -cp "./sitegenerator" BibParser cicirello-pubs-web.bib p b
+        if [[ `git status --porcelain` ]]; then
+          git config --global user.name 'Vincent A Cicirello'
+          git config --global user.email 'cicirello@users.noreply.github.com'
+          git add -A
+          git commit -m "Website updated by custom site generator"
+        fi
 
-
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3.8.0
+      with:
+        title: "Website updated by custom site generator"
+        body: > 
+          Website updates produced by custom site generator. 
+        commit-message: "Website updated by custom site generator"
+        author: Vincent A Cicirello <cicirello@users.noreply.github.com>
+        committer: Vincent A Cicirello <cicirello@users.noreply.github.com>
+        delete-branch: true
