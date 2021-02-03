@@ -48,4 +48,5 @@ jobs:
         commit-message: "Website updated by custom site generator"
         author: Vincent A Cicirello <cicirello@users.noreply.github.com>
         committer: Vincent A Cicirello <cicirello@users.noreply.github.com>
+        branch: create-pull-request/site-update
         delete-branch: true
