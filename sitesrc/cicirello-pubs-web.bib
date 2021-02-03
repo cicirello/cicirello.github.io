@@ -1,0 +1,2343 @@
+@ARTICLE{EAI-COGCOM-2021,
+author = {Vincent A. Cicirello},
+title = {Software Articles and Open Source Research Software: The Why, the What, and the How},
+journal = {EAI Endorsed Transactions on Cognitive Communications},
+year = {2021},
+month = {January},
+numpages = {3},
+doi = {https://doi.org/10.4108/eai.28-1-2021.168507},
+acro = {cogcom},
+pdf = {eai.28-1-2021.168507.pdf},
+titletag = {Cognitive Communications},
+note = {Editorial from Co-Editor-in-Chief},
+abstract = {In this editorial, I make the case for why you should
+write and publish software articles about your open source research 
+software. I begin by discussing some of the benefits of releasing
+your research software as an open source project. Then, I explain 
+what a software article is in general, as well as why you should 
+consider writing one about your research software, such as increased 
+reproducibility, increased software reuse, the potential to increase 
+the impact that your research has on the work of others, the potential 
+to gain new collaborators, among other advantages. Open source enables
+these things, and software articles enhance the process by increasing
+discoverability, as well as by placing the software within a broader
+research context. I then discuss how to proceed to write a software 
+article more specifically for submission to the <i>EAI Transactions on 
+Cognitive Communications</i>, using either the "research article" or "short
+communications" article types.}
+}
+%volume = {},
+%number = {},
+%articleno = {},
+
+@ARTICLE{EAI2020INIS-2,
+author = {Vincent A. Cicirello},
+title = {Optimizing the Modified Lam Annealing Schedule},
+journal = {EAI Endorsed Transactions on Industrial Networks and Intelligent Systems},
+year = {2020},
+month = {December},
+volume = {7},
+number = {25},
+articleno = {e1},
+numpages = {11},
+doi = {https://doi.org/10.4108/eai.16-12-2020.167653},
+acro = {inis2},
+pdf = {eai.16-12-2020.167653.pdf},
+abstract = {Simulated annealing is a metaheuristic commonly used 
+for combinatorial optimization in many industrial applications.
+Its runtime behavior is controlled by an algorithmic component
+known as the annealing schedule. The classic annealing schedules
+have control parameters that must be set or tuned ahead of time.
+Adaptive annealing schedules, such as the Modified Lam, are 
+parameter-free and self-adapt during runtime. However, they are
+also more complex than the classic alternatives, leading to more 
+time per iteration. In this paper, we present an optimized variant 
+of Modified Lam annealing, and experimentally demonstrate the
+potential significant impact on runtime performance of carefully
+optimizing the annealing schedule.},
+titletag = {Industrial Networks and Intelligent Systems}
+}
+
+
+@article{JOSS2020,
+author = {Vincent A. Cicirello},
+title = {{Chips-n-Salsa}: A Java Library of Customizable, Hybridizable, Iterative, Parallel, Stochastic, and Self-Adaptive Local Search Algorithms},
+journal = {Journal of Open Source Software},
+volume = {5},
+number = {52},
+articleno = {2448},
+year = {2020},
+month = {August},
+pdf = {cicirello2020joss.pdf},
+acro = {joss},
+doi = {https://doi.org/10.21105/joss.02448},
+abstract = {Discrete optimization problems are often of practical real-world 
+importance as well as computationally intractable. For example, the traveling 
+salesperson, bin packing, and longest common subsequence problems are NP-Hard, 
+as is resource constrained scheduling, and many single-machine scheduling problems. 
+Polynomial time algorithms for such problems are unlikely to exist, and the best 
+known algorithms that guarantee optimal solutions have a worst-case exponential 
+runtime. It is thus common to use stochastic local search and other metaheuristics. 
+Stochastic local search algorithms begin at a random search state, and apply a 
+sequence of neighbor transitions to nearby search states. This includes 
+perturbative algorithms like simulated annealing and hill climbers, where 
+each search state is a complete candidate feasible solution, and a mutation 
+operator makes a small random modification to move to another local candidate 
+solution; and also includes constructive algorithms like stochastic samplers, 
+where each search state is a partial solution that is iteratively transformed into 
+a complete solution. Stochastic local search algorithms do not guarantee 
+optimal solutions. However, they often find near-optimal solutions in much 
+less time than systematic search. They also offer an anytime property, where 
+solution quality improves with runtime.</p>
+<p>Chips-n-Salsa is a Java library of customizable, hybridizable, iterative, 
+parallel, stochastic, and self-adaptive local search algorithms. Its focus is 
+discrete optimization, but also supports continuous optimization. The library 
+provides a variety of solution representations, including BitVector and IntegerVector 
+classes, indexable vectors of bits and integers, respectively, along with 
+corresponding mutation operators. The library utilizes our significant prior 
+research on permutation optimization problems, providing an extensive set 
+of mutation operators for permutations, including window-limited mutation. 
+It uses the JavaPermutationTools (JPT) library for efficiently representing 
+solutions to such problems. For continuous problems, Chips-n-Salsa provides a 
+RealVector class, Gaussian mutation, Cauchy mutation, and uniform mutation. The 
+library includes optimization problems useful for benchmarking metaheuristic 
+implementations, such as the well-known OneMax problem, BoundMax (generalization 
+of OneMax to integers), the Permutation in a Haystack problem, and polynomial root 
+finding.</p>
+<p>The repository (https://github.com/cicirello/Chips-n-Salsa) contains the library 
+source code, and programs with examples of key functionality. API and other 
+documentation is hosted on the web (https://chips-n-salsa.cicirello.org/). The 
+library can be integrated into projects using maven via GitHub Packages.}
+}
+
+@ARTICLE{EAI2020INIS,
+author = {Vincent A. Cicirello},
+title = {Kendall Tau Sequence Distance: Extending Kendall Tau from Ranks to Sequences},
+journal = {EAI Endorsed Transactions on Industrial Networks and Intelligent Systems},
+year = {2020},
+month = {April},
+doi = {https://doi.org/10.4108/eai.13-7-2018.163925},
+otherLink = {https://arxiv.org/abs/1905.02752},
+volume = {7},
+number = {23},
+articleno = {e1},
+acro = {inis},
+pdf = {eai.13-7-2018.163925.pdf},
+abstract = {An edit distance is a measure of the minimum cost sequence of edit 
+operations to transform one structure into another. Edit distance can be used 
+as a measure of similarity as part of a pattern recognition system, with lower 
+values of edit distance implying more similar structures. Edit distance is 
+most commonly encountered within the context of strings, where Wagner and Fischer's 
+string edit distance is perhaps the most well-known. However, edit distance is 
+not limited to strings. For example, there are several edit distance measures 
+for permutations, including Wagner and Fischer's string edit distance since a 
+permutation is a special case of a string. However, another edit distance for 
+permutations is Kendall tau distance, which is the number of pairwise element 
+inversions. On permutations, Kendall tau distance is equivalent to an edit 
+distance with adjacent swap as the edit operation. A permutation is often used to 
+represent a total ranking over a set of elements. There exist multiple extensions 
+of Kendall tau distance from total rankings (permutations) to partial rankings 
+(i.e., where multiple elements may have the same rank), but none of these are 
+suitable for computing distance between sequences. We set out to explore extending 
+Kendall tau distance in a different direction, namely from the special case of 
+permutations to the more general case of strings or sequences of elements 
+from some finite alphabet. We name our distance metric Kendall tau sequence 
+distance, and define it as the minimum number of adjacent swaps necessary to 
+transform one sequence into the other. We provide two O(n lg n) algorithms 
+for computing it, and experimentally compare their relative performance. 
+We also provide reference implementations of both algorithms in an 
+open source Java library.},
+titletag = {Industrial Networks and Intelligent Systems}
+}
+
+techreport{ARXIV2019,
+author = {Vincent A. Cicirello},
+title = {Kendall Tau Sequence Distance: Extending Kendall Tau from Ranks to Sequences},
+number = {arXiv:1905.02752 [cs.DM]},
+type = {arXiv preprint},
+arxiv = {arXiv:1905.02752},
+year = {2019},
+month = {October},
+pdf = {arxiv.1905.02752.pdf},
+acro = {arXiv},
+doi = {https://arxiv.org/abs/1905.02752},
+abstract = {An edit distance is a measure of the minimum cost sequence of edit operations
+to transform one structure into another.  Edit distance is most commonly
+encountered within the context of strings, where Wagner and Fischer's
+string edit distance is perhaps the most well-known.  However, edit distance is not
+limited to strings.  For example, there are several edit distance measures
+for permutations, including Wagner and Fischer's string edit distance since a
+permutation is a special case of a string.  However, another
+edit distance for permutations
+is Kendall tau distance, which is the number of pairwise element
+inversions.  On permutations, Kendall tau distance is 
+equivalent to an edit distance with adjacent swap as the edit operation.
+A permutation is often used to represent a total ranking over a set of elements.
+There exist multiple extensions of Kendall tau distance from total rankings (permutations)
+to partial rankings (i.e., where multiple elements may have the same rank), but none of
+these are suitable for computing distance between sequences.
+We set out to explore extending Kendall tau distance in a different direction, namely
+from the special case of permutations to the more general case of strings or sequences
+of elements from some finite alphabet.  We name our distance metric 
+Kendall tau sequence distance, and define it as the minimum number of adjacent swaps
+necessary to transform one sequence into the other.  We provide two O(n lg n) 
+algorithms for computing it, and experimentally compare their relative performance.  
+We also provide reference implementations of both algorithms in an open source Java library.}
+}
+
+@INPROCEEDINGS{BICT2019,
+author = {Vincent A. Cicirello},
+title = {Classification of Permutation Distance Metrics for Fitness Landscape Analysis},
+booktitle = {Proceedings of the 11th International Conference on Bio-inspired Information and Communication Technologies},
+publisher = {Springer Nature},
+month = {March},
+pages = {81-97},
+year = {2019},
+acro = {bict},
+titletag = {International Conference on Bioinspired Information and Communication Technologies},
+pdf = {cicirello-bict2019.pdf},
+doi = {https://doi.org/10.1007/978-3-030-24202-2_7},
+abstract = {Commonly used computational and analytical tools for 
+fitness landscape analysis of optimization problems require identifying 
+a distance metric that characterizes the similarity of different solutions 
+to the problem.  For example, fitness distance correlation is Pearson 
+correlation between solution fitness and distance to the nearest 
+optimal solution.  In this paper, we survey the available distance 
+metrics for permutations, and use principal component analysis to 
+classify the metrics.  The result is aligned with existing classifications 
+of permutation problem types produced through less formal means, 
+including the A-permutation, R-permutation, and P-permutation types, 
+and has also identified subtypes.  The classification can assist in 
+identifying appropriate metrics based on optimization problem feature 
+for use in fitness landscape analysis.  Implementations of all of the 
+permutation metrics, and the code for our analysis, are available as open source.}
+}
+note = {Pittsburgh, PA}
+
+@article{JOSS2018,
+author = {Vincent A. Cicirello},
+title = {{JavaPermutationTools}: A Java Library of Permutation Distance Metrics},
+journal = {Journal of Open Source Software},
+volume = {3},
+number = {31},
+articleno = {950},
+year = {2018},
+month = {November},
+pdf = {cicirello2018joss.pdf},
+acro = {joss},
+doi = {https://doi.org/10.21105/joss.00950},
+abstract = {Permutations can represent a wide variety of ordered data.  For example,
+a permutation may represent an individual's preferences (or ranking) of a collection
+of products such as books or music.  Or perhaps a permutation may represent a route
+for delivering a set of packages.  Permutations can also represent one-to-one mappings 
+between sets (e.g., instructors to courses at a fixed time).  There are applications 
+where measuring the distance between a pair of permutations is necessary.  For example,
+a recommender system may assess the similarity of two individuals' preferences 
+for music to make song recommendations.  Depending upon the application, 
+the permutation features most important to distance calculation may be 
+the absolute positions of the elements (e.g., one-to-one mappings), the adjacency 
+of elements (e.g., the routing example), or general precedence of pairs of 
+elements (e.g., music preferences).  Thus, it is no surprise that there
+are many permutation metrics in the research literature.</p>
+<p>The motivation and origin of this library is our research on fitness landscape analysis 
+for permutation optimization.  In a 
+permutation optimization problem, solutions are represented by 
+permutations of some set, and the objective is to maximize 
+or minimize some function.  For example, a solution 
+to a traveling salesperson problem is the permutation of the set of cities
+that corresponds to the minimal cost tour.
+During our research, we developed a Java library of permutation distance 
+metrics.  Most of the distance metrics in the literature are described mathematically with 
+no source code available.  Thus, our library offers convenient access to efficient 
+implementations of a variety of metrics with a common programmatic 
+interface.  The library also provides metrics on sequences (strings and arrays of 
+various types); where unlike a permutation, a sequence may contain multiple copies of the same element.</p>
+<p>The source repository 
+(https://github.com/cicirello/JavaPermutationTools) 
+contains source code of the library, programs that provide example 
+usage of key functionality, as well as programs that reproduce results from papers that 
+have used the library.  API documentation is hosted on the web 
+(https://jpt.cicirello.org/).}
+}
+
+
+
+@INPROCEEDINGS{FLAIRS2018,
+author = {Vincent A. Cicirello},
+title = {Impact of Random Number Generation on Parallel Genetic Algorithms},
+booktitle = {Proceedings of the Thirty-First International 
+             Florida Artificial Intelligence Research Society Conference},
+publisher = {AAAI Press},
+month = {May},
+year = {2018},
+pages = {2--7},
+pdf = {cicirello-flairs2018.pdf},
+acro = {flairs},
+titletag = {International Florida Artificial Intelligence Research Society Conference},
+doi = {https://aaai.org/ocs/index.php/FLAIRS/FLAIRS18/paper/view/17492},
+graphicalAbstract = {flairs2018.png},
+abstract = {In this paper, we present a parallel genetic algorithm (pGA) with adaptive control parameters and permutation representation
+for weighted tardiness scheduling with sequence-dependent setups, an NP-Hard problem.
+This pGA provides a linear to slightly superlinear speedup relative to its sequential counterpart.
+As part of our research, we explore the effects of different random number generation algorithms on the runtimes
+of both sequential and parallel GAs.  GAs and other forms of evolutionary computation rely so heavily on random number generation that our results show
+that we can obtain a 20% increase in the speed of a pGA, and an over 25% increase in the speed of
+a sequential GA, simply by careful choice of random number generator--both the underlying generator as well as algorithms
+for specific number types such as Gaussian often needed for mutating real-valued genes.}
+}
+note = {Melbourne, Florida.  Acceptance rate:~39.3\% (24/61).}
+%May 21--23
+
+@techreport{ARXIV2017,
+author = {Vincent A. Cicirello},
+title = {Design, Configuration, Implementation, and Performance of a Simple 32 Core Raspberry Pi Cluster},
+number = {arXiv:1708.05264 [cs.DC]},
+type = {arXiv preprint},
+arxiv = {arXiv:1708.05264},
+year = {2017},
+month = {August},
+pdf = {arxiv.1708.05264.pdf},
+acro = {arXiv},
+doi = {https://arxiv.org/abs/1708.05264},
+graphicalAbstract = {pi-cluster-graphical-abstract.png},
+abstract = {In this report, I describe the design and implementation of an inexpensive, eight node, 32 core, cluster of
+raspberry pi single board computers, as well as the performance of this cluster on two computational tasks,
+one that requires significant data transfer relative to computational time requirements, and one that does not.
+We have two use-cases for the cluster: (a) as an educational tool for classroom usage, such as covering
+parallel algorithms in an algorithms course; and (b) as a test system for use during the development of 
+parallel metaheuristics, essentially serving as a personal desktop parallel computing cluster.
+Our preliminary results show that the slow 100 Mbps networking of the raspberry pi significantly limits 
+such clusters to parallel computational tasks that are either long running relative to data communications
+requirements, or that which requires very little internode communications.  Additionally, although the raspberry pi 3 
+has a quad-core processor, parallel speedup degrades during attempts to utilize all four cores of all cluster nodes
+for a parallel computation, likely due to resource contention with operating system level processes. However, 
+distributing a task across three cores of each cluster node does enable linear (or near linear) speedup.}
+}
+
+@INPROCEEDINGS{SOCS2017,
+author = {Vincent A. Cicirello},
+title = {Variable Annealing Length and Parallelism in Simulated Annealing},
+booktitle = {Proceedings of the Tenth International Symposium on Combinatorial Search (SoCS 2017)},
+publisher = {AAAI Press},
+pages = {2-10},
+year = {2017},
+month = {June},
+pdf = {SoCS2017-Cicirello.pdf},
+acro = {SoCS},
+titletag = {International Symposium on Combinatorial Search},
+doi = {https://aaai.org/ocs/index.php/SOCS/SOCS17/paper/view/15784},
+otherLink = {http://arxiv.org/abs/1709.02877},
+graphicalAbstract = {socs2017.png},
+abstract = {In this paper, we propose: (a) a restart schedule for an adaptive simulated annealer, and (b) 
+parallel simulated annealing, with an adaptive and parameter-free annealing schedule.  
+The foundation of our approach is the Modified Lam annealing schedule, which adaptively controls the temperature parameter 
+to track a theoretically ideal rate of acceptance of neighboring states.  A sequential implementation of Modified Lam simulated 
+annealing is almost parameter-free.  However, it requires prior knowledge of the annealing length.  We eliminate this  
+parameter using restarts, with an exponentially increasing schedule of annealing lengths.  We then extend this restart schedule to
+parallel implementation, executing several Modified Lam simulated annealers in 
+parallel, with varying initial annealing lengths, and our proposed parallel annealing length schedule.
+To validate our approach, we conduct experiments on an 
+NP-Hard scheduling problem with sequence-dependent setup constraints.  We compare our approach to fixed 
+length restarts, both sequentially and in parallel.  
+Our results show that our approach can achieve substantial performance gains, throughout the course of the run, 
+demonstrating our approach to be an effective anytime algorithm.}
+}
+note = {Pittsburgh, PA}
+
+@INPROCEEDINGS{SOCS2017-PrevPub,
+author = {Vincent A. Cicirello},
+title = {Searching for a Permutation in a Haystack},
+booktitle = {Proceedings of the Tenth International Symposium on Combinatorial Search (SoCS 2017)},
+publisher = {AAAI Press},
+pages = {177},
+year = {2017},
+month = {June},
+note = {Previously Published Papers Track},
+pdf = {SoCS2017-PrevPub-Cicirello.pdf},
+acro = {SoCS},
+titletag = {International Symposium on Combinatorial Search},
+graphicalAbstract = {haystack.png},
+abstract = {We provide an overview of the Permutation in a Haystack problem, which serves as a tool for fitness
+landscape analysis, as well as in search algorithm design.  The Permutation in a Haystack enables 
+defining a search landscape for permutation optimization problems that abstracts the permutation 
+features, which impact solution fitness, such as absolute element positions, edges, and pairwise 
+element precedences.  In this way, it allows the local search algorithm designer to explore a wide 
+variety of landscape characteristics in a problem independent manner. We introduced the Permutation 
+in a Haystack problem in a paper recently published in IEEE Transactions on Evolutionary 
+Computation (Cicirello, 2016).  In that paper, we also introduced the Search Landscape Calculus, an 
+analytical framework for analyzing the fitness landscape induced by a local search operator via local 
+rates of change of fitness.  We then applied the tools to an analysis of several common permutation 
+mutation operators on a wide variety of permutation search landscapes, and validated the findings 
+empirically using simulated annealing.}
+}
+note = {Pittsburgh, PA. Previously Published Papers Track}
+
+
+
+@ARTICLE{CCSCE2016,
+author = {Vincent A. Cicirello},
+title = {Student Developed Computer Science Educational Tools as Software Engineering Course Projects},
+journal = {Journal of Computing Sciences in Colleges},
+volume = {32},
+number = {3},
+month = {January},
+year = {2017},
+pages = {55-61},
+pdf = {cicirello-ccsce-2016.pdf},
+acro = {ccsce},
+doi = {http://dl.acm.org/citation.cfm?id=3015220.3015233},
+abstract = {In a one semester course on software engineering for upper level computer
+science students, students typically learn the fundamental software processes
+spanning the software development lifecycle – from requirements specification
+through architectural design, implementation, testing, and evolution, along
+with the software tools that support the development activities. Courses in
+software engineering often incorporate semester long team projects, where
+students collaborate on a software development project. Thus, in addition to
+developing the technical skills associated with software development, the
+software engineering course is a common place where computer science
+students develop their skills in teamwork and collaboration, as well as in
+communications. The nature and type of projects in such courses varies.
+Some integrate projects where students develop software for "real clients"
+such as on campus departments, or local non-profits, while others have been
+increasing exposure to open source development with students contributing to
+existing open source projects. In our software engineering course, we have
+recently introduced course projects where teams of students specify, design,
+and implement software that assists computer science students in learning
+fundamental computer science topics. In this paper, we present our experience
+with such CS learning tool projects, including a discussion of the impact on
+student outcomes in a senior-level course on software engineering. We
+compare this experience to our prior use of "real projects for real clients" in
+this same course. We find that students who participate in the CS learning tool
+projects perceive an increase in learning progress on fundamental principles,
+theories, and factual knowledge, as compared to their peers in course sections
+with "real projects for real clients," with an equivalent effect on teamwork and
+collaboration skills. Most surprisingly, the students who develop CS learning
+tools report a significantly higher level of progress on industrial relevant skill
+development as compared to the students who develop so called "real projects
+for real clients."}
+}
+
+
+@DATA{HD2016,
+author = {Vincent A. Cicirello},
+publisher = {Harvard Dataverse},
+title = {Weighted Tardiness Scheduling with Sequence-Dependent Setups: A Benchmark Library},
+year = {2016},
+month = {June},
+doi = {http://dx.doi.org/10.7910/DVN/VHA0VQ},
+acro = {hd},
+zip = {/datasets/wtsds/wtsds-instances.zip},
+abstract = {This set of benchmark instances for the problem known as Weighted Tardiness Scheduling with 
+Sequence Dependent Setups originated in 2003 as part of the Ph.D. Dissertation research of Vincent A. 
+Cicirello from Carnegie Mellon University's Robotics Institute.
+This benchmark set includes the instances, the current best known solutions, a problem generator, 
+and links to relevant publications.}
+}
+doi = {10.7910/DVN/VHA0VQ},
+
+
+@ARTICLE{TEVC2015,
+author = {Vincent A. Cicirello},
+title = {The Permutation in a Haystack Problem and the Calculus of Search Landscapes},
+journal = {IEEE Transactions on Evolutionary Computation},
+year = {2016},
+month = {June},
+volume = {20},
+number = {3},
+pages = {434-446},
+pdf = {ieee-tevc-2016.pdf},
+acro = {evc},
+doi = {http://dx.doi.org/10.1109/TEVC.2015.2477284},
+abstract = {The natural encoding for many search and optimization problems is the permutation, 
+such as the traveling salesperson, vehicle routing, scheduling, assignment and mapping problems, 
+among others. The effectiveness of a given mutation or crossover operator depends upon the nature 
+of what the permutation represents. For some problems, it is the absolute locations of the elements 
+that most directly influences solution fitness; while for others, element adjacencies or even element 
+precedences are most important. Different permutation operators respect different properties. We aim to provide the 
+genetic algorithm or metaheuristic practitioner with a framework enabling effective permutation search 
+landscape analysis. To this end, we contribute a new family of optimization problems, the permutation 
+in a haystack, that can be parameterized to the various types of permutation problem (e.g., absolute 
+versus relative positioning). Additionally, we propose a calculus of search landscapes, enabling analysis 
+of search landscapes through examination of local fitness rates of change. We use our approach to analyze 
+the behavior of common permutation mutation operators on a variety of permutation in a haystack landscapes; 
+and empirically validate the prescriptive power of the search landscape calculus via experiments with simulated annealing.}
+}
+
+
+@INPROCEEDINGS{BICT2015,
+author = {Vincent A. Cicirello},
+title = {Genetic Algorithm Parameter Control: Application to Scheduling with Sequence-Dependent Setups},
+booktitle = {Proceedings of the 9th International Conference on Bio-inspired Information and Communications Technologies},
+publisher = {EAI},
+month = {December},
+year = {2015},
+pages = {136-143},
+pdf = {cicirello-bict-2015.pdf},
+acro = {bict},
+titletag = {International Conference on Bioinspired Information and Communications Technologies},
+doi = {http://dl.acm.org/citation.cfm?id=2954825},
+abstract = {Genetic algorithms, and other forms of evolutionary computation, are controlled by numerous parameters, 
+such as crossover and mutation rates, population size, among others depending upon the specific form of evolutionary 
+computation as well as which operators are employed. Setting the values for these parameters is no simple task. 
+In this paper, we develop a genetic algorithm with adaptive control parameters for an NP-Hard scheduling problem 
+known as weighted tardiness scheduling with sequence-dependent setups. Our genetic algorithm uses the permutation 
+representation along with the non-wrapping order crossover and insertion mutation operators. We encode the control 
+parameters within the members of the population and evolve these during search using Gaussian mutation. We demonstrate 
+this approach out-performs a manually tuned genetic algorithm for the problem, and that it converges upon effective 
+parameter values very early in the run.}
+}
+note = {New York, NY},
+doi = {http://dx.doi.org/10.4108/eai.3-12-2015.2262346},
+
+
+@article{CCSCE2015Welcome,
+author = {Vincent Cicirello and Aakash Taneja},
+title = {Welcome to CCSC Eastern 2015},
+year = {2016},
+pages = {1--2},
+volume = {31},
+number = {3},
+month = {January},
+journal = {Journal of Computing Sciences in Colleges},
+acro = {ccsce},
+doi = {https://dl.acm.org/action/showFmPdf?doi=10.5555%2F2835377},
+pdf = {ccsc2015welcome.pdf}
+}
+
+
+@INPROCEEDINGS{BICT2014,
+author = {Vincent A. Cicirello},
+title = {On the Effects of Window-Limits on the Distance Profiles of Permutation Neighborhood Operators},
+booktitle = {Proceedings of the 8th International Conference on Bio-inspired Information and Communications Technologies},
+publisher = {EAI},
+month = {December},
+year = {2014},
+pages = {28--35},
+pdf = {cicirello-bict-2014.pdf},
+acro = {bict},
+titletag = {International Conference on Bioinspired Information and Communications Technologies},
+doi = {http://dl.acm.org/citation.cfm?id=2744531},
+abstract = {Local search algorithms, such as simulated annealing, tabu search, and local hill climbers attempt to optimize 
+a solution to a problem by making locally improving modifications to a candidate solution. They rely on a neighborhood 
+operator to restrict the search to a typically small set of possible successor states. The genetic algorithm mutation 
+operator, likewise, enables the exploration of the local neighborhood of candidate solutions within the genetic algorithm's 
+population. In this paper, we profile window-limited variations of several commonly employed neighborhood operators for problems 
+in which candidate solutions are represented as permutations. Window-limited neighborhood operators enable tuning the size of 
+the local neighborhood--e.g., to balance cost of search step against likelihood of getting stuck in a local optima. Window 
+limits potentially can even be adjusted dynamically during search--e.g., to give a stagnated search a "kick." We provide 
+profiles of the distance characteristics of window-limited variations of several of the more common permutation neighborhood operators.}
+}
+note = {Boston, MA},
+doi = {http://dx.doi.org/10.4108/icst.bict.2014.257872}
+
+
+@INPROCEEDINGS{FLAIRS2013,
+author = {Vincent A. Cicirello and Robert Cernera},
+title = {Profiling the Distance Characteristics of Mutation Operators for Permutation-Based Genetic Algorithms},
+booktitle = {Proceedings of the Twenty-Sixth International 
+             Florida Artificial Intelligence Research Society Conference},
+publisher = {AAAI Press},
+month = {May},
+year = {2013},
+pages = {46--51},
+pdf = {cicirello-FLAIRS2013.pdf},
+acro = {flairs},
+titletag = {International Florida Artificial Intelligence Research Society Conference},
+doi = {http://www.aaai.org/ocs/index.php/FLAIRS/FLAIRS13/paper/view/5841},
+abstract = {In this paper, we consider the permutation representation of genetic algorithms, 
+and more generally, local search algorithms. We use a variety of permutation distance measures 
+to profile the behavior of the most commonly used mutation operators for permutation-based 
+genetic algorithms. Our operator profiles are also applicable to other local search algorithms, 
+such as simulated annealing, as the most common permutation mutation operators are also commonly 
+found as neighborhood operators for other metaheuristics in a search of the space of permutations. 
+In addition to using several existing distance measures, we introduce two specific instances of the 
+edit distance measure. Our aim is to offer the GA, and local search practitioner, guidance in the 
+selection of mutation and neighborhood operators.}
+}
+note = {St. Pete's Beach, Florida.},
+%May 22--24
+%Acceptance rate:~36.5\% (27/74).
+
+
+@ARTICLE{CAG2013,
+author = {Vincent A. Cicirello and William C. Regli},
+title = {A Flexible and Extensible Approach to Automated CAD/CAM Format Classification},
+journal = {Computers \& Graphics},
+volume = {37},
+number = {5},
+month = {August},
+year = {2013},
+pages = {484--495},
+note = {Special Section on 3D Object Retrieval},
+url = {http://dx.doi.org/10.1016/j.cag.2013.03.007},
+pdf = {CAG-2013.pdf},
+acro = {cag},
+titletag = {Computers and Graphics},
+doi = {http://dx.doi.org/10.1016/j.cag.2013.03.007},
+abstract = {There are hundreds of distinct 3D, CAD and engineering file formats. 
+As engineering design and analysis has become increasingly digital, the proliferation 
+of file formats has created many problems for data preservation, data exchange, and interoperability. 
+In some situations, physical file objects exist on legacy media and must be identified and interpreted 
+for reuse. In other cases, file objects may have varying representational expressiveness.</p>
+
+<p>We introduce the problem of automated file recognition and classification in emerging digital 
+engineering environments, where all design, manufacturing and production activities are "born digital." 
+The result is that massive quantities and varieties of data objects are created during the product lifecycle.</p>
+
+<p>This paper presents an approach to automated identification of engineering file formats. This work operates 
+independent of any modeling tools and can identify families of related file objects as well as variations in versions. 
+This problem is challenging as it cannot assume any a priori knowledge about the nature of the physical file object. 
+Applications for these methods include support for a number of emerging applications in areas such as forensic analysis, 
+data translation, as well as digital curation and long-term data management.}
+}
+
+@ARTICLE{CCSCNE2013-unplugged,
+author = {Vincent A. Cicirello},
+title = {A CS Unplugged Activity for the Online Classroom},
+journal = {Journal of Computing Sciences in Colleges},
+volume = {28},
+number = {6},
+month = {June},
+year = {2013},
+pages = {162--168},
+pdf = {cicirello-ccscne2013-unplugged.pdf},
+acro = {ccscne},
+doi = {http://dl.acm.org/citation.cfm?id=2460156.2460187},
+abstract = {In this paper, we present a group, asynchronous problem solving exercise designed 
+to introduce non-computer science students to a variety of concepts from artificial intelligence 
+and operations research. The exercise is designed to be a Computer Science (CS) Unplugged activity 
+suitable for the online classroom. CS Unplugged is a methodology for teaching CS concepts using 
+hands-on interactive activities without using a computer. CS Unplugged activities are often used 
+to introduce CS concepts to novices, such as elementary, middle, or high school students; but can 
+also be effective at engaging the non-CS undergraduate student. By definition, CS Unplugged seems at 
+odds with online education, as the participants in the exercise are necessarily using computers. 
+We present an interactive activity motivated by CS Unplugged, but implemented within an asynchronous 
+threaded discussion board. The activity is based on the well-known Bin Packing problem, and is specifically 
+an extension of an existing active learning exercise known as Collective Bin Packing but adapted 
+to the online classroom. The activity is designed for an undergraduate interdisciplinary course 
+as part of a liberal arts curriculum.}
+}
+
+@ARTICLE{CCSCNE2013-SE,
+author = {Vincent A. Cicirello},
+title = {Experiences with a Real Projects for Real Clients Course on Software Engineering at a Liberal Arts Institution},
+journal = {Journal of Computing Sciences in Colleges},
+volume = {28},
+number = {6},
+month = {June},
+year = {2013},
+pages = {50--56},
+pdf = {cicirello-ccscne2013-SE.pdf},
+acro = {ccscne},
+doi = {http://dl.acm.org/citation.cfm?id=2460156.2460167},
+abstract = {A Real Projects for Real Clients Course (RPRCC) is a course that provides students 
+with the opportunity to develop a solution to a real problem. Students interact directly with a 
+real client, and work on solving a problem for that client. RPRCCs are examples of service learning. 
+Within the computing sciences, there has been a recent surge in the integration of RPRCCs into the 
+curriculum. They are argued to offer an increased industrial awareness, and to help retain computing 
+majors, especially among women. In this paper, we present our experiences with a senior-level computer 
+science course on software engineering (SE) at a liberal arts institution. We have found that recruiting 
+so-called "real clients" from within the liberal arts college setting is surprisingly easy; and that once 
+you have established an initial set of clients is mostly self-sustaining. We demonstrate that an RPRCC 
+enables students to develop their skills in teamwork and applied problem solving. The RPRCC offers the 
+SE course a framework where students gain experience applying a variety of software architectures, 
+design patterns, and other important SE concepts; and simultaneously develop teamwork skills.}
+}
+
+
+@article{CCSCE2012Welcome,
+author = {Vincent Cicirello and Aakash Taneja},
+title = {Welcome to CCSC Eastern 2012},
+year = {2013},
+pages = {1--2},
+volume = {28},
+number = {3},
+month = {January},
+journal = {Journal of Computing Sciences in Colleges},
+acro = {ccsce},
+doi = {https://dl.acm.org/action/showFmPdf?doi=10.5555%2F2400161},
+pdf = {ccsc2012welcome.pdf}
+}
+
+@MISC{PATENT2010,
+author = {William C. Regli and Vincent A. Cicirello},
+title = {Method for Comparing Solid Models},
+howpublished = {U.S. Patent \#7,761,265 B2},
+year = {2010},
+month = {July},
+pdf = {US7761265.pdf},
+acro = {patent},
+titletag = {Patent US7761265},
+doi = {https://patents.google.com/patent/US7761265B2},
+abstract = {A method for determining a similarity of a first solid model 
+to a second solid model is disclosed. The method includes the steps of: 
+selecting a set of features for representing the first solid model; extracting 
+features corresponding to the selected set of features from the first solid model; 
+constructing an undirected model dependency graph of the first solid model based on the 
+selected set of features; extracting features corresponding to the selected set of 
+features from the second solid model; constructing an undirected model dependency 
+graph of the second solid model based on the selected set of features; comparing the 
+undirected model dependency graph of the first solid model with the undirected model 
+dependency graph of the second solid model; and outputting a numerical measure 
+indicative of the similarity of the first solid model to the second solid model.}
+}
+%howpublished = {U.S. Patent \#7,761,265 (filed 5/6/2003, expires 1/21/2026)},
+%year = {issued 7/20/2010}
+
+MISC{PAT-APP-2003,
+author = {William C. Regli and Vincent A. Cicirello},
+title = {Method for Comparing Solid Models},
+howpublished = {U.S. Patent Application \#10/430,046},
+year = {2003},
+month = {May}
+}
+%year = {filed 5/6/2003}
+
+MISC{PAT-PROV-APP-2002,
+author = {William C. Regli and Vincent A. Cicirello},
+title = {Machining Feature-based Comparisons of Mechanical Parts},
+howpublished = {U.S. Provisional Patent Application \#60/380,109},
+year = {2002},
+month = {May}
+}
+%year = {filed 5/6/2002}
+
+@INPROCEEDINGS{FLAIRS2010,
+author = {Vincent A. Cicirello},
+title = {Heuristic Sequencing Crossover: Integrating Problem Dependent 
+         Heuristic Knowledge into a Genetic Algorithm},
+booktitle = {Proceedings of the Twenty-Third International 
+             Florida Artificial Intelligence Research Society Conference, FLAIRS-23},
+publisher = {AAAI Press},
+month = {May},
+year = {2010},
+pages = {14--19},
+pdf = {FLAIRS2010.pdf},
+acro = {flairs},
+titletag = {International Florida Artificial Intelligence Research Society Conference},
+doi = {http://www.aaai.org/ocs/index.php/FLAIRS/2010/paper/view/1228},
+abstract = {Dispatch scheduling policies offer a computationally inexpensive approach to 
+many scheduling problems as an alternative to more processor intensive search algorithms. 
+They are especially useful in dynamic situations where problem solving may be temporally constrained. 
+However, dispatch heuristics have also been effectively used for guidance within more intensive 
+search algorithms, expanding their applicability well beyond simple myopic job or task selection. 
+In this paper, we present a new crossover operator for genetic algorithms (GA) where a permutation 
+representation is employed. Our new operator directly integrates problem-dependent knowledge in the 
+form of a dispatch scheduling policy into the crossover step of a GA which is usually a problem-independent 
+recombination. Our novel crossover operator, Heuristic Sequencing Crossover (HeurX), recombines elements of 
+M parents into a single child and is specifically designed for steady-state GAs. We empirically demonstrate 
+its effectiveness on a strongly NP-Hard scheduling problem known as Weighted Tardiness Scheduling with 
+Sequence-Dependent Setups. We compare our approach to a generational GA using a problem-independent crossover 
+operator. We show the potential power of integrating problem-dependent knowledge via a dispatch heuristic into 
+what is traditionally a problem independent problem solver.}
+}
+note = {Daytona Beach, Florida.},
+%month = {19-21 May},
+%editor = {Hans W. Guesgen and R. Charles Murray},
+%  Acceptance rate:~37.9\% (22/58).
+
+
+@INPROCEEDINGS{SIGCSE2009,
+author = {Vincent A. Cicirello},
+title = {On the Role and Effectiveness of Pop Quizzes in CS1},
+booktitle = {Proceedings of the 40th ACM Technical Symposium on Computer Science Education, SIGCSE'09},
+publisher = {ACM Press},
+month = {March},
+year = {2009},
+pages = {286--290},
+note = {Also published in <i>ACM SIGCSE Inroads</i>, 41(1):286--290, March 2009.},
+pdf = {SIGCSE2009.pdf},
+acro = {sigcse},
+titletag = {ACM Technical Symposium on Computer Science Education},
+doi = {http://dx.doi.org/10.1145/1539024.1508971},
+abstract = {In this paper, we explore the potential important role that unannounced 
+(or "pop") quizzes can play in CS-1. "Pop" quizzes generate continual feedback to both 
+the student and the instructor of the course. They also encourage students to avoid missing 
+class unless necessary. We present the results of a three year study on the effectiveness of "pop" 
+quizzes in CS-1. Our results demonstrate that students who experience "pop" quizzes in CS-1 score 
+higher on exams than do their counterparts who did not experience "pop" quizzes. This appears especially 
+true for upperclassmen, particularly for juniors. The use of "pop" quizzes in CS-1 also improves performance 
+on programming assignments for juniors. CS/IS majors and Math majors both receive a greater benefit 
+from "pop" quizzes than do other non-majors.}
+}
+Chattanooga, TN.
+%Editors: S. Fitzgerald and M. Guzdial and G. Lewandowski and S. Wolfman and T. J. Cortina,
+%month = {4--7 March},
+%editor = {S. Fitzgerald et al},
+%{\bf Acceptance rate:~33\% (100/302).} 
+
+ARTICLE{SIGCSE2009-journal-version,
+author = {Vincent A. Cicirello},
+title = {On the Role and Effectiveness of Pop Quizzes in CS1},
+journal = {ACM SIGCSE Inroads},
+volume = {41},
+number = {1},
+year = {2009},
+month = {March},
+pages = {286--290},
+note = {Also published in {\it Proceedings of the 40th ACM Technical Symposium on 
+Computer Science Education}, with acceptance rate of 33\%, March 2009.}
+}
+%(Acceptance rate:~33\% (100/302))
+
+@ARTICLE{CCSCNE2009-bin,
+author = {Vincent A. Cicirello},
+title = {Collective Bin Packing: An Active Learning Exercise},
+journal = {Journal of Computing Sciences in Colleges},
+volume = {24},
+number = {6},
+month = {June},
+year = {2009},
+pages = {117-123},
+pdf = {p117-cicirello-ccscne09-2.pdf},
+acro = {ccscne},
+doi = {http://dl.acm.org/citation.cfm?id=1529995.1530020},
+abstract = {Active learning has become an important part of effective computer science pedagogy. 
+Active learning helps to keep students engaged in the learning process and is useful at all levels 
+of computer science education from introductory courses on programming through more advanced upper 
+level topics and graduate level coursework. In this paper, we present an active learning exercise 
+that we developed for use in courses on artificial intelligence for demonstrating heuristic search 
+concepts as well as concepts related to swarm intelligence. We have also found the exercise useful 
+in an interdisciplinary course for non-majors to demonstrate some of the problem solving approaches 
+of computer science. It is also applicable to courses on discrete mathematics. The exercise that we 
+call Collective Bin Packing is an adaptation of the well-known combinatorial optimization problem 
+known as bin packing. During the exercise, students take turns deciding upon individual problem 
+solving steps. A follow-up class discussion draws out the algorithmic elements of the students' 
+collective reasoning process. An interactive Java application is used to facilitate the group problem solving exercise.}
+}
+
+@ARTICLE{CCSCNE2009-pair,
+author = {Vincent A. Cicirello},
+title = {On Self-Selected Pairing in CS1: Who Pairs with Whom?},
+journal = {Journal of Computing Sciences in Colleges},
+volume = {24},
+number = {6},
+month = {June},
+year = {2009},
+pages = {43--49},
+pdf = {p43-cicirello-ccscne09-1.pdf},
+acro = {ccscne},
+doi = {http://dl.acm.org/citation.cfm?id=1529995.1530005},
+abstract = {In recent years, we have seen an increased use of pair programming in CS-1 courses. 
+Widespread evidence shows pair programming as beneficial at all levels of programming skill. 
+During three academic years, we studied what students in CS-1 choose when given the option to 
+either pair program or to program independently. We explore which students choose to pair and 
+how often, and examine the majors and academic years of the self-selected pairs. Among our objectives 
+is to learn about student pair preferences to help guide the assignment of partners when mandatory pair 
+programming is used. We show that Math majors are more likely than Computer Science/Information Systems 
+(CS/IS) majors to prefer pair programming in CS-1. Math majors prefer pairing with Math majors. CS/IS 
+majors more often choose to pair with non-majors, perhaps indicating self-chosen mentoring roles.}
+}
+
+
+@TECHREPORT{TechReport-Interface2008,
+author = {Vincent A. Cicirello},
+title = {Statistical Models of Multistart Randomized Heuristic Search Performance},
+TYPE = {Technical Report},
+institution = {Richard Stockton College},
+address = {Galloway, NJ},
+note = {Presented at the <i>40th Symposium on the Interface: Computing Science and Statistics</i> (conference without proceedings), in Durham, NC, sponsored by the National Institute of Statistical Sciences.
+Full paper here as Technical Report.},
+year = {2008},
+month = {May},
+pdf = {cicirello-stockton-2008.pdf},
+acro = {rsc},
+abstract = {The complexity of many combinatorial optimization problems often preclude the application of exact problem solving
+techniques as the problem is scaled to real-world size. For example, for a problem that is NP-Hard in the strong
+sense, any algorithm that guarantees that its solutions are optimal is going to be limited in the size of the instance
+that it can solve given computational limitations. Rather than requiring "optimal" solutions, an alternative is to favor
+sufficiently good solutions that can be found efficiently. One approach to this uses a randomized heuristic algorithm.
+This paper specifically considers an algorithm known as Value Biased Stochastic Sampling (VBSS). VBSS uses a
+heuristic function to bias the random generation of a proposed solution to the problem. This process is repeated some
+number of times and retains only the best solution found over several trials. The key to the effectiveness of VBSS
+is the choice of the heuristic function. The job of the heuristic function is to provide problem dependent evaluation
+of the choices that can be made. This evaluation is used to bias the random decisions during the problem solving
+process. At the time of the design of such an algorithm, it may not be obvious which of several heuristics are best.
+During the past few years, we have been developing techniques for allowing VBSS to self-select which heuristic to
+use. Our approach relies on modeling the distribution of the quality of solutions obtained by VBSS over its allocated
+set of restarts. This paper presents some of our analysis of potential models, including goodness of fit tests for several
+possible assumptions we can make about the distribution of the quality of solutions. Our analysis leads us to the
+selection of the Generalized Extreme Value Distribution for our models of randomized heuristic performance.}
+}
+%\url{http://loki.stockton.edu/~cicirelv/cicirello-stockton-2008.pdf}. 
+
+INPROCEEDINGS{Abstract-Interface2008,
+author = {Vincent A. Cicirello},
+title = {Statistically Modeling the Performance of a Multistart Randomized Heuristic Algorithm},
+booktitle = {The 40th Symposium on the Interface: Computing Science and Statistics, Abstracts},
+year = {2008},
+month = {May},
+pages = {27},
+publisher = {Interface Foundation of North America},
+note = {Durham, NC.  Abstract of talk in technical session.}
+}
+%month = {21-24 May},
+
+
+@INPROCEEDINGS{WSC12,
+author = {Vincent A. Cicirello},
+title = {Weighted Tardiness Scheduling with Sequence-Dependent Setups: A Benchmark Problem for Soft Computing},
+booktitle = {Applications of Soft Computing: Updating the State of the Art},
+year = {2009},
+volume = {52},
+pages = {189--198},
+publisher = {Springer},
+series = {Advances in Soft Computing},
+pdf = {ApplicationsOfSoftComputing.pdf},
+acro = {asc},
+doi = {http://dx.doi.org/10.1007/978-3-540-88079-0_19},
+abstract = {In this paper we present a set of benchmark instances and a benchmark instance generator for a single-machine scheduling problem known as the weighted tardiness scheduling problem with sequence-dependent setups. Furthermore, we argue that it is an ideal benchmark problem for soft computing in that it is computationally hard and does not lend itself well to exact solution procedures. Additionally, it has a number of important real world applications.}
+}
+%note = {Proceedings is currently in press and due to be published 1st quarter of 2008.}
+% month = {16-26 October},
+% Acceptance rate:~39\% (27/69)
+%editor = {E. Avineri and M. Koppen and K. Dahal and Y. Sunitiyoso and R. Roy},
+
+@article{CCSCStudentPaper2008,
+author = {Demetrios Roubos and Shawn Casler and James Hedigan and Ryan Shaw and Suvineetha Herath and David Costantino and Vincent Cicirello and Robert Kachur and Ajantha Herath},
+title = {A Study of Wireless Security Privacy and Forensics},
+journal = {CCSC:SC Student Paper E-Journal},
+volume = {1},
+year = {2008},
+month = {April},
+publisher = {The Consortium for Computing Sciences in Colleges: South Central Region},
+numpages = {7},
+pdf = {P-0017-final.pdf},
+acro = {ccscsc},
+doi = {http://www.ccsc.org/southcentral/E-Journal/2008/Papers/P-0017-final.pdf},
+abstract = {Wireless networking has become an extremely common household technology in a
+matter of only a few years. Concerns for privacy have become more relevant than ever,
+with more cases of identity and data theft occurring everyday. Initially, consumer grade
+wireless technology was distributed without security being a major concern. Today,
+almost every consumer grade wireless router comes with either "out-of-the-box"
+encryption or with relatively easy to follow instructions on how to properly secure the
+household wireless infrastructure. In this paper we investigate wireless technology and
+the implications related to the privacy of the average user.}
+}
+
+
+@INPROCEEDINGS{CP-Workshop-2007,
+author = {Vincent A. Cicirello},
+title = {On the Design of an Adaptive Simulated Annealing Algorithm},
+booktitle = {Proceedings of the International Conference on Principles and Practice of Constraint Programming
+First Workshop on Autonomous Search},
+year = {2007},
+month = {September},
+publisher = {AAAI Press},
+pdf = {CP2007-Autonomous-Search-Workshop.pdf},
+acro = {cp},
+titletag = {CP Workshop on Autonomous Search},
+doi = {https://archive.a4cp.org/cp2007/CP1A/pdf/Cicirello.pdf},
+abstract = {In this paper, we demonstrate the ease in which an adaptive simulated
+annealing algorithm can be designed. Specifically, we use the adaptive annealing
+schedule known as the modified Lam schedule to apply simulated annealing to
+the weighted tardiness scheduling problem with sequence-dependent setups. The
+modified Lam annealing schedule adjusts the temperature to track the theoretical
+optimal rate of accepted moves. Employing the modified Lam schedule allows
+us to avoid the often tedious tuning of the annealing schedule; as the algorithm
+tunes itself for each instance during problem solving. Our results show that an
+adaptive simulated annealer can be competitive when compared to highly tuned,
+hand crafted algorithms. Specifically, we compare our results to a state-of-the-art
+genetic algorithm for weighted tardiness scheduling with sequence-dependent
+setups. Our study serves as an illustration of the ease with which a parameter-free
+simulated annealer can be designed and implemented.}
+}
+%month = {23-27 September},
+note = {Providence, RI},
+
+
+@INPROCEEDINGS{ICAPS-Workshop-2007,
+author = {Vincent A. Cicirello},
+title = {The Challenge of Sequence-Dependent Setups: 
+Proposal for a Scheduling Competition Track on One Machine Sequencing Problems},
+booktitle = {Proceedings of the International Conference on Automated Planning and Scheduling (ICAPS)
+Workshop on Scheduling a Scheduling Competition},
+year = {2007},
+month = {September},
+publisher = {AAAI Press},
+pdf = {ICAPS-Competition-Workshop.pdf},
+acro = {icaps},
+titletag = {ICAPS Workshop on Scheduling a Scheduling Competition},
+doi = {http://icaps07-satellite.icaps-conference.org/workshop4/paper05.pdf},
+abstract = {Designing a scheduling competition to attract researchers
+from the several fields interested in scheduling problems
+seems a challenging, and highly worthwhile effort. In this
+paper, we propose a design for one possible track of this
+proposed scheduling competition. Specifically, we propose
+a track aimed at one machine sequencing problems. We argue
+that any such track must include problems with sequence-dependent
+setups. Our proposed single machine sequencing
+track would additionally include a spectrum of objective
+functions of increasing optimization difficulty under
+sequence-dependent setups. We also offer a problem instance
+generator along with a set of benchmark problem instances
+for one potential competition problem—the weighted tardiness
+scheduling problem with sequence-dependent setups.}
+}
+%month = {22-26 September},
+note = {Providence, RI},
+
+
+
+@ARTICLE{CCSC2007,
+author = {Vincent A. Cicirello},
+title = {An Interdisciplinary Course on Artificial Intelligence Designed for a Liberal Arts Curriculum},
+journal = {Journal of Computing Sciences in Colleges},
+year = {2008},
+volume = {23},
+number = {3},
+month = {January},
+pages = {120--127},
+pdf = {p120-cicirello.pdf},
+acro = {ccsce},
+doi = {http://dl.acm.org/citation.cfm?id=1295109.1295137},
+abstract = {This article introduces a course the author recently designed; and which was first taught in Fall 2006. 
+The course provides an introduction to the field of artificial intelligence (AI) focused at non-majors as part of a 
+liberal arts curriculum. The course provides an overview of the foundational science and philosophy at the heart of AI from 
+an interdisciplinary perspective. The course largely focuses on the diverse applications to many fields of endeavor, and the 
+impact AI is beginning to have on areas of society as well as the potential future impact. The course draws together topics from 
+diverse fields including computer science, philosophy, psychology, game theory, among others. One of the goals of the course is 
+to engage students from disciplines outside the computing sciences, while drawing on the strengths of their individual backgrounds. 
+A secondary objective is to raise awareness among students outside of the computing sciences that there is more to computer 
+science than programming and mathematics (e.g., that some CS topics are highly interdisciplinary). A key teaching element of 
+this course is that of utilizing prior knowledge for discussion context.}
+}
+% Acceptance rate:~45.6\%.
+% 23rd Annual Consortium of Computing Sciences in Colleges Eastern Conference
+
+
+
+@INPROCEEDINGS{GECCO2006,
+author = {Vincent A. Cicirello},
+title = {Non-Wrapping Order Crossover: An Order Preserving
+Crossover Operator that Respects Absolute Position},
+booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference (GECCO'06)},
+year = {2006},
+month = {July},
+pages = {1125--1131},
+volume = {2},
+publisher = {ACM Press},
+note = {<strong>Nominated for the Genetic Algorithms Track Best Paper Award</strong>.},
+pdf = {GECCO2006.pdf},
+acro = {gecco},
+titletag = {Genetic and Evolutionary Computation Conference},
+doi = {http://dx.doi.org/10.1145/1143997.1144177},
+abstract = {In this paper, we introduce a new crossover operator for the permutation representation of a GA. 
+This new operator, Non-Wrapping Order Crossover (NWOX), is a variation of the well-known Order Crossover (OX) 
+operator. It strongly preserves relative order, as does the original OX, but also respects the absolute positions 
+within the parent permutations. This crossover operator is experimentally compared to several other permutation 
+crossover operators on an NP-Hard problem known as weighted tardiness scheduling with sequence-dependent setups. 
+A GA using this NWOX operator finds new best known solutions for several benchmark problem instances and proves to 
+be superior to the previous best performing metaheuristic for the problem.}
+}
+Seattle, WA.
+%Acceptance rate:~46\% (205/446).
+%month = {8-12 July},
+%editor = {{M. Keijzer et al}},
+
+
+@ARTICLE{IEEE-IS-2005,
+author = {Joseph Kopena and Evan Sultanik and Gaurav Naik and Iris Howley and Maxim Peysakhov and Vincent A. Cicirello and Moshe Kam and William Regli},
+title = {Service-Based Computing on MANETs: Enabling Dynamic Interoperability of First Responders},
+journal = {IEEE Intelligent Systems},
+YEAR = {2005},
+VOLUME = {20},
+NUMBER = {5},
+NOTE = {Special Issue on Artificial Intelligence for Homeland Security.},
+MONTH = {September/October},
+PAGES = {17--25},
+pdf = {IEEE-IS-2005.pdf},
+acro = {ieeeis},
+doi = {http://dx.doi.org/10.1109/MIS.2005.94},
+abstract = {Mobile ad hoc networks will form a critical part of the first-responder communications infrastructure. 
+Empirical data shows how network-aware, autonomous, mobile agents can manage information services on live manet environments. 
+A multidisciplinary team in Drexel University's College of Engineering has been working with local law enforcement and 
+transportation officials to identify problems in enabling police, fire, security, and other public protectors to effectively 
+communicate and collaborate in first-response situations. Development of the Philadelphia Area Urban Wireless Network Testbed (PA-UWNT) 
+is part of this effort. The PA-UWNT is a mobile ad hoc network (manet) comprising mobile computers (PDAs, tablets, and laptops) 
+and Web service-based applications. Our experience in the PA-UWNT project indicates that constructing such systems will require 
+new research developments in computer networking, agent and service-based computing, and security that integrate each of these 
+disciplines at several fundamental levels. In this paper, we outline part of this approach through experiments demonstrating 
+the utility of integrating the network and agent layers and enabling agents to reason about the current operating context. 
+We posit that autonomous agents that can reason about the network's slate and services offer an effective means of 
+meeting the manet environment's challenges.}
+}
+%Reprinted in {\it IEEE Distributed Systems Online}, 6(11), November 2005
+
+
+ARTICLE{IEEE-DSO-2005,
+author = {Joseph Kopena and Evan Sultanik and Gaurav Naik and Iris Howley and Maxim Peysakhov and Vincent A. Cicirello and Moshe Kam and William Regli},
+title = {Service-Based Computing on MANETs: Enabling Dynamic Interoperability of First Responders},
+journal = {IEEE Distributed Systems Online},
+YEAR = {2005},
+VOLUME = {6},
+NUMBER = {11},
+ACRO = {dso},
+NOTE = {Reprint of article originally in {\it IEEE Intelligent Systems}, 20(5)},
+MONTH = {November}
+}
+
+@INPROCEEDINGS{AAAI2005,
+author = {Vincent A. Cicirello and Stephen F. Smith},
+title = {The Max $K$-Armed Bandit: A New Model of Exploration Applied to Search Heuristic Selection},
+booktitle = {The Proceedings of the Twentieth National Conference on Artificial Intelligence},
+year = {2005},
+month = {July},
+publisher = {AAAI Press},
+volume = {3},
+pages = {1355--1361},
+award = {AAAI 2005 Outstanding Paper Award},
+pdf = {AAAI2005.pdf},
+acro = {aaai},
+titletag = {AAAI},
+doi = {http://www.aaai.org/Library/AAAI/2005/aaai05-215.php},
+abstract = {The multiarmed bandit is often used as an analogy for the tradeoff between exploration 
+and exploitation in search problems. The classic problem involves allocating trials to the arms of a multiarmed 
+slot machine to maximize the expected sum of rewards. We pose a new variation of the multiarmed bandit, the Max K-Armed Bandit, 
+in which trials must be allocated among the arms to maximize the expected best single sample reward of the series of trials. 
+Motivation for the Max K-Armed Bandit is the allocation of restarts among a set of multistart stochastic search algorithms. 
+We present an analysis of this Max K-Armed Bandit showing under certain assumptions that the optimal strategy allocates trials 
+to the observed best arm at a rate increasing double exponentially relative to the other arms. This motivates an exploration 
+strategy that follows a Boltzmann distribution with an exponentially decaying temperature parameter. We compare this exploration 
+policy to policies that allocate trials to the observed best arm at rates faster (and slower) than double exponentially. 
+The results confirm, for two scheduling domains, that the double exponential increase in the rate of allocations to the 
+observed best heuristic outperforms the other approaches.}
+}
+note = {<strong>Winner of the 2005 AAAI Outstanding Paper Award</strong>.},
+Pittsburgh, PA.
+%month = {9-13 July},
+%editor = {M. M. Veloso and S. Kambhampati},
+%Acceptance rate:~18\% (148/803).
+
+
+@INPROCEEDINGS{ISDEMO2005,
+author = {Gustave Anderson and Andrew Burnheimer and Vincent Cicirello 
+and David Dorsey and Chris Dugan and Iris Howley and Moshe Kam and Joseph Kopena 
+and Rob Lass and Kris Malfettone and Andy Mroczkowski and Gaurav Naik and Max Peysakhov 
+and Brian Pyles and William Regli and Evan Sultanik and James Thiel and Kyle Usbeck 
+and Dan Venutolo and Marc Winners},
+title = {The AI Technologies of the Philadelphia Area Urban Wireless Network Testbed},
+booktitle = {The Proceedings of the Twentieth National Conference on Artificial Intelligence},
+year = {2005},
+month = {July},
+publisher = {AAAI Press},
+pages = {1674--1675},
+volume = {4},
+pdf = {ISD05-003.pdf},
+acro = {aaaidemo},
+titletag = {AAAI Demo},
+doi = {http://www.aaai.org/Library/AAAI/2005/isd05-003.php},
+abstract = {Drexel University's College of Engineering has been working with local law enforcement and 
+transportation officials to develop a Philadelphia Area Urban Wireless Network Testbed (PA-UWNT). The 
+PAUWNT is a mobile ad hoc network (MANET) consisting of PDAs (HP iPAQs), Tablet PCs, and laptops. The PAUWNT 
+integrates: (1) the industrial-strength mobile agent platform of Lockheed's Advanced Technology Laboratories 
+known as the Extendable Mobile Agent Architecture (EMAA) (2) an 802.11b wireless network with ad hoc routing; and (3) 
+lightweight computing platforms such as PDAs and Tablets. MANETs, such as the PA-UWNT, can allow for a "bring your own network" solution 
+to communications and management of rescue workers at the location of a natural disaster, where traditional networking infrastructure is not 
+likely to exist or at best is likely to be inoperable. One of the goals of the PA-UWNT is to enable researchers at Drexel University to 
+study research problems of importance to the enabling of police, fire, security, and other emergency personnel to 
+communicate and collaborate effectively over MANETs.}
+}
+%month = {9-13 July},
+%editor = {M. M. Veloso and S. Kambhampati},
+note = {Pittsburgh, PA},
+
+
+@INPROCEEDINGS{MASS2005-1,
+author = {Maxim Peysakhov and Andrew Mroczkowski and
+Leonardo Urbano and Jacob Warren and Vincent A. Cicirello and William Regli and Moshe Kam},
+title = {Agent Survivability Through Power Awareness},
+booktitle = {Proceedings of the 2005 IEEE Second Symposium on Multi-Agent Security and Survivability},
+year = {2005},
+month = {August},
+pages = {31--38},
+pdf = {MASS2005-power-aware.pdf},
+acro = {mass},
+titletag = {IEEE Symposium on Multi-Agent Security and Survivability},
+doi = {http://dx.doi.org/10.1109/MASSUR.2005.1507045},
+abstract = {Wireless mobile ad-hoc networks (MANETS) of personal digital assistants (PDAs) 
+are a growing field of study due to potential applications in environments that lack a functioning 
+communications infrastructure. Mobile computing platforms such as PDAs and tablet PCs offer software 
+designers great challenges to the design of survivable software applications. One of these challenges 
+pertains to limited power resources. Processor loads, large amounts of wireless network activity, and 
+input/output (I/O operations can strain the limited battery life inherent with such mobile platforms. 
+In this paper we demonstrate how power awareness of software agents can increase system robustness and 
+survivability. This paper presents first steps in a direction that can derive large payoffs for decentralized 
+coordination and collaboration on power-constrained computing platforms.}
+}
+%month = {30-31 August},
+note = {Philadelphia, PA},
+
+
+@INPROCEEDINGS{MASS2005-2,
+author = {Vincent A. Cicirello and Andrew Mroczkowski and William Regli},
+title = {Designing Decentralized Software for a Wireless Network Environment:
+Evaluating Patterns of Mobility for a Mobile Agent Swarm},
+booktitle = {Proceedings of the 2005 IEEE Second Symposium on Multi-Agent Security and Survivability},
+year = {2005},
+month = {August},
+pages = {49--57},
+pdf = {MASS2005-pattern.pdf},
+acro = {mass},
+titletag = {IEEE Symposium on Multi-Agent Security and Survivability},
+doi = {http://dx.doi.org/10.1109/MASSUR.2005.1507047},
+abstract = {Designing decentralized software applications for a wireless network environment offers harsh challenges to the software engineer. 
+All of the usual difficulties associated with a distributed system are present, but are amplified by the inherent dynamics and uncertainty of 
+the wireless network. This paper takes an agent-oriented software engineering perspective in considering how to design decentralized software 
+systems for a mobile ad hoc network (MANET) of resource-constrained devices. Specifically, the authors codify within the context of a software 
+design pattern the concept of an agent swarm. Swarms of mobile agents have been used in the development of applications to support coordination 
+and collaboration in a live MANET test bed. Work is underway to transition some of this technology into use by public protectors as part of the 
+Philadelphia area urban wireless network testbed. The objectives of this paper include motivating the need for a swarm-based approach to 
+distributed software for wireless environments and discussing the critical issues involved with mobile agents swarming on a MANET. For example, 
+one such design issue is the selection of migration patterns for use by the swarming agents. Several different types of itinerary patterns are 
+evaluated within the context of a mobile agent swarm.}
+}
+%month = {30-31 August},
+note = {Philadelphia, PA},
+
+
+@INPROCEEDINGS{SPRING2005,
+author = {Joseph B. Kopena and Vincent A. Cicirello and Maxim Peysakhov and Kris Malfettone and Andrew Mroczkowski and Gaurav Naik and Evan Sultanik and Moshe Kam and William C. Regli},
+title = {Network Awareness and the Philadelphia Area Urban Wireless Network Testbed},
+booktitle = {AI Technologies for Homeland Security: Papers from the 2005 AAAI Spring Symposium},
+year = {2005},
+month = {March},
+publisher = {AAAI Press},
+pages = {70--75},
+pdf = {SS05-01-010.pdf},
+acro = {aaaisp},
+titletag = {AAAI Spring Symposium},
+doi = {http://www.aaai.org/Library/Symposia/Spring/2005/ss05-01-010.php},
+abstract = {This paper overviews the Philadelphia Area Urban Wireless Network Testbed (PA-UWNT) project and several applications of 
+artificial intelligence therein. PA-UWNT is a research and development effort in mobile and ubiquitous computing, focusing on 
+communication and collaboration between first responders and other emergency personnel. Support systems in these environments 
+face a number of challenges such as a lack of in-place infrastructure, frequent network disruptions, and limited bandwidth and power. 
+The Testbed, consisting of robust networked computing platforms along with access to public and private locations, enables the project to test, 
+evaluate, and develop new approaches to effectively supporting users in these domains. In this work, agents that reason on network 
+state and available services in conducting information dissemination and collection tasks are proposed and evaluated.}
+}
+%, Technical Report SS-05-01 (part of book title)
+%month = {21-23 March},
+note = {Stanford University, CA},
+
+
+@INPROCEEDINGS{CP2004,
+AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+TITLE = {Heuristic Selection for Stochastic Search Optimization: Modeling Solution
+Quality by Extreme Value Theory},
+BOOKTITLE = {Principles and Practice of Constraint Programming -- 
+CP 2004: 10th International Conference, Proceedings},
+        SERIES = {Lecture Notes in Computer Science},
+        PUBLISHER = {Springer-Verlag},
+YEAR = {2004},
+MONTH = {September/October},
+VOLUME = {LNCS 3258},
+PAGES = {197--211},
+pdf = {CP2004.pdf},
+acro = {cp},
+titletag = {Principles and Practice of Constraint Programming International Conference},
+doi = {http://dx.doi.org/10.1007/978-3-540-30201-8_17},
+abstract = {The success of stochastic algorithms is often due to their ability to effectively amplify the performance of search heuristics. 
+This is certainly the case with stochastic sampling algorithms such as heuristic-biased stochastic sampling (HBSS) and value-biased stochastic sampling (VBSS), 
+wherein a heuristic is used to bias a stochastic policy for choosing among alternative branches in the search tree. One complication in getting the most 
+out of algorithms like HBSS and VBSS in a given problem domain is the need to identify the most effective search heuristic. 
+In many domains, the relative performance of various heuristics tends to vary across different problem instances and no single heuristic dominates. 
+In such cases, the choice of any given heuristic will be limiting and it would be advantageous to gain the collective power of several heuristics. 
+Toward this goal, this paper describes a framework for integrating multiple heuristics within a stochastic sampling search algorithm. In its essence, 
+the framework uses online-generated statistical models of the search performance of different base heuristics to select which to employ on each 
+subsequent iteration of the search. To estimate the solution quality distribution resulting from repeated application of a strong heuristic within 
+a stochastic search, we propose the use of models from extreme value theory (EVT). Our EVT-motivated approach is validated on the NP-Hard problem 
+of resource-constrained project scheduling with time windows (RCPSP/max). Using VBSS as a base stochastic sampling algorithm, the integrated use 
+of a set of project scheduling heuristics is shown to be competitive with the current best known heuristic algorithm for RCPSP/max and in some cases 
+even improves upon best known solutions to difficult benchmark instances.}
+}
+%MONTH = {27 September--1 October},
+%EDITOR = {M. Wallace},
+%{\bf Acceptance rate:~29\% (46/158)}
+NOTE = {Toronto, Canada.},
+
+
+@ARTICLE{VBSS,
+AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+TITLE = {Enhancing Stochastic Search Performance by Value-Biased Randomization of Heuristics},
+JOURNAL = {Journal of Heuristics},
+YEAR = {2005},
+MONTH = {January},
+VOLUME = {11},
+NUMBER = {1},
+PAGES = {5--34},
+pdf = {HEURISTICS2005.pdf},
+acro = {jheur},
+doi = {http://dx.doi.org/10.1007/s10732-005-6997-8},
+abstract = {This paper investigates the utility of introducing randomization as a means of boosting the 
+performance of search heuristics. We introduce a particular approach to randomization, called Value-biased 
+stochastic sampling (VBSS), which emphasizes the use of heuristic value in determining stochastic bias. We 
+offer an empirical study of the performance of value-biased and rank-biased approaches to randomizing search heuristics. 
+We also consider the use of these stochastic sampling techniques in conjunction with local hill-climbing. Finally, we 
+contrast the performance of stochastic sampling search with more systematic search procedures as a means of 
+amplifying the performance of search heuristics.}
+}
+
+@ARTICLE{IEEE-IS-2004,
+AUTHOR = {Vincent A. Cicirello and Max Peysakhov and Gustave Anderson and
+Gaurav Naik and Kenneth Tsang and William C. Regli and Moshe Kam},
+TITLE = {Designing Dependable Agent Systems for Mobile Wireless Networks},
+JOURNAL = {IEEE Intelligent Systems},
+YEAR = {2004},
+VOLUME = {19},
+NUMBER = {5},
+NOTE = {Special Issue on Dependable Agent Systems},
+MONTH = {September/October},
+PAGES = {39--45},
+pdf = {IEEE-IS-2004.pdf},
+acro = {ieeeis},
+doi = {http://dx.doi.org/10.1109/MIS.2004.41},
+abstract = {A mobile ad hoc network (MANET) is a wireless network of mobile devices-such as PDAs, laptops, cell phones, and other 
+lightweight, easily transportable computing devices-in which each node can act as a router for network traffic rather than relying 
+on fixed networking infrastructure. As mobile computing becomes ubiquitous, MANETS becomes increasingly important. As a 
+design paradigm, multiagent systems (MASs) can help facilitate and coordinate ad hoc-scenarios that might include security personnel, 
+rescue workers, police officers, firefighters, and paramedics. On this network, mobile agents perform critical functions that include 
+delivering messages, monitoring resource usage on constrained mobile devices, assessing network traffic patterns, analyzing host behaviors, 
+and revoking access rights for suspicious hosts and agents. Agents can effectively operate in such environments if they are environment 
+aware - if they can sense and reason about their complex and dynamic environments. Altogether, agents living on a MANET must be network, 
+information, and performance aware. This article fleshes out how we apply this approach to populations of mobile agents on a live MANET.}
+}
+
+@ARTICLE{JAAMAS2004,
+        AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+        TITLE = {Wasp-like Agents for Distributed Factory Coordination},
+        JOURNAL = {Autonomous Agents and Multi-Agent Systems},
+        VOLUME = {8},
+        NUMBER = {3},
+        YEAR = {2004},
+        MONTH = {May},
+        PAGES = {237--266},
+		pdf = {jaamas-8-3.pdf},
+acro = {jaamas},
+doi = {http://dx.doi.org/10.1023/B:AGNT.0000018807.12771.60},
+abstract = {Agent-based approaches to manufacturing scheduling and control have gained increasing attention in recent years. 
+Such approaches are attractive because they offer increased robustness against the unpredictability of factory operations. 
+But the specification of local coordination policies that give rise to efficient global performance and effectively adapt to 
+changing circumstances remains an interesting challenge. In this paper, we present a new approach to this coordination problem, 
+drawing on various aspects of a computational model of how wasp colonies coordinate individual activities and allocate tasks 
+to meet the collective needs of the nest.</p>
+<p>We focus specifically on the problem of configuring parallel multi-purpose machines in a factory to best satisfy product demands over time. 
+Wasp-like computational agents that we call routing wasps act as overall machine proxies. These agents use a model of wasp task allocation 
+behavior, coupled with a model of wasp dominance hierarchy formation, to determine which new jobs should be accepted into the machine's queue. 
+If you view our system from a market-oriented perspective, the policies that the routing wasps independently adapt for their respective machines 
+can be likened to policies for deciding when to bid and when not to bid for arriving jobs.</p>
+<p>We benchmark the performance of our system on the real-world problem of assigning trucks to paint booths in a simulated vehicle paintshop. 
+The objective of this problem is to minimize the number of paint color changes accrued by the system, assuming no a priori knowledge of the 
+color sequence or color distribution of trucks arriving in the system. We demonstrate that our system outperforms the bidding mechanism 
+originally implemented for the problem as well as another related adaptive bidding mechanism.}
+}
+
+@INPROCEEDINGS{MASS2004,
+AUTHOR = {Donovan Artz and Vincent A. Cicirello and William Regli and Moshe Kam},
+TITLE = {Engineering Multi-Agent Systems},
+BOOKTITLE = {Proceedings of the 2004 IEEE First Symposium on Multi-Agent Security and Survivability},
+YEAR = {2004},
+MONTH = {August},
+PAGES = {100--107},
+ISBN = {0-7803-8799-6},
+pdf = {MASS2004.pdf},
+acro = {mass},
+titletag = {IEEE Symposium on Multi-Agent Security and Survivability},
+doi = {http://dx.doi.org/10.1109/MASSUR.2004.1368423},
+abstract = {Security of an agent system is often limited, relying on basic cryptographic techniques without consideration 
+of issues such as key maintenance, forming and communicating in secure groups, or interlayer security. From a security 
+engineering perspective, multi-agent systems introduce new channels and possibly layers, resulting in additional security concerns. 
+A comprehensive security engineering perspective - studying the information flow of the multi-layered system, identifying, 
+analyzing and addressing multi-level security threats - is rarely taken. This paper presents a security engineering process for 
+multi-agent systems - motivating the need for comprehensive security engineering and showing how to proceed with the process within 
+an agent system. One of the largest obstacles in security engineering is understanding how to decompose a system into the parts 
+that require security. This paper provides a decomposition for agent systems that can be directly applied to the security engineering process. 
+Examples are given that detail the application of the presented security engineering process to: 1) a FIPA-compliant agent system; 
+and 2) peer-to-peer content lookup. The most important contribution of this paper, is proposing a formal approach to addressing security 
+within an agent system, where there exist unique and application-specific threats that must be addressed.}
+}
+%MONTH = {30-31 August},
+%  {\bf Acceptance rate:~29\% (14/48)}
+NOTE = {Philadelphia, PA.},
+
+@INPROCEEDINGS{FAABS2004,
+AUTHOR = {Maxim D. Peysakhov and Vincent A. Cicirello and William C. Regli},
+TITLE = {Ecology Based Decentralized Agent Management System},
+BOOKTITLE = {Formal Approaches to Agent-Based Systems: 
+Third International Workshop, FAABS 2004, Revised Selected Papers},
+YEAR = {2004},
+MONTH = {April},
+PUBLISHER = {Springer-Verlag},
+SERIES = {Lecture Notes in Computer Science},
+volume = {LNCS 3228},
+PAGES = {1--11},
+pdf = {FAABS2004.pdf},
+acro = {faabs},
+titletag = {Formal Approaches to Agent-Based Systems},
+doi = {http://dx.doi.org/10.1007/978-3-540-30960-4_1},
+abstract = {The problem of maintaining a desired number of mobile agents on a network is not trivial, 
+especially if we want a completely decentralized solution. Decentralized control makes a system more 
+robust and less susceptible to partial failures. The problem is exacerbated on wireless ad hoc networks 
+where host mobility can result in significant changes in the network size and topology. In this paper 
+we propose an ecology-inspired approach to the management of the number of agents. The approach associates 
+agents with living organisms and tasks with food. Agents procreate or die based on the abundance of 
+uncompleted tasks (food). We performed a series of experiments investigating properties of such systems and 
+analyzed their stability under various conditions. We concluded that the ecology based metaphor can be 
+successfully applied to the management of agent populations on wireless ad hoc networks.}
+}
+%MONTH = {26-28 April},
+%editor = {M. G. Hinchey and J. L. Rash and W. F. Truszkowski and C. A. Rouff},
+NOTE = {Greenbelt, Maryland},
+
+
+@INPROCEEDINGS{DEMO,
+AUTHOR = {Gustave Anderson and Andrew Burnheimer and Vincent Cicirello and 
+David Dorsey and Saturnino Garcia and Moshe Kam and Joseph Kopena and 
+Kris Malfettone and Andy Mroczkowski and Gaurav Naik and Max Peysakhov 
+and William Regli and Joshua Shaffer and Evan Sultanik
+and Kenneth Tsang and Leonardo Urbano and Kyle Usbeck 
+and Jacob Warren},
+TITLE = {Demonstration of the Secure Wireless Agent Testbed (SWAT)},
+BOOKTITLE = {Proceedings of the Third International Joint Conference on Autonomous Agents and Multi-Agent Systems (AAMAS-2004)},
+YEAR = {2004},
+MONTH = {July},
+PAGES = {1214--1215},
+volume = {3},
+PUBLISHER = {IEEE Computer Society},
+pdf = {p1212.pdf},
+acro = {aamas},
+titletag = {AAMAS Demo},
+doi = {http://dx.doi.org/10.1109/AAMAS.2004.10265},
+abstract = {We will demonstrate the Secure Wireless Agent Testbed (SWAT), a unique facility developed at Drexel University to 
+study integration, networking and information assurance for next-generation wireless mobile agent systems. SWAT is an implemented 
+system that fully integrates: (1) mobile agents, (2) wireless ad hoc multi-hop networks, and (3) security. The demonstration will 
+show the functionality of a number of decentralized agent-based applications, including applications for authentication, collaboration, 
+messaging, and remote sensor monitoring. The demonstration will take place on a live mobile ad hoc network consisting of approximately 
+a dozen nodes (PDAs, tablet PCs, and laptops) and hundreds of mobile software agents. AAMAS 2004 Demo.}
+}
+%MONTH = {19-23 July},
+%EDITOR = {N. R. Jennings and C. Sierra and L. Sonenberg and M. Tambe},
+NOTE = {New York City, NY},
+
+
+@INPROCEEDINGS{ICAPSDEMO,
+AUTHOR = {Gustave Anderson and Andrew Burnheimer and Vincent Cicirello and 
+David Dorsey and Saturnino Garcia and Moshe Kam and Joseph Kopena and 
+Kris Malfettone and Andy Mroczkowski and Gaurav Naik and Max Peysakhov 
+and William Regli and Joshua Shaffer and Evan Sultanik
+and Kenneth Tsang and Leonardo Urbano and Kyle Usbeck 
+and Jacob Warren},
+TITLE = {Demonstration of the Secure Wireless Agent Testbed (SWAT)},
+BOOKTITLE = {The 14th International Conference on Automated Planning and Scheduling},
+YEAR = {2004},
+MONTH = {June},
+pdf = {andersong_swat.pdf},
+acro = {icaps},
+titletag = {ICAPS Demo},
+doi = {http://icaps04.icaps-conference.org/demos/andersong_swat.pdf},
+abstract = {We will demonstrate the Secure Wireless Agent Testbed
+(SWAT), a unique facility developed at Drexel University
+to study integration, networking and information assurance
+for next-generation wireless mobile agent systems. SWAT
+is an implemented system that fully integrates: (1) mobile
+agents, (2) wireless ad hoc multi-hop networks, and (3) security.
+The demonstration will show the functionality of a
+number of decentralized agent-based applications, including
+applications for authentication, collaboration, messaging,
+and remote sensor monitoring. The demonstration will
+take place on a live mobile ad hoc network consisting of approximately
+a dozen nodes (PDAs, tablet PCs, and laptops)
+and hundreds of mobile software agents. ICAPS 2004 Demo.}
+}
+%MONTH = {3-7 June}
+
+@INPROCEEDINGS{ISDEMO,
+AUTHOR = {Gustave Anderson and Andrew Burnheimer and Vincent Cicirello and 
+David Dorsey and Saturnino Garcia and Moshe Kam and Joseph Kopena and 
+Kris Malfettone and Andy Mroczkowski and Gaurav Naik and Max Peysakhov 
+and William Regli and Joshua Shaffer and Evan Sultanik
+and Kenneth Tsang and Leonardo Urbano and Kyle Usbeck 
+and Jacob Warren},
+TITLE = {Intelligent Systems Demonstration: The Secure Wireless Agent Testbed (SWAT)},
+BOOKTITLE = {Proceedings of the Nineteenth National Conference on Artificial Intelligence and the Sixteenth
+Innovative Applications of Artificial Intelligence Conference},
+YEAR = {2004},
+MONTH = {July},
+PAGES = {1004--1005},
+PUBLISHER = {AAAI Press},
+pdf = {AAAI04-150.pdf},
+acro = {aaaidemo},
+titletag = {AAAI Demo},
+doi = {http://www.aaai.org/Library/AAAI/2004/aaai04-150.php},
+abstract = {We will demonstrate the Secure Wireless Agent Testbed (SWAT), a unique facility developed at Drexel University to study integration, 
+networking and information assurance for next-generation wireless mobile agent systems. SWAT is an implemented system that fully 
+integrates: (1) mobile agents, (2) wireless ad hoc multi-hop networks, and (3) security. The demonstration will show the functionality 
+of a number of decentralized agent-based applications, including applications for authentication, collaboration, messaging, and remote 
+sensor monitoring. The demonstration will take place on a live mobile ad hoc network consisting of approximately a dozen nodes (PDAs, 
+tablet PCs, and laptops) and hundreds of mobile software agents.}
+}
+%MONTH = {25-29 July},
+%EDITOR = {D. L. McGuinness and G. Ferguson},
+NOTE = {San Jose, California},
+
+@INPROCEEDINGS{DARPA-MANETS,
+AUTHOR = {Vincent Cicirello and Moshe Kam and William Regli and Rafael Alonso and Jeffrey Bloom},
+TITLE = {The Secure Wireless Agent Testbed},
+BOOKTITLE = {The DARPA Proposers Day Workshop: Defense Against Cyber Attacks on Mobile Ad Hoc Networks},
+MONTH = {February},
+YEAR = {2004},
+NOTE = {Invited Presentation},
+acro = {darpa},
+titletag = {DARPA Defense Against Cyber Attacks on Mobile Ad Hoc Networks},
+abstract = {The Secure Wireless Agent Testbed (SWAT) is a unique facility developed at 
+Drexel University in collaboration with Sarnoff Corporation to study 
+integration, networking and information assurance for next-generation wireless
+mobile agent systems.  It is the only known implemented system fully 
+integrating: mobile agents, MANETs, and security.  The authors believe that 
+SWAT is the largest known multi-agent system living on a MANET (802.11b 
+wireless network with ad hoc routing), consisting of dozens of mobile hosts 
+(PDAs, laptops) and thousands of static and mobile software agents.  Novel 
+mechanisms have been developed for SWAT integrating autonomous agent 
+technologies with public-key and symmetric key encryption to support secure 
+communication, at multiple OSI layers, among groups of hosts and agents.</p>
+<p>SWAT Security is monitored by agents that manage keys, assess network traffic 
+patterns and analyze host behaviors.  Agents can use machine learning to 
+develop profiles for nominal agent, hardware platform and network states.  
+Given learned profiles, detection agents identify specific problems in SWAT, 
+including over-runs/capture, and malicious insiders.  Other agents monitor the 
+health of the network and the devices in the network, looking for network 
+attacks and security breaches.  Using this framework, agents can revoke access 
+rights for suspicious hosts or agents and adaptively re-route traffic at the 
+network layer to improve the information integrity of the overall system.  
+Agents also provide the implementation framework for decentralized user 
+applications, including those for authentication, collaboration, messaging, and
+remote sensor monitoring.}
+}
+%MONTH = {18 February},
+NOTE = {Abstract of invited presentation},
+
+@PHDTHESIS{CMU-THESIS,
+AUTHOR = {Vincent A. Cicirello},
+TITLE = {Boosting Stochastic Problem Solvers Through Online Self-Analysis of Performance},
+SCHOOL = {The Robotics Institute, School of Computer Science, Carnegie Mellon University},
+YEAR = {2003},
+ADDRESS = {Pittsburgh, PA},
+MONTH = {July},
+pdf = {cicirello_vincent_2003_1.pdf},
+acro = {thesis},
+abstract = {In many combinatorial domains, simple stochastic algorithms often exhibit superior
+performance when compared to highly customized approaches. Many of these simple algorithms
+outperform more sophisticated approaches on difficult benchmark problems; and
+often lead to better solutions as the algorithms are taken out of the world of benchmarks
+and into the real-world. Simple stochastic algorithms are often robust, scalable problem
+solvers.</p>
+<p>This thesis explores methods for combining sets of heuristics within a single stochastic
+search. The ability of stochastic search to amplify heuristics is often a key factor in its
+success. Heuristics are not, however, infallible and in most domains no single heuristic
+dominates. It is therefore desirable to gain the collective power of a set of heuristics; and to
+design a search control framework capable of producing a hybrid algorithm from component
+heuristics with the ability to customize itself to a given problem instance. A primary
+goal is to explore what can be learned from quality distributions of iterative stochastic
+search in combinatorial optimization domains; and to exploit models of quality distributions
+to enhance the performance of stochastic problem solvers. We hypothesize that models
+of solution quality can lead to effective search control mechanisms, providing a general
+framework for combining multiple heuristics into an enhanced decision-making process.
+These goals lead to the development of a search control framework, called QD-BEACON,
+that uses online-generated statistical models of search performance to effectively combine
+search heuristics. A prerequisite goal is to develop a suitable stochastic sampling algorithm
+for combinatorial search problems. This goal leads to the development of an algorithm
+called VBSS that makes better use, in general, of the discriminatory power of a given
+search heuristic as compared to existing sampling approaches.</p>
+<p>The search frameworks of this thesis are evaluated on combinatorial optimization problems.
+Specifically, we show that: 1) VBSS is an effective method for amplifying heuristic
+performance for the weighted tardiness sequencing problem with sequence-dependent setups;
+2) QD-BEACON can enhance the current best known algorithm for weighted tardiness
+sequencing; and 3) QD-BEACON and VBSS together provide the new best heuristic
+algorithm for the constrained optimization problem known as RCPSP/max.}
+}
+%MONTH = {21 July},
+NOTE = {Also available as technical report CMU-RI-TR-03-27},
+
+
+@INPROCEEDINGS{MULTIROBOT2003,
+        AUTHOR = {Dani Goldberg and Vincent Cicirello and M. Bernardine Dias and Reid Simmons and Stephen Smith and Anthony Stentz},
+        TITLE = {Market-Based Multi-Robot Planning in a Distributed Layered Architecture},
+        BOOKTITLE = {Multi-Robot Systems: From Swarms to Intelligent Automata: Proceedings of the 2003 International Workshop on Multi-Robot Systems},
+        PUBLISHER = {Kluwer Academic Publishers},
+        VOLUME = {2},
+        YEAR = {2003},
+        MONTH = {March},
+        PAGES = {27--38},
+		pdf = {multi-robot03.pdf},
+acro = {mrs},
+titletag = {Multi-Robot Systems},
+abstract = {This paper presents a market-based, multi-robot planning capability, designed as part of a distributed, layered architecture for multi-robot control and coordination. More specifically, we are developing an extension to the traditional three-layered robot architecture that enables robots to interact directly at each layer: the behavioral level, the robots create distributed control loops; at the executive level, they synchronize task execution; at the planning level, they use market-based techniques to assign tasks and allocate resources. The market-based planning layer of each robot has two main components: (1) a trader that participates in the market, auctioning and bidding on tasks; (2) a scheduler that determines task feasibility and cost for the trader, and interacts with the executive layer for task execution. This paper focuses on the planning level, detailing the architecture, our current implementation, and planned future extensions. We show how the architecture (in particular, the planning layer) has been applied to a Mars exploration scenario involving the characterization of scientifically "interesting" rocks. We also present preliminary simulation results exploring market and scenario parameters.}
+}
+%MONTH = {17-19 March},
+%  Acceptance rate:~$<$~37\% (26/70+)
+        NOTE = {Washington, DC.},
+
+		
+@INPROCEEDINGS{AAMAS2003,
+      AUTHOR = {Dani Goldberg and Vincent Cicirello and M. Bernardine Dias and Reid Simmons and Stephen Smith and Anthony Stentz},
+      TITLE = {Task Allocation Using a Distributed Market-Based Planning Mechanism},
+      BOOKTITLE = {Proceedings of the Second International Joint Conference on Autonomous Agents and Multiagent Systems (AAMAS-2003)},
+      YEAR = {2003},
+      MONTH = {July},
+      PAGES = {996--997},
+      PUBLISHER = {ACM Press},
+      pdf = {p996-goldberg.pdf},
+acro = {aamas},
+titletag = {International Joint Conference on Autonomous Agents and Multiagent Systems},
+doi = {http://dx.doi.org/10.1145/860575.860763},
+abstract = {This paper describes a market-based planning mechanism used for task and resource allocation 
+within a larger distributed, multi-robot control and coordination architecture. We are developing an 
+extension to the traditional three-layered robot architecture that enables robots to interact directly at each 
+layer: at the behavioral level, the robots create distributed control loops; at the executive level, 
+they synchronize task execution; at the planning level, they use market-based techniques to allocate 
+tasks and resources. This paper focusses on the market-based planning layer, which is comprised of two 
+main components: a trader that participates in the market, auctioning and bidding on tasks; and a scheduler 
+that determines task feasibility and cost for the trader, and interacts with the executive layer for task execution.}
+}
+%MONTH = {14-18 July},
+%  Acceptance rate for full papers:~24.7\%, posters:~32.2\%.
+NOTE = {Melbourne, Australia.  Poster Paper.},
+	  
+	  
+@TECHREPORT{TECH2003,
+        AUTHOR = {Vincent A. Cicirello},
+        TITLE = {Weighted Tardiness Scheduling with Sequence-Dependent Setups: A Benchmark Library},
+        INSTITUTION = {Intelligent Coordination and Logistics Laboratory, Robotics Institute, Carnegie Mellon University},
+        YEAR = {2003},
+        TYPE = {Technical Report},
+        ADDRESS = {Pittsburgh, PA},
+        MONTH = {February},
+		pdf = {wtsbenchmarks.pdf},
+acro = {cmu},
+titletag = {Carnegie Mellon University},
+abstract = {This report details a set of benchmark problem instances that we have generated for
+the weighted tardiness scheduling with sequence-dependent setups problem. The version
+of the problem without setup times is NP-Hard. The problem is further complicated by
+the sequence-dependent nature of the setups. Given that the weighted tardiness objective
+and the sequence-dependent setups constraint are both common real-world problem
+characteristics, and given the difficulty in solving this problem, we feel that it is currently
+under-represented in the research literature. With few algorithms currently available for the
+problem, this first benchmark problem set and initial results obtained via a large number of
+heuristic algorithms will hopefully encourage others to explore additional solutions to the
+problem.}
+}
+%NOTE = {http://www.ozone.ri.cmu.edu/benchmarks.html}
+
+@ARTICLE{AIEDAM2002,
+        AUTHOR = {Vincent A. Cicirello and William C. Regli},
+        TITLE = {An Approach to a Feature-based Comparison of Solid Models of Machined Parts},
+        JOURNAL = {Artificial Intelligence for Engineering Design, Analysis and Manufacturing},
+        PAGES = {385--399},
+        YEAR = {2002},
+        MONTH = {November},
+        VOLUME = {16},
+        NUMBER = {5},
+acro = {aiedam},
+pdf = {aiedam2002.16.5.pdf},
+doi = {http://dx.doi.org/10.1017/S0890060402165048},
+abstract = {Solid models are the critical data elements in modern computer-aided design 
+environments, because they describe the shape and form of manufactured artifacts. 
+Their growing ubiquity has created new problems in how to effectively manage the many 
+models that are now stored in the digital libraries for large design and manufacturing 
+enterprises. Existing techniques from the engineering literature and industrial practice, 
+such as group technology, rely on human-supervised encodings and classification; techniques 
+from the multimedia database and computer graphics/vision communities often ignore the 
+manufacturing attributes that are most significant in the classification of models. This 
+paper presents our approach to comparing the manufacturing similarity assessments of solid 
+models of mechanical parts based on machining features. Our technical approach is threefold: 
+perform machining feature extraction, construct a model dependency graph (MDG) from the set 
+of machining features, and partition the models in a database using a measure of similarity 
+based on the MDGs. We introduce two heuristic search techniques for comparing MDGs and present 
+empirical experiments to validate our approach using our testbed, the National Design Repository.}
+}
+
+@INPROCEEDINGS{CP2002,
+        AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+        TITLE = {Amplification of Search Performance through Randomization of Heuristics},
+        BOOKTITLE = {Principles and Practice of Constraint Programming -- CP 2002: 8th International Conference, Proceedings},
+        SERIES = {Lecture Notes in Computer Science},
+        VOLUME = {LNCS 2470},
+        PUBLISHER = {Springer-Verlag},
+        YEAR = {2002},
+        PAGES = {124--138},
+        MONTH = {September},
+      pdf = {CP2002.pdf},
+acro = {cp},
+titletag = {Principles and Practice of Constraint Programming International Conference},
+doi = {http://dx.doi.org/10.1007/3-540-46135-3_9},
+abstract = {Randomization as a means for improving search performance in combinatorial 
+domains has received increasing interest in recent years. In optimization contexts, it can 
+provide a means for overcoming the deficiencies of available search heuristics and broadening 
+search in productive directions. In this paper, we consider the issue of amplifying the performance 
+of a search heuristic through randomization. We introduce a general framework for embedding a base 
+heuristic within an iterative sampling process and searching a stochastic neighborhood of the 
+heuristic's prescribed trajectory. In contrast to previous approaches, which have used rank-ordering 
+as a basis for randomization, our approach instead relies on assigned heuristic value. Use of heuristic 
+value is important because it makes it possible to vary the level of stochasticity in relation to the 
+discriminatory power of the heuristic in different decision contexts, and hence concentrate search 
+around those decisions where the heuristic is least informative. To evaluate the efficacy of the 
+approach, we apply it to a complex, weighted-tardiness scheduling problem. Taking a state-of-the-art 
+heuristic for this scheduling problem as a starting point, we demonstrate an ability to consistently 
+and significantly improve on the deterministic heuristic solution across a broad range of problem 
+instances. Our approach is also shown to consistently outperform a previously developed, rank-ordering 
+based approach to randomizing the same heuristic in terms of percentage of improvement obtained.}
+}
+%MONTH = {7-13 September},
+%EDITOR = {P. {Van Hentenryck}},
+%  {\bf Acceptance rate:~30\% (44/146)}
+  NOTE = {Ithaca, NY.},
+		
+		
+@INPROCEEDINGS{SPACE2002,
+        AUTHOR = {Dani Goldberg and Vincent Cicirello and M. Bernardine Dias and Reid Simmons and Stephen Smith and Trey Smith and Anthony Stentz},
+        TITLE = {A Distributed Layered Architecture for Mobile Robot Coordination: Application to Space Exploration},
+        BOOKTITLE = {The 3rd International NASA Workshop on Planning and Scheduling for Space},
+        YEAR = {2002},
+        MONTH = {October},
+        pdf = {nasa-pss02-final.pdf},
+acro = {nasa},
+titletag = {NASA Workshop on Planning and Scheduling for Space},
+abstract = {This paper presents an architecture that enables multiple robots to explicitly coordinate
+actions at multiple levels of abstraction. In particular, we are developing an extension to the traditional
+three-layered robot architecture that enables robots to interact directly at each layer: at the behavioral level, the robots create distributed control loops; at the executive level, 
+they synchronize task execution; at the planning level, they use market-based techniques to assign tasks, form teams, and
+allocate resources. We illustrate these ideas in the context of a Mars exploration scenario.}
+}
+% MONTH = {27-29 October},
+NOTE = {Houston, TX},
+		
+@INPROCEEDINGS{WRAC2002,
+	AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+	TITLE = {Distributed Coordination of Resources via Wasp-like Agents},
+	BOOKTITLE = {Innovative Concepts for Agent-Based Systems: First International 
+                     Workshop on Radical Agent Concepts, WRAC-2002},
+	YEAR = {2002},
+	MONTH = {January},
+        SERIES = {Lecture Notes in Artificial Intelligence},
+        VOLUME = {LNAI 2564},
+        PAGES = {71--80},
+        PUBLISHER = {Springer-Verlag},
+        URL = {cicirello-wrac2001.pdf},
+		pdf = {WRAC2002.pdf},
+acro = {wrac},
+titletag = {First International Workshop on Radical Agent Concepts},
+doi = {http://dx.doi.org/10.1007/978-3-540-45173-0_5},
+abstract = {Agent-based approaches to scheduling have gained increasing attention in recent years. 
+One inherent advantage of agent-based approaches is their tendency for robust behavior; since activity 
+is coordinated via local interaction protocols and decision policies, the system is insensitive to 
+unpredictability in the executing environment. At the same time, such "self-scheduling" systems presume 
+that a coherent global behavior will emerge from the local interactions of individual agents, and realizing 
+this behavior remains a difficult problem. We draw on the adaptive behavior of the natural multi-agent 
+system of the wasp colony as inspiration for decentralized mechanisms for coordinating factory operations. 
+We compare the resulting systems to the state-of-the-art for the problems examined.}
+}
+%MONTH = {16-18 January},
+%EDITOR = {W. Truszkowski and C. Rouff and M. Hinchey},
+
+
+@INPROCEEDINGS{SIAM2002,
+        AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+        TITLE = {WHISTLING: Wasp Behavior Inspired Stochastic Sampling},
+        BOOKTITLE = {The 2002 SIAM Annual Meeting and SIAM 50th Anniversary, Final Program and Abstracts},
+        PUBLISHER = {SIAM},
+        YEAR = {2002},
+        MONTH = {July},
+        PAGES = {228},
+acro = {siam},
+pdf = {SIAM2002.pdf},
+titletag = {SIAM Annual Meeting},
+abstract = {We present a stochastic search algorithm called Wasp beHavior Inspired STochastic SampLING (WHISTLING).
+Dispatch scheduling policies often provide good decision-making baselines for scheduling problems, but are not
+infallible and can make suboptimal decisions. Hence, instead of unconditionally following its decisions, we use
+the dispatch policy to bias a stochastic selection process. WHISTLING provides a fast and effective method for sampling from
+a stochastic neighborhood of a heuristic solution given a dispatch policy. We have specifically focused our experimentation
+on a weighted tardiness scheduling problem with sequence-dependent setups.}
+}
+%NOTE = {Abstract and poster presentation.},
+% MONTH = {8-12 July},
+%   Philadelphia, PA
+
+TECHREPORT{PROPOSAL,
+        AUTHOR = {Vincent A. Cicirello},
+        TITLE = {Boosting Stochastic Problem Solvers through Online Self-Analysis of Performance},
+        INSTITUTION = {Robotics Institute, Carnegie Mellon University},
+        YEAR = {2002},
+        TYPE = {Ph.D. Thesis Proposal},
+        ADDRESS = {Pittsburgh, PA},
+        MONTH = {July},
+        NOTE = {Document available upon request}
+}
+% MONTH = {23 July},
+
+@INPROCEEDINGS{AGENTS2001,
+	AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+	TITLE = {Wasp Nests for Self-Configurable Factories},
+	BOOKTITLE = {Proceedings of the Fifth International Conference on Autonomous Agents},
+	PUBLISHER = {ACM Press},
+	YEAR = {2001},
+	MONTH = {May/June},
+	PAGES = {473--480},
+	pdf = {cicirello-agents2001.pdf},
+acro = {agents},
+titletag = {International Conference on Autonomous Agents},
+doi = {http://dx.doi.org/10.1145/375735.376420},
+abstract = {Agent-based approaches to manufacturing scheduling and control have gained increasing attention 
+in recent years. Such approaches are attractive because they offer increased robustness against the 
+unpredictability of factory operations. But the specification of local coordination policies that give 
+rise to efficient global performance and effectively adapt to changing circumstances remains an interesting 
+challenge. In this paper, we introduce a new approach to this coordination problem, drawing on various 
+aspects of a computational model of how wasp colonies coordinate individual activities and allocate 
+tasks to meet the collective needs of the nest. We focus specifically on the problem of configuring 
+machines in a factory to best satisfy (potentially changing) product demands over time. Our system models 
+the set of jobs queued in front of any given machine as a wasp nest, wherein wasp-like agents interact 
+to form a social hierarchy and prioritize the jobs that they represent. Other wasp-like agents external 
+to the nest act as overall machine proxies, and use a model of wasp task allocation behavior to determine 
+which new jobs should be accepted into the machine's queue. We show for simple factories that our multi-agent 
+system achieves the desired effect. For a given job mix, the system converges to a factory configuration 
+that maximizes overall performance, and as the job mix changes, the system quickly adapts to a new, 
+more appropriate configuration.}
+}
+%ORGANIZATION = {ACM SIGART, ACM/SIGGRAPH, ACM/SIGCHI},
+%EDITOR = {J. P. M\"{u}ller and E. Andre and S. Sen and C. Frasson},
+% {\bf Acceptance rate:~27\% (66/248)}
+NOTE = {Montreal, Quebec, Canada.},
+        
+
+@INPROCEEDINGS{AAAIFALL2001,
+	AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+	TITLE = {Randomizing Dispatch Scheduling Policies},
+	BOOKTITLE = {Using Uncertainty Within Computation: Papers from the 2001 AAAI Fall Symposium},
+	PUBLISHER = {AAAI Press},
+	YEAR = {2001},
+	MONTH = {November},
+	PAGES = {30--37},
+	URL = {cicirello-aaai-fall-2001.pdf},
+		pdf = {FS01-04-004.pdf},
+acro = {aaaifa},
+titletag = {AAAI Fall Symposium},
+doi = {http://www.aaai.org/Papers/Symposia/Fall/2001/FS-01-04/FS01-04-004.pdf},
+abstract = {The factory is a complex dynamic environment and scheduling
+operations for such an environment is a challenging problem.
+In practice, dispatch scheduling policies are commonly
+employed, as they offer an efficient and robust solution. However,
+dispatch scheduling policies are generally myopic, and
+as such they are susceptible to sub-optimal decision-making.
+In this paper, we attempt to improve upon results of such
+dispatch policies by introducing non-determinism into the
+decision-making process, and instead using a given policy
+as a baseline for biasing stochastic decisions. We consider
+the problem of weighted tardiness scheduling with sequence-dependent
+setups with unknown arrival times in a dynamic
+environment, and show that randomization of state-of-the-art
+dispatch heuristics for this problem in this manner can improve
+performance. Furthermore, we find that the "easier"
+the problem, the less benefit there is from randomization; the
+"harder" the problem, the more benefit. Our method of randomization
+is based on a model of the way colonies of wasps
+self-organize social hierarchies in nature.}
+}
+%, Technical Report {FS-01-04} (part of book title)
+%MONTH = {2-4 November},
+NOTE = {North Falmouth, Massachusetts},
+        
+		
+@INPROCEEDINGS{ISADS2001,
+	AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+	TITLE = {Ant Colony Control for Autonomous Decentralized Shop Floor Routing},
+	BOOKTITLE = {ISADS-2001: Proceedings of the Fifth International Symposium on Autonomous 
+                    Decentralized Systems},
+	PUBLISHER = {IEEE Computer Society Press},
+	YEAR = {2001},
+	MONTH = {March},
+	PAGES = {383--390},
+	URL = {cicirello-isads2001.pdf},
+		pdf = {ISADS2001.pdf},
+acro = {isads},
+titletag = {International Symposium on Autonomous Decentralized Systems},
+doi = {http://dx.doi.org/10.1109/ISADS.2001.917443},
+abstract = {We introduce a new approach to autonomous decentralized shop floor routing. 
+Our system, which we call Ant Colony Control (AC2), applies the analogy of a colony of ants 
+foraging for food to the problem of dynamic shop floor routing. In this system, 
+artificial ants use only indirect communication to make all shop routing decisions by 
+altering and reacting to their dynamically changing common environment through the use of 
+simulated pheromone trails. For simple factory layouts, we show that the emergent behavior 
+of the colony is comparable to using the optimal routing strategy. Furthermore, as the complexity 
+of the factory layout is increased, we show that the adaptive behavior of AC2 evolves local 
+decision making policies that lead to near-optimal solutions from the standpoint of global performance.}
+}
+%Acceptance rate:~47\% (48/102)
+%MONTH = {26--28 March},
+NOTE = {Dallas, TX.},
+        
+
+@INPROCEEDINGS{SMI2001,
+	AUTHOR = {Vincent A. Cicirello and William C. Regli},
+	TITLE = {Machining Feature-Based Comparison of Mechanical Parts},
+	BOOKTITLE = {Proceedings of the International Conference on Shape Modeling and Applications},
+	PUBLISHER = {IEEE Computer Society Press},
+	YEAR = {2001},
+	MONTH = {May},
+	PAGES = {176--185},
+	URL = {smi01-paper.pdf},
+		pdf = {SMI2001.pdf},
+acro = {smi},
+titletag = {International Conference on Shape Modeling and Applications},
+doi = {http://dx.doi.org/10.1109/SMA.2001.923388},
+abstract = {Solid models are the critical data elements in modern computer-aided design 
+(CAD) environments, describing the shape and form of manufactured artifacts. Their 
+growing ubiquity has created new problems in how to effectively manage the many models 
+that are now stored in the digital libraries of large design and manufacturing enterprises. 
+Existing techniques from the engineering literature and from industrial practice, such as group 
+technology, rely on human-supervised encoding and classification, while techniques from the 
+multimedia database and computer graphics/vision communities often ignore the manufacturing 
+attributes most significant in the classification of models.</p> 
+<p>This paper presents our approach 
+to the manufacturing similarly assessment of solid models of mechanical parts based on machining 
+features. Our technical approach is three-fold: (1) perform machining feature extraction to map the 
+solid model to a set of STEP AP 224 machining features; (2) construct a model dependency graph 
+from the set of machining features; and (3) find the nearest neighbors to the query graph using an 
+iterative improvement search across a database of other models. We also present empirical experiments 
+to validate our approach using our testbed, the National Design Repository.</p>
+<p>The contribution of this 
+research is the first fully automated technique for machining feature-based comparisons of mechanical 
+artifacts. We believe that this work can lead to radical changes in the way in which design data is 
+managed in modern engineering enterprises.}
+}
+%Acceptance rate:~44.8\% (30/67)
+%ORGANIZATION = {ACM SIGGRAPH, the Computer Graphics Society, and EUROGRAPHICS},
+NOTE = {Genova, Italy.},
+        
+
+
+    
+	
+@INPROCEEDINGS{SIGMAN2001-2,
+	AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+	TITLE = {Improved Routing Wasps for Distributed Factory Control},
+	BOOKTITLE = {The IJCAI-01 Workshop on Artificial Intelligence and Manufacturing, Working Notes},
+	YEAR = {2001},
+	MONTH = {August},
+	PAGES = {26--32},
+	ORGANIZATION = {AAAI SIGMAN},
+        pdf = {cicirello-sigman2001-2.pdf},
+acro = {sigman},
+titletag = {IJCAI Workshop on Artificial Intelligence and Manufacturing},
+abstract = {Agent-based approaches to manufacturing scheduling
+and control are attractive because they offer
+increased robustness against the unpredictability
+of factory operations. Previously, we introduced
+a new approach to coordinating factory routing
+and scheduling based on a computational model
+of wasp behavior. The natural multi-agent system
+of the wasp colony is highly effective in selforganizing
+the allocation of tasks necessary to fulfill the needs of 
+the nest and has proven useful as an
+effective model upon which to base our distributed
+approach to factory control. In this paper, we improve
+upon our original formulation of the routing
+wasp with the addition of a tournament of dominance
+contests among routing wasps competing for
+the same job. We experimentally evaluate this improved
+performance.}
+}
+%MONTH = {4-9 August},
+NOTE = {Seattle, WA.},
+
+@INPROCEEDINGS{SIGMAN2001-1,
+	AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+	TITLE = {Insect Societies and Manufacturing},
+	BOOKTITLE = {The IJCAI-01 Workshop on Artificial Intelligence and Manufacturing, Working Notes},
+	YEAR = {2001},
+	MONTH = {August},
+	PAGES = {33--38},
+	    ORGANIZATION = {AAAI SIGMAN},
+        pdf = {cicirello-sigman2001-1.pdf},
+acro = {sigman},
+titletag = {IJCAI Workshop on Artificial Intelligence and Manufacturing},
+abstract = {In this paper, we present examples from the literature
+of successful problem solving systems that
+have been heavily influenced directly from biological
+studies of insect societies. Included among
+these systems are a few of our own. These examples
+are presented in light of manufacturing applications
+and only the tip of the iceberg is touched
+upon. It is our hope that the reader will find
+a new source of inspiration in problem solving
+tool design; and realize the potential of coordination
+mechanisms for multi-agent manufacturing
+systems inspired by social insects.}
+}
+%MONTH = {4-9 August},
+NOTE = {Seattle, WA.},
+
+
+
+	
+
+%%% Disabled Custom for not to avoid mix up with WRAC paper
+%%% Add list of presentations at some point and put this in it.	
+INPROCEEDINGS{CUSTOM2001,
+        AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+        TITLE = {Distributed Coordination of Resources via Wasp-like Agents},
+        BOOKTITLE = {{CUSTOM} Mini Conference: Program and Abstracts},
+        PUBLISHER = {Center for Uncertain Systems: Tools for Optimization and Management (CUSTOM)},
+        ADDRESS = {Carnegie Mellon University},
+        YEAR = {2001},
+        MONTH = {December},
+        PAGES = {43},
+        ORGANIZATION = {Sponsor: Sandia National Lab; and CMU CUSTOM},
+acro = {custom},
+titletag = {CUSTOM},
+NOTE = {Abstract and poster presentation},
+abstract = {Agent-based approaches to scheduling have gained increasing attention in recent years. 
+One inherent advantage of agent-based approaches is their tendency for robust behavior; since activity is coordinated via local
+interaction protocols and decision policies, the system is insensitive to unpredictability in the executing environment.
+At the same time, such "self-scheduling" systems presume that a coherent global behavior will emerge from the local interactions
+of individual agents, and realizing this behavior remains a difficult problem.
+We draw on the adaptive behavior of the natural multiagent system of the wasp colony as inspiration for decentralized mechanisms
+for coordinating factory operations.  Specifically, we have developed an adaptive policy for dynamically assigning trucks to
+paint booths in a simulated vehicle paintshop with the objective of minimizing paint color changes. This adaptive mechanism is
+inspired by the self-organized task allocation of wasp colonies.  We have also developed a framework called
+Wasp beHavior Inspired STochastic SampLING (WHISTLING) that has been inspired by a model of self-organized dominance hierarchies
+among social wasps for searching a stochastic neighborhood of a dispatch scheduling policy.
+This framework recognizes that dispatch policies are not infallible and instead uses it to focus a stochastic optimization procedure.}
+}
+% MONTH = {16-18 December},
+
+        
+		
+@TECHREPORT{TECH2001,
+        AUTHOR = {Vincent A. Cicirello},
+        TITLE = {A Game-Theoretic Analysis of Multi-Agent Systems for Shop Floor Routing},
+        INSTITUTION = {Robotics Institute, Carnegie Mellon University},
+        YEAR = {2001},
+        TYPE = {Technical Report},
+        NUMBER = {CMU-RI-TR-01-28},
+        ADDRESS = {Pittsburgh, PA},
+        MONTH = {September},
+        pdf = {cicirello_tech_1.pdf},
+acro = {cmu},
+abstract = {In recent years, the desire for a more robust basis for coordination in manufacturing environments
+has motivated research into agent-based approaches to manufacturing scheduling
+and control. We have been developing a series of such multi-agent systems inspired by
+models of social insect behavior for the problem of dynamic shop floor routing. To date,
+all of our results have been empirical in terms of global system performance and we have
+been without any satisfying explanation for the behavior of the interacting agents of these
+systems. This paper is an attempt to model these interactions in game-theoretic terms as
+normal form games. In the analysis, we show that the behavior of the agents in a repeated
+game scenario appears to converge upon the repeated play of Nash Equilibria (NE). This
+analysis consists of the examination of games corresponding to specific problem instances.
+Some of the systems in this study tend to converge upon deficient NE; while the others
+successfully coordinate upon "better" equilibria on a consistent basis.}
+}
+
+@TECHREPORT{TECH2001-2,
+        AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+        TITLE = {Wasp-like Agents for Distributed Factory Coordination},
+        INSTITUTION = {Robotics Institute, Carnegie Mellon University},
+        YEAR = {2001},
+        TYPE = {Technical Report},
+        NUMBER = {CMU-RI-TR-01-39},
+        ADDRESS = {Pittsburgh, PA},
+        MONTH = {December},
+        pdf = {cicirello_tech_2.pdf},
+acro = {cmu},
+abstract = {Agent-based approaches to manufacturing scheduling and control have gained increasing
+attention in recent years. Such approaches are attractive because they offer increased
+robustness against the unpredictability of factory operations. But the specification of local
+coordination policies that give rise to efficient global performance and effectively adapt
+to changing circumstances remains an interesting challenge. In this paper, we present a
+new approach to this coordination problem, drawing on various aspects of a computational
+model of how wasp colonies coordinate individual activities and allocate tasks to
+meet the collective needs of the nest. We focus specifically on the problem of configuring
+machines in a factory to best satisfy (potentially changing) product demands over time.
+Wasp-like computational agents that we call routing wasps act as overall machine proxies.
+These agents use a model of wasp task allocation behavior, coupled with a model of wasp
+dominance hierarchy formation, to determine which new jobs should be accepted into the
+machine's queue. We show for simple factories that our multi-agent system achieves the
+desired effect. For a given job mix, the system converges to a factory configuration that
+maximizes overall performance, and as the job mix changes, the system adapts to a new,
+more appropriate configuration. We also show that our system is competitive to that of
+an agent-based system for the problem that has been successfully demonstrated in real-world
+practice, outperforming this prior system in its intended domain in several important
+respects.}
+}
+
+@ARTICLE{JCAD2000,
+        AUTHOR = {William C. Regli and Vincent A. Cicirello},
+        TITLE = {Managing Digital Libraries for Computer-Aided Design},
+        JOURNAL = {Computer-Aided Design},
+        YEAR = {2000},
+        MONTH = {February},
+        VOLUME = {32},
+        NUMBER = {2},
+        PAGES = {119--132},
+        pdf = {CADpaper.pdf},
+acro = {jcad},
+titletag = {JCAD},
+doi = {http://dx.doi.org/10.1016/S0010-4485(99)00095-0},
+abstract = {This paper describes our initial efforts to deploy a digital library to 
+support computer-aided collaborative design. At present, this experimental testbed, 
+The Engineering Design Knowledge Repository, is an effort to collect and archive 
+public domain engineering data for use by researchers and engineering professionals. 
+We envision this effort expanding to facilitate collaboration and process archival 
+for distributed design and manufacturing teams.</p>
+<p>CAD knowledge-bases are vital to engineers, who search through vast amounts of corporate 
+legacy data and navigate on-line catalogs to retrieve precisely the right components for 
+assembly into new products. This research attempts to begin addressing the critical need 
+for improved computational methods for reasoning about complex geometric and engineering 
+information. In particular, we focus on archival and reuse of design and manufacturing 
+data for mechatronic systems. This paper presents a description of the research problems, 
+an overview of the initial architecture of the testbed and a description of some of our 
+preliminary results on conceptual design and design retrieval.}
+}
+
+@INPROCEEDINGS{GECCO2000,
+	AUTHOR = {Vincent A. Cicirello and Stephen F. Smith},
+	TITLE = {Modeling {GA} Performance for Control Parameter Optimization},
+	BOOKTITLE = {GECCO-2000: Proceedings of the Genetic and Evolutionary Computation Conference},
+	PUBLISHER = {Morgan Kaufmann Publishers},
+	YEAR = {2000},
+	MONTH = {July},
+	PAGES = {235--242},
+	    pdf = {gecco2000-cicirello.pdf},
+acro = {gecco},
+titletag = {Genetic and Evolutionary Computation Conference},
+doi = {http://dl.acm.org/citation.cfm?id=2933750},
+abstract = {The optimization of the control parameters of genetic algorithms is often a 
+time consuming and tedious task. In this work we take the meta-level genetic algorithm 
+approach to control parameter optimization. We enhance this process by incorporating a neural 
+network for fitness evaluation. This neural network is trained to learn the complex interactions 
+of the genetic algorithm control parameters and is used to predict the performance of the genetic 
+algorithm relative to values of these control parameters. To validate our approach we describe a 
+genetic algorithm for the largest common subgraph problem that we develop using this neural network 
+enhanced meta-level genetic algorithm. The resulting genetic algorithm significantly outperforms 
+a hand-tuned variant and is shown to be competitive with a hill-climbing algorithm used in practical applications.}
+}
+%Acceptance rate:~47\% (125/264)
+%MONTH = {8-12 July},
+%EDITOR = {D. Whitley and D. Goldberg and E. Cant\'{u}-Paz and L. Spector and I. Parmee and H. Beyer},
+NOTE = {Las Vegas, NV.},
+    
+
+@INPROCEEDINGS{NSF2000,
+	AUTHOR = {William C. Regli and Lisa Anthony and Vincent Cicirello and Jon John and Xiaoli Qin and Yuriy Shapirshteyn and Vera Zaychik},
+	TITLE = {The Engineering Design Repositories Project},
+	BOOKTITLE = {National Science Foundation Design and Manufacturing Grantees Meeting},
+	YEAR = {2000},
+	MONTH = {January},
+	    pdf = {nsf_dmi_grantees_00_career.pdf},
+acro = {nsf},
+abstract = {Under this NSF CAREER project, we are developing
+representations and algorithms to manage large
+digital libraries of complex engineering knowledge. The
+algorithms and data structures we are creating will integrate
+knowledge-bases of geometric information with
+systems for case-based reasoning and digital information
+retrieval. The research in this highly interdisciplinary
+project bridges several important fields: geometric
+reasoning, case-based reasoning, and digital libraries;
+it draws on the challenges presented by real-world problems
+from the domain of solid modeling and ComputerAided
+Design (CAD) for engineering and manufacturing.
+This paper gives a brief overview of our progress during
+the 1998-1999 academic year.}
+}
+%MONTH = {3-6 January},
+NOTE = {Vancouver, BC, Canada.},
+    
+	
+@MASTERSTHESIS{MSthesis,
+        AUTHOR = {Vincent A. Cicirello},
+        TITLE = {Intelligent Retrieval of Solid Models},
+        SCHOOL = {Department of Mathematics and Computer Science, Drexel University},
+        YEAR = {1999},
+        MONTH = {June},
+        ADDRESS = {Philadelphia, PA},
+        pdf = {cicirello-thesis.pdf},
+acro = {thesis},
+abstract = {Nearly all major commercial computer-aided design systems have adopted a featurebased
+design approach to solid modeling. Models are created via a sequence of operations
+that apply design features to incremental versions of a design model. Even surfacing, freeform
+surface shaping, and deformation operations are internally represented in modeling
+systems as features in a "history tree" that generates the final design. Much in the same
+manner that Constructive Solid Geometry (CSG) trees for an individual model can be nonunique,
+these design feature histories for solid models might be ordered in a number of
+ways and still result in the same final geometry and topology. Manufacturing features,
+easily obtained from the use of a feature recognition system, often map simply to manufacturing
+operations such as milling operations for some machine tool.</p>
+<p>This problem is formulated symbolically and geometric reasoning techniques are presented
+to generate a representation of features and feature dependencies that deals with
+the non-uniqueness problem encountered in design feature histories. It is shown that this
+representation is not limited to design features and can be used with manufacturing features
+as well. The representation defined is termed the Model Dependency Graph (MDG)
+and alternatively the Undirected Model Dependency Graph (UMDG) and is used as a basis
+for developing techniques for managing databases of solid models. Using the MDG,
+algorithms are introduced that can assess the similarity of solid models based on design or
+manufacturing features and can be used in the retrieval of these models. One of these algorithms
+computes an approximation to the subgraph isomorphism and graph isomorphism
+problems using a random restart gradient descent approach. Another of these algorithms
+uses the search method known as A* to detect subgraph isomorphism. It is believed that
+these techniques can be used to build intelligent CAD knowledge bases and to identify
+meaningful part families from large sets of designs. Lastly, experimental results and performance
+metrics for these approaches are described. It is shown empirically that although
+the worst case complexity of solutions to the subgraph isomorphism problem is exponential
+the described algorithms' performance on random graphs and on the UMDG is tractable in
+practice.}
+}
+
+@INPROCEEDINGS{SM99,
+	AUTHOR = {Vincent A. Cicirello and William C. Regli},
+	TITLE = {Resolving Non-Uniqueness in Design Feature Histories},
+	BOOKTITLE = {Proceedings of the Fifth ACM/SIGGRAPH Symposium on Solid Modeling and Applications},
+	PUBLISHER = {ACM Press},
+	YEAR = {1999},
+	MONTH = {June},
+	PAGES = {76--84},
+	    pdf = {sm99-paper.pdf},
+acro = {sm},
+titletag = {ACM/SIGGRAPH Symposium on Solid Modeling Applications},
+doi = {http://dx.doi.org/10.1145/304012.304020},
+abstract = {Nearly all major commercial computer-aided design systems have
+adopted a feature-based design approach to solid modeling. Models
+are created via a sequence of operations which apply design
+features to incremental versions of a design model. Even surfacing,
+free-form surface shaping, and deformation operations are internally
+represented in modeling systems as features in a "history
+tree" that generates the final design. Much in the same manner that
+Constructive Solid Geometry (CSG) trees for an individual model
+can be non-unique, these design feature histories for solid models
+might be ordered in a number of ways and still result in the same
+final geometry and topology.</p>
+<p>We formulate this problem symbolically and present geometric
+reasoning techniques to generate a canonical form for certain
+classes of design feature histories. We define this representation as
+a Model Dependency Graph (MDG) and show how it can be used as
+a basis for developing techniques for managing databases of solid
+models. Using the MDG, we introduce algorithms that can assess
+the similarity of solid models based on design features. We believe
+these techniques can be used to build intelligent CAD knowledge-bases
+and to identify meaningful part families from large sets of
+designs. Lastly, we describe experimental results and performance
+metrics for our approach.}
+}
+%MONTH = {9-11 June},
+%EDITOR = {Willem F. Bronsvoort and David C. Anderson},
+%  {\bf Acceptance rate:~$<$~30\% (30/100+)}
+NOTE = {Ann Arbor, MI.},
+    
+	
+@INPROCEEDINGS{SIGXI99,
+	AUTHOR = {Vincent A. Cicirello},
+	TITLE = {Intelligent Retrieval of CAD Models},
+	BOOKTITLE = {The Eleventh Annual Sigma Xi Research Symposium},
+	PUBLISHER = {Drexel University and MCP Hahnemann University},
+	YEAR = {1999},
+	MONTH = {May},
+        PAGES = {125},
+	NOTE = {Abstract and Poster Presentation},
+acro = {sigxi},
+titletag = {Sigma Xi Research Symposium},
+abstract = {Nearly all major commercial computer-aided design systems have
+adopted a feature-based design approach to solid modeling. Models
+are created via a sequence of operations which apply design
+features to incremental versions of a design model. Even surfacing,
+free-form surface shaping, and deformation operations are internally
+represented in modeling systems as features in a "history
+tree" that generates the final design. Much in the same manner that
+Constructive Solid Geometry (CSG) trees for an individual model
+can be non-unique, these design feature histories for solid models
+might be ordered in a number of ways and still result in the same
+final geometry and topology.</p>
+<p>We formulate this problem symbolically and present geometric
+reasoning techniques to generate a canonical form for certain
+classes of design feature histories. We define this representation as
+a Model Dependency Graph (MDG) and show how it can be used as
+a basis for developing techniques for managing databases of solid
+models. Using the MDG, we introduce algorithms that can assess
+the similarity of solid models based on design features. 
+One of these algorithms computes an approximation to the subgraph isomorphism
+and graph isomorphism problems using a random restart gradient descent approach.
+Another of these algorithms uses the search method known as A* to detect subgraph isomorphism.
+We believe
+these techniques can be used to build intelligent CAD knowledge-bases
+and to identify meaningful part families from large sets of
+designs. Lastly, we describe experimental results and performance
+metrics for our approach.}
+}
+%Drexel University, Philadelphia.},
+
+@TECHREPORT{GICL99,
+        AUTHOR = {Vincent A. Cicirello},
+        TITLE = {Survey of Graph Matching Algorithms},
+        INSTITUTION = {Geometric and Intelligent Computing Laboratory, Drexel University},
+        YEAR = {1999},
+        MONTH = {March},
+        TYPE = {Technical Report},
+        ADDRESS = {Philadelphia, PA},
+acro = {drexel},
+pdf = {survey-1999.pdf},
+abstract = {Graph matching problems of varying types are important in a wide array of application areas.  A graph matching problem is a problem
+involving some form of comparison between graphs.  Some of the many application areas of such problems include information
+retrieval, sub-circuit identification, chemical structure classification, and networks.  Problems of efficient graph matching
+arise in any field that may be modeled with graphs.  For example, any problem that can be modeled with binary relations between entities in the
+domain is such a problem.  The individual entities in the problem domain become nodes in the graph.  And each binary relation becomes
+an edge between the appropriate nodes.  Although it is possible to formulate such a large array of problems as graph matching problems, it is not 
+necessarily a good idea to do so.</p>
+<p>Graph matching is a very difficult problem.  The graph isomorphism problem is to determine if there exists a one-to-one mapping from the nodes
+of one graph to the nodes of a second graph that preserves adjacency.  Similarly, the subgraph isomorphism problem is to determine if there
+exists a one-to-one mapping from the nodes of a given graph to the nodes of a subgraph of a second graph that preserves adjacency.  The 
+largest common subgraph problem is to find the largest subgraphs of two given graphs such that the subgraphs are isomorphic.  The
+digraph D-morphism problem is to determine if there exists a one-to-one mapping from the nodes of one directed graph to the nodes of a second 
+directed graph that preserves adjacency if you disregard the directions of the arcs.
+The closely related problems of subgraph isomorphism, largest common subgraph, and digraph D-morphism are known to be 
+NP-complete.  Whether or not the graph isomorphism problem is in the
+class of NP-complete problems is an open question.  Although there do exist special cases of each of these
+problems that can be solved in polynomial time, there do not exist known algorithms of polynomial complexity to solve these
+problems in the general case.  Therefore, the search for more
+efficient solutions to these problems is of great importance.}
+}
+
+@INPROCEEDINGS{SIAM98,
+	AUTHOR = {William C. Regli and Vincent A. Cicirello},
+	TITLE = {Representations and Algorithms for CAD/CAM Digital Libraries},
+	BOOKTITLE = {SIAM Workshop on Mathematical Foundations for Features in Computer-Aided Design and Manufacturing},
+	YEAR = {1998},
+	MONTH = {October},
+        PAGES = {34},
+        pdf = {SIAM-98-ekb.pdf},
+acro = {siam},
+abstract = {This presentation describes our initial effort to deploy a digital library to support engineering design and
+manufacturing. This experimental testbed, The Engineering Design Repository, is an effort to collect and
+archive public domain engineering data for use by researchers and engineering professionals.</p>
+<p>CAD knowledge-bases are vital to engineers, who search through vast amounts of corporate legacy data
+and navigate on-line catalogs to retrieve precisely the right components for assembly into new products. For
+example, it is conservatively estimated that more than 75% of design activity involves the reuse of previous
+designs.</p>
+<p>Our research begins to address the critical need for improved computational methods for reasoning about
+complex geometric, feature, and engineering information. In particular, we focus on archival and reuse of
+design and manufacturing data for mechatronic systems. We describe the research problems, give an overview
+of the initial architecture of testbed, and introduce some of our current results. We expect this work to help
+to further the mathematical foundation and algorithmic tools to support content-based retrieval from large
+engineering knowledge-bases.}
+}
+NOTE = {Extended Abstract. Troy, MI.},
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
