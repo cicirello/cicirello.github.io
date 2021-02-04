@@ -8,7 +8,7 @@ on:
 jobs:
   build_index:
     runs-on: ubuntu-latest
-    name: Build the Website
+    name: Index the website
 
     steps:
     - name: Checkout website repo
