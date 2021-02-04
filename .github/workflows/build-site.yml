@@ -3,7 +3,7 @@ name: Build the Website
 on:
   push:
     branches: [ master ]
-    paths: [ 'sitesrc/**' ]
+    paths: [ 'sitesrc/**.config', 'sitesrc/**.bib' ]
 
 jobs:
   build:
