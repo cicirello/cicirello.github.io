@@ -29,10 +29,10 @@ jobs:
     - name: Build and run the website indexer
       run: |
         cd sitegenerator/indexer
-        ant
+        mvn package
         cd ..
         cd ..
-        java -jar sitegenerator/indexer/target/WebsiteIndexer.jar sitemap.xml https://www.cicirello.org/ > js/search_index.js
+        java -jar sitegenerator/indexer/target/WebsiteIndexer-1.0.0-jar-with-dependencies.jar sitemap.xml https://www.cicirello.org/ > js/search_index.js
         if [[ `git status --porcelain` ]]; then
           cd sitegenerator
           javac index-version-inc/*.java -d .
