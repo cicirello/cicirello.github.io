@@ -32,7 +32,7 @@ jobs:
         ant
         cd ..
         cd ..
-        java -jar sitegenerator/indexer/dist/WebsiteIndexer.jar sitemap.xml https://www.cicirello.org/ > js/search_index.js
+        java -jar sitegenerator/indexer/target/WebsiteIndexer.jar sitemap.xml https://www.cicirello.org/ > js/search_index.js
         if [[ `git status --porcelain` ]]; then
           cd sitegenerator
           javac index-version-inc/*.java -d .
