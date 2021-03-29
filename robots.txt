@@ -9,7 +9,7 @@ Disallow: /images/vac.jpg
 User-agent: *
 Disallow: /presentations/
 Disallow: /.github/
-Disallow: /sitesrc/
+Disallow: /.sitesrc/
 
 Sitemap: https://www.cicirello.org/sitemap.xml
 
