@@ -2,7 +2,7 @@ name: Generate search index
 
 on:
   push:
-    branches: [ master ]
+    branches: [ staging ]
     paths: [ 'sitemap.xml' ]
 
 jobs:
