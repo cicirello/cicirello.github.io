@@ -41,7 +41,7 @@ jobs:
         fi
 
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3.9.2
+      uses: peter-evans/create-pull-request@v3.10.0
       with:
         title: "Website updated by custom site generator"
         body: > 
