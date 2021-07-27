@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
-<rect fill="#f6f0bb" stroke="#4CAF50" stroke-width="80" width="1200" height="560" x="40" y="40"/>
+<rect fill="#bfd9bf" stroke="#4CAF50" stroke-width="80" width="1200" height="560" x="40" y="40"/>
 <g font-family="'Times New Roman',Georgia,serif">
-<text x="50%" y="144" text-anchor="middle" font-size="64px" font-weight="bold" fill="#862d2d">Vincent A. Cicirello, Ph.D.</text>
-<g transform="translate(1116,84)"><svg width="80" height="80" viewBox="0 0 32 32"><rect style="fill:#bfd9bf;stroke:#862d2d;stroke-width:1.5;" width="30.5" height="30.5" x="0.75" y="0.75" rx="4"/><text x="50%" y="35%" dominant-baseline="central" text-anchor="middle" font-size="20px" fill="#862d2d">VC</text><text x="50%" y="65%" dominant-baseline="central" text-anchor="middle" font-size="20px" fill="#862d2d">A</text></svg></g>
+<text x="50%" y="148" text-anchor="middle" font-size="72px" font-weight="bold" fill="#862d2d">Vincent A. Cicirello, Ph.D.</text>
+<g transform="translate(1116,84)"><svg width="80" height="80" viewBox="0 0 32 32"><rect style="fill:#f6f0bb;stroke:#862d2d;stroke-width:1.5;" width="30.5" height="30.5" x="0.75" y="0.75" rx="4"/><text x="50%" y="35%" dominant-baseline="central" text-anchor="middle" font-size="20px" fill="#862d2d">VC</text><text x="50%" y="65%" dominant-baseline="central" text-anchor="middle" font-size="20px" fill="#862d2d">A</text></svg></g>
 </g>
-<text x="360" y="266" font-size="38px" fill="#305030">Researcher and educator in A.I., algorithms,</text>
-<text x="360" y="310" font-size="38px" fill="#305030">evolutionary computation, machine learning,</text>
-<text x="360" y="354" font-size="38px" fill="#305030">and swarm intelligence</text>
-<text x="50%" y="198" text-anchor="middle" font-size="44px" fill="#862d2d">https://www.cicirello.org</text>
+<text x="360" y="270" font-size="38px" fill="#305030">Researcher and educator in A.I., algorithms,</text>
+<text x="360" y="314" font-size="38px" fill="#305030">evolutionary computation, machine learning,</text>
+<text x="360" y="358" font-size="38px" fill="#305030">and swarm intelligence</text>
+<text x="50%" y="202" text-anchor="middle" font-size="44px" fill="#862d2d">https://www.cicirello.org</text>
 <rect x="415" y="389" width="710" height="116" stroke="#4CAF50" stroke-width="10" fill="#f6f0bb"/>
 <text x="523" y="440" font-size="36px" fill="#862d2d">ACM Senior</text>
 <text x="523" y="476" font-size="36px" fill="#862d2d">Member</text>
