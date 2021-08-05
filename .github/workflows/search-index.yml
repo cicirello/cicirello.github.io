@@ -39,7 +39,7 @@ jobs:
           javac index-version-inc/*.java -d .
           cd ..
           java -cp "./sitegenerator" IncrementIndexVersion js/site_search.min.js
-          git config --global user.name 'Vincent A Cicirello'
+          git config --global user.name 'Vincent A. Cicirello'
           git config --global user.email 'cicirello@users.noreply.github.com'
           git add -A
           git commit -m "Website search index automated update"
@@ -52,8 +52,8 @@ jobs:
         body: > 
           Website search index automated update. 
         commit-message: "Website search index automated update"
-        author: Vincent A Cicirello <cicirello@users.noreply.github.com>
-        committer: Vincent A Cicirello <cicirello@users.noreply.github.com>
+        author: Vincent A. Cicirello <cicirello@users.noreply.github.com>
+        committer: Vincent A. Cicirello <cicirello@users.noreply.github.com>
         branch: create-pull-request/index-update
         delete-branch: true
 

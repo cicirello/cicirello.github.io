@@ -10,6 +10,7 @@ User-agent: *
 Disallow: /presentations/
 Disallow: /.github/
 Disallow: /.sitesrc/
+Disallow: /endpoints/
 
 Sitemap: https://www.cicirello.org/sitemap.xml
 
