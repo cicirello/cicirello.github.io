@@ -1,3 +1,35 @@
+@ARTICLE{APP-SCI-2021,
+AUTHOR = {Vincent A. Cicirello},
+TITLE = {Self-Tuning Lam Annealing: Learning Hyperparameters While Problem Solving},
+JOURNAL = {Applied Sciences},
+VOLUME = {11},
+YEAR = {2021},
+MONTH = {November},
+NUMBER = {21},
+ARTICLENO = {9828},
+NUMPAGES = {37},
+DOI = {https://doi.org/10.3390/app11219828},
+ACRO = {applsci},
+PDF = {applsci-11-09828.pdf},
+ABSTRACT = {The runtime behavior of Simulated Annealing (SA), similar to other 
+metaheuristics, is controlled by hyperparameters. For SA, hyperparameters 
+affect how temperature varies over time, and temperature in turn 
+affects SA's decisions on whether or not to transition to neighboring states.
+It is typically necessary to tune the hyperparameters ahead of time.
+However, there are adaptive annealing schedules that use search feedback to
+evolve the temperature during the search. A classic and generally 
+effective adaptive annealing schedule is the Modified Lam. Although effective, 
+the Modified Lam can be sensitive to the scale of the cost function, and is 
+sometimes slow to converge to its target behavior. In this paper, we present a 
+novel variation of the Modified Lam that we call Self-Tuning Lam, which uses 
+early search feedback to auto-adjust its self-adaptive behavior. Using a 
+variety of discrete and continuous optimization problems, we demonstrate the 
+ability of the Self-Tuning Lam to nearly instantaneously converge to its target 
+behavior independent of the scale of the cost function, as well as its run 
+length. Our implementation is integrated into Chips-n-Salsa, an open-source 
+Java library for parallel and self-adaptive local search.}
+}
+
 @ARTICLE{EAI-COGCOM-2021,
 author = {Vincent A. Cicirello},
 title = {Software Articles and Open Source Research Software: The Why, the What, and the How},
