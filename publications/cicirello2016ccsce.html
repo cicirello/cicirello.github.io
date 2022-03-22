@@ -33,11 +33,11 @@ a { color: #005500; }
 a:visited { color:#862d2d; }
 nav ul { list-style-type: none; margin: 0px; padding: 0; overflow: hidden; }
 nav li { float: left; margin-right: 8px; }
-nav li a { display: block; background-color: #f6f0bb; border: 2px solid #4CAF50; text-decoration: none; text-align: center; color: #1c2833; }
-nav li:not(:first-child) a { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 12px; }
-#menu-icon { display: none; }
+nav li a, #menu-icon { display: block; background-color: #f6f0bb; border: 2px solid #4CAF50; text-decoration: none; text-align: center; color: #1c2833; }
+nav li a { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 12px; }
+#menu-icon { cursor: pointer; display: none; }
 nav li a:visited { color: #1c2833; }
-nav li a:hover:not(.active) { background-color: #305030; color: white; }
+nav li a:hover:not(.active), #menu-icon:hover:not(.active) { background-color: #305030; color: white; }
 nav li a.active { background-color: #4CAF50; }
 aside { float: left; width: 235px; }
 aside h4 { display: inline; }
@@ -52,7 +52,7 @@ section { margin-top: 30px; }
 @media screen and (max-width:600px){
 article, aside { clear:both; width:calc(100% - 20px); }
 nav:not(.open) li a:not(.active) { display: none; }
-#menu-icon { display: block; padding: 0px 4px 1px 4px; border-radius: 4px; }
+#menu-icon { display: block; padding: 5px 9px 6px 9px; border-radius: 4px; }
 }
 </style>
 <link rel="icon" href="/images/favicon.svg" sizes="any" type="image/svg+xml">
@@ -63,7 +63,7 @@ nav:not(.open) li a:not(.active) { display: none; }
 <h2><a href="/"><img src="/images/vac.svg" alt="Vincent A. Cicirello, Ph.D. - Professor of Computer Science" width="1280" height="640" style="max-width: 100%; height: auto;"></a></h2>
 <nav itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement" id="topNav">
 <ul>
-<li><a href="javascript:void(0);" onclick="toggleMenu()" id="menu-icon">&#9776;</a></li>
+<li><button type="button" onclick="toggleMenu()" id="menu-icon">&#9776;</button></li>
 <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/"><span itemprop="name">Home</span></a></li>
 <li itemprop="hasPart" itemscope itemtype="https://schema.org/CollectionPage"><a itemprop="url" href="/publications/"><span itemprop="name">Publications</span></a></li>
 <li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/research/"><span itemprop="name">Research</span></a></li>
