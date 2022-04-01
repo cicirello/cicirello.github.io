@@ -43,6 +43,7 @@ article, aside { clear:both; width:calc(100% - 20px); }
 nav:not(.open) li a:not(.active) { display: none; }
 #menu-icon { display: block; padding: 5px 9px 5px 9px; border-radius: 4px; }
 }
+form:after { content: ""; display: table; clear: both; }
 #search_input { max-width: 210px; padding: 8px; border: 2px solid #862d2d; outline: 0; margin: 0; vertical-align:bottom;}
 #submit_button {margin-left:5px; font-weight:bold; font-size:1.4em; color:#862d2d; background-color: #f6f0bb; text-align:center; border: 2px solid #862d2d; padding: 0px 8px 2px 8px; vertical-align:bottom;}
 #submit_button:hover { background-color: #305030; color: white; }
@@ -75,7 +76,6 @@ nav:not(.open) li a:not(.active) { display: none; }
 <form action="/search/">
 <input type="search" name="q" id="search_input" pattern=".{3,}" title="At least 3 characters" required>
 <input id="submit_button" type="submit" value="&#x2315;">
-<div style="clear: both;"></div>
 </form>
 </article>
 <aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPSideBar">
