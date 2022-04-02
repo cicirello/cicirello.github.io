@@ -76,14 +76,15 @@ h1, h2, h3, h4, h5, h6, strong { color: #862d2d; }
 img.respimg { max-width: 100%; height: auto; }
 a { color: #005500; }
 a:visited { color:#862d2d; }
-nav ul { list-style-type: none; margin: 0px; padding: 0; overflow: hidden; }
-nav li { float: left; margin-right: 8px; }
-nav li a, #menu-icon { display: block; background-color: #f6f0bb; border: 2px solid #4CAF50; text-decoration: none; text-align: center; color: #1c2833; }
-nav li a { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 12px; }
+#toggle { position: absolute; left: -100vw; }
+nav { margin: 0px; padding: 0; overflow: hidden; }
+nav div, #menu-icon { float: left; margin-right: 8px; }
+nav div a, #menu-icon { display: block; background-color: #f6f0bb; border: 2px solid #4CAF50; text-decoration: none; text-align: center; color: #1c2833; }
+nav div a { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 12px; }
 #menu-icon { cursor: pointer; display: none; }
-nav li a:visited { color: #1c2833; }
-nav li a:hover:not(.active), #menu-icon:hover:not(.active) { background-color: #305030; color: white; }
-nav li a.active { background-color: #4CAF50; }
+nav div a:visited { color: #1c2833; }
+nav div a:hover:not(.active), #menu-icon:hover:not(.active) { background-color: #305030; color: white; }
+nav div a.active { background-color: #4CAF50; }
 aside { float: left; width: 235px; }
 aside h4 { display: inline; }
 article { float: right; width: calc(100% - 280px); }
@@ -96,8 +97,9 @@ section { margin-top: 30px; }
 #copyright { text-align: center; color: #862d2d; }
 @media screen and (max-width:600px){
 article, aside { clear:both; width:calc(100% - 20px); }
-nav:not(.open) li a:not(.active) { display: none; }
-#menu-icon { display: block; padding: 5px 9px 5px 9px; border-radius: 4px; }
+nav div a:not(.active) { display: none; }
+#toggle:checked ~ div a:not(.active) { display: block; }
+#menu-icon { display: block; padding: 3px 7px 3px 7px; border-radius: 4px; }
 }
 </style>
 <link rel="icon" href="/images/favicon.svg" sizes="any" type="image/svg+xml">
@@ -107,17 +109,16 @@ nav:not(.open) li a:not(.active) { display: none; }
 <div itemscope>
 <h2><a href="/"><img src="/images/vac.svg" alt="Vincent A. Cicirello, Ph.D. - Professor of Computer Science" width="1280" height="640" class="respimg"></a></h2>
 <nav itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement" id="topNav">
-<ul>
-<li><button type="button" onclick="toggleMenu()" id="menu-icon">&#9776;</button></li>
-<li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/"><span itemprop="name">Home</span></a></li>
-<li itemprop="hasPart" itemscope itemtype="https://schema.org/CollectionPage"><a itemprop="url" href="/publications/"><span itemprop="name">Publications</span></a></li>
-<li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/research/"><span itemprop="name">Research</span></a></li>
-<li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/software/"><span itemprop="name">Open Source Software</span></a></li>
-<li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/datasets/"><span itemprop="name">Datasets</span></a></li>
-<li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/teaching/"><span itemprop="name">Teaching</span></a></li>
-<li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/professional/"><span itemprop="name">Professional Activities</span></a></li>
-<li itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/search/"><span itemprop="name">Site Search</span></a></li>
-</ul>
+<input type="checkbox" id="toggle">
+<label for="toggle" id="menu-icon">&#9776;</label>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/"><span itemprop="name">Home</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/CollectionPage"><a itemprop="url" href="/publications/"><span itemprop="name">Publications</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/research/"><span itemprop="name">Research</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/software/"><span itemprop="name">Open Source Software</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/datasets/"><span itemprop="name">Datasets</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/teaching/"><span itemprop="name">Teaching</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/professional/"><span itemprop="name">Professional Activities</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/search/"><span itemprop="name">Site Search</span></a></div>
 </nav>
 </div>
 </header>
@@ -184,6 +185,5 @@ GitHub" src="/images/mark-github-16.svg" width="32" height="32"></a>
 <div id="copyright"><small>Copyright &copy; 1996-<span id="year"></span> Vincent A. Cicirello.</small></div>
 <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </footer>
-<script>function toggleMenu() { var x = document.getElementById("topNav"); x.className = (x.className === "") ? "open" : x.className = ""; }</script>
 </body>
 </html>
