@@ -5,7 +5,8 @@
 		"pageKey": "default",
 		"defaultSrc": [ "'none'" ],
 		"imgSrc": [ "'self'"],
-		"baseUri": [ "'none'" ]
+		"baseUri": [ "'none'" ],
+		"formAction": [ "'none'" ]
 	},
 	
 	"pages": [
