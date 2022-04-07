@@ -4,16 +4,23 @@
 	"defaultCSP": {
 		"pageKey": "default",
 		"defaultSrc": [ "'none'" ],
-		"imgSrc": [ "'self'"]
+		"imgSrc": [ "'self'"],
+		"baseUri": [ "'none'" ],
+		"formAction": [ "'none'" ]
 	},
 	
 	"pages": [
+		{
+			"pageKey": "404",
+			"formAction": [ "'self'" ]
+		},
 		{
 			"pageKey": "e",
 			"imgSrc": [ "data:" ]
 		},
 		{
 			"pageKey": "searchresults",
+			"formAction": [ "'self'" ],
 			"scriptSrc": [ 
 				"'self'",
 				"https://ajax.googleapis.com/ajax/libs/jquery/"
