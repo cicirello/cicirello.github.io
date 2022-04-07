@@ -9,8 +9,8 @@
 	
 	"pages": [
 		{
-			"pageKey": "software",
-			"imgSrc": [ "https://img.shields.io/" ]
+			"pageKey": "e",
+			"imgSrc": [ "data:image/png" ]
 		},
 		{
 			"pageKey": "searchresults",
@@ -18,6 +18,10 @@
 				"'self'",
 				"https://ajax.googleapis.com/ajax/libs/jquery/"
 			]
+		},
+		{
+			"pageKey": "software",
+			"imgSrc": [ "https://img.shields.io/" ]
 		}
 	]
 }
