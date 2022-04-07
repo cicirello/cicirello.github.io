@@ -10,7 +10,7 @@
 	"pages": [
 		{
 			"pageKey": "e",
-			"imgSrc": [ "data:image/png" ]
+			"imgSrc": [ "data:" ]
 		},
 		{
 			"pageKey": "searchresults",
