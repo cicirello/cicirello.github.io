@@ -5,5 +5,12 @@
 		"pageKey": "default",
 		"defaultSrc": [ "'none'" ],
 		"imgSrc": [ "'self'"]
-	}
+	},
+	
+	"pages": [
+		{
+			"pageKey": "software",
+			"imgSrc": [ "https://img.shields.io/" ]
+		}
+	]
 }
