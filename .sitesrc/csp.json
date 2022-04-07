@@ -4,7 +4,8 @@
 	"defaultCSP": {
 		"pageKey": "default",
 		"defaultSrc": [ "'none'" ],
-		"imgSrc": [ "'self'"]
+		"imgSrc": [ "'self'"],
+		"baseUri": [ "'none'" ]
 	},
 	
 	"pages": [
