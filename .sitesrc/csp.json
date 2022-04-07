@@ -1,0 +1,9 @@
+{
+	"httpEquiv": "Content-Security-Policy",
+	
+	"defaultCSP": {
+		"pageKey": "default",
+		"defaultSrc": [ "'none'" ],
+		"imgSrc": [ "'self'"]
+	}
+}
