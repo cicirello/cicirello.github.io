@@ -4,6 +4,7 @@ on:
   push:
     branches: [ staging ]
     paths: [ '.sitesrc/**.config', '.sitesrc/**.bib', '.sitesrc/**.json', 'styles/style.css' ]
+  workflow_dispatch:
 
 jobs:
   build:
