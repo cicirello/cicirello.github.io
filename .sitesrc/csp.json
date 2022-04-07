@@ -11,6 +11,13 @@
 		{
 			"pageKey": "software",
 			"imgSrc": [ "https://img.shields.io/" ]
+		},
+		{
+			"pageKey": "searchresults",
+			"scriptSrc": [ 
+				"'self'",
+				"https://ajax.googleapis.com/ajax/libs/jquery/"
+			]
 		}
 	]
 }
