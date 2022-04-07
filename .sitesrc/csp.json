@@ -1,0 +1,27 @@
+{
+	"httpEquiv": "Content-Security-Policy",
+	
+	"defaultCSP": {
+		"pageKey": "default",
+		"defaultSrc": [ "'none'" ],
+		"imgSrc": [ "'self'"]
+	},
+	
+	"pages": [
+		{
+			"pageKey": "e",
+			"imgSrc": [ "data:" ]
+		},
+		{
+			"pageKey": "searchresults",
+			"scriptSrc": [ 
+				"'self'",
+				"https://ajax.googleapis.com/ajax/libs/jquery/"
+			]
+		},
+		{
+			"pageKey": "software",
+			"imgSrc": [ "https://img.shields.io/" ]
+		}
+	]
+}
