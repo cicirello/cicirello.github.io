@@ -11,11 +11,16 @@
 	
 	"pages": [
 		{
+			"pageKey": "404",
+			"formAction": [ "'self'" ]
+		},
+		{
 			"pageKey": "e",
 			"imgSrc": [ "data:" ]
 		},
 		{
 			"pageKey": "searchresults",
+			"formAction": [ "'self'" ],
 			"scriptSrc": [ 
 				"'self'",
 				"https://ajax.googleapis.com/ajax/libs/jquery/"
