@@ -4,6 +4,7 @@ Disallow: /
 User-agent: Googlebot-Image
 Disallow: /images/addr.png
 Disallow: /images/vac.jpg
+Disallow: /e/
 
 User-agent: *
 Disallow: /endpoints/
