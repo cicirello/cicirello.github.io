@@ -8,5 +8,6 @@ Disallow: /e/
 
 User-agent: *
 Disallow: /endpoints/
+Disallow: /e/
 
 Sitemap: https://www.cicirello.org/sitemap.xml
