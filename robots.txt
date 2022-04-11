@@ -3,16 +3,11 @@ Disallow: /
 
 User-agent: Googlebot-Image
 Disallow: /images/addr.png
-Disallow: /presentations/
 Disallow: /images/vac.jpg
 Disallow: /e/
 
 User-agent: *
-Disallow: /presentations/
-Disallow: /.github/
-Disallow: /.sitesrc/
 Disallow: /endpoints/
 Disallow: /e/
 
 Sitemap: https://www.cicirello.org/sitemap.xml
-

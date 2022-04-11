@@ -23,7 +23,7 @@ jobs:
         path: sitegenerator
 
     - name: Set up JDK 11
-      uses: actions/setup-java@v2
+      uses: actions/setup-java@v3
       with:
         distribution: 'adopt'
         java-version: '11'
@@ -43,7 +43,7 @@ jobs:
         fi
 
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v4.0.1
+      uses: peter-evans/create-pull-request@v4.0.2
       with:
         title: "Website updated by custom site generator"
         body: > 
