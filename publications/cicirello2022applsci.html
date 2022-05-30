@@ -1,25 +1,55 @@
 <!DOCTYPE html>
-<html lang=en itemscope itemtype="https://schema.org/WebPage" itemref="pageAuthor topNav">
+<html lang=en itemscope itemtype="https://schema.org/ItemPage" itemref="pageAuthor topNav">
 <head>
 <meta charset=utf-8>
-<link rel="canonical" href="https://www.cicirello.org/research/gaoperators/">
-<link itemprop="url" href="https://www.cicirello.org/research/gaoperators/">
+<link rel="canonical" href="https://www.cicirello.org/publications/cicirello2022applsci.html">
+<link itemprop="url" href="https://www.cicirello.org/publications/cicirello2022applsci.html">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'sha256-Jm8dnViZtfY7vF9SYXPaRY4DEhbbM1rF5cND3bq8g7Q='; base-uri 'none'; form-action 'none';">
 <meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin">
-<title>Genetic Operators for Permutation Representation - Research - Vincent A. Cicirello - Professor of Computer Science</title>
-<meta name="title" content="Genetic Operators for Permutation Representation - Research - Vincent A. Cicirello - Professor of Computer Science">
-<meta itemprop="name" content="Genetic Operators for Permutation Representation - Research - Vincent A. Cicirello - Professor of Computer Science">
-<meta name="description" content="The permutation representation for genetic algorithms requires specialized operators. A wide variety of crossover and mutation
-operators for permutations exist in the research literature. In my research on evolutionary computation for optimizing permutation structures,
-I have developed several crossover and mutation operators, including Cycle Mutation,
-Non-Wrapping Order Crossover (NWOX), Uniform Partially Matched Crossover (UPMX),
-Heuristic Sequencing Crossover (HeurX), and window-limited variations of common permutation mutation operators.">
-<meta itemprop="description" content="The permutation representation for genetic algorithms requires specialized operators. A wide variety of crossover and mutation
-operators for permutations exist in the research literature. In my research on evolutionary computation for optimizing permutation structures,
-I have developed several crossover and mutation operators, including Cycle Mutation,
-Non-Wrapping Order Crossover (NWOX), Uniform Partially Matched Crossover (UPMX),
-Heuristic Sequencing Crossover (HeurX), and window-limited variations of common permutation mutation operators.">
+<title>Cycle Mutation: Evolving Permutations via Cycle Induction - Applied Sciences - 2022</title>
+<meta name="title" content="Cycle Mutation: Evolving Permutations via Cycle Induction - Applied Sciences - 2022">
+<meta itemprop="name" content="Cycle Mutation: Evolving Permutations via Cycle Induction - Applied Sciences - 2022">
+<meta name="description" content="Evolutionary algorithms solve problems by simulating the evolution of a
+population of candidate solutions. We focus on evolving permutations for
+ordering problems such as the traveling salesperson problem (TSP), as well as
+assignment problems such as the quadratic assignment problem (QAP) and largest
+common subgraph (LCS). We propose cycle mutation, a new mutation operator whose
+inspiration is the well-known cycle crossover operator, and the concept of a
+permutation cycle. We use fitness landscape analysis to explore the problem
+characteristics for which cycle mutation works best. As a prerequisite, we
+develop new permutation distance measures: cycle distance, k-cycle distance,
+and cycle edit distance. The fitness landscape analysis predicts that cycle
+mutation is better suited for assignment and mapping problems than it is for
+ordering problems. We experimentally validate these findings showing cycle
+mutation&#8217;s strengths on problems ...">
+<meta itemprop="description" content="Evolutionary algorithms solve problems by simulating the evolution of a
+population of candidate solutions. We focus on evolving permutations for
+ordering problems such as the traveling salesperson problem (TSP), as well as
+assignment problems such as the quadratic assignment problem (QAP) and largest
+common subgraph (LCS). We propose cycle mutation, a new mutation operator whose
+inspiration is the well-known cycle crossover operator, and the concept of a
+permutation cycle. We use fitness landscape analysis to explore the problem
+characteristics for which cycle mutation works best. As a prerequisite, we
+develop new permutation distance measures: cycle distance, k-cycle distance,
+and cycle edit distance. The fitness landscape analysis predicts that cycle
+mutation is better suited for assignment and mapping problems than it is for
+ordering problems. We experimentally validate these findings showing cycle
+mutation&#8217;s strengths on problems such as QAP and LCS, and its limitations
+on problems such as the TSP, while also showing that it is less prone to local
+optima than commonly used alternatives. We integrate cycle mutation into the
+open source Chips-n-Salsa library, and the new distance metrics into the open
+source JavaPermutationTools library.">
+<meta name="citation_title" content="Cycle Mutation: Evolving Permutations via Cycle Induction">
+<meta name="citation_author" content="Vincent A. Cicirello">
+<meta name="citation_publication_date" content="2022">
+<meta name="citation_date" content="2022">
+<meta name="citation_journal_title" content="Applied Sciences">
+<meta name="citation_volume" content="12">
+<meta name="citation_issue" content="11">
+<meta name="citation_pdf_url" content="https://www.cicirello.org/publications/applsci-12-05506.pdf">
+<meta name="citation_abstract_html_url" content="https://www.cicirello.org/publications/cicirello2022applsci.html">
+<meta name="citation_doi" content="10.3390/app12115506">
 <style>
 header, nav, footer, article, aside, section { display: block; }
 footer { clear: both; }
@@ -77,41 +107,33 @@ nav div a:not(.active) { display: none; }
 </nav>
 </div>
 </header>
-<article itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
-<h2>Genetic Operators for Permutation Representation</h2>
-<p>The permutation representation for genetic algorithms requires specialized operators. A wide variety of crossover and mutation
-operators for permutations exist in the research literature. In my research on evolutionary computation for optimizing permutation structures,
-I have developed several crossover and mutation operators, including Cycle Mutation,
-Non-Wrapping Order Crossover (NWOX), Uniform Partially Matched Crossover (UPMX),
-Heuristic Sequencing Crossover (HeurX), and window-limited variations of common permutation mutation operators.</p>
-<section class="publist">
-<h3>Selected Publications</h3>
-<ul itemscope itemtype="https://schema.org/ItemList">
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="1"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2022applsci.html">Cycle Mutation: Evolving Permutations via Cycle Induction</a>.<br>
-Vincent A. Cicirello.<br>
-<i>Applied Sciences</i>, 12(11), Article 5506,
-June 2022. doi:10.3390/app12115506<br>
-<a href="/publications/applsci-12-05506.pdf">[PDF]</a> <a href="/publications/cicirello2022applsci.bib">[BIB]</a> <a href="https://doi.org/10.3390/app12115506">[DOI]</a> <a href="http://arxiv.org/abs/2205.14125">[arXiv]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="2"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2014bict.html">On the Effects of Window-Limits on the Distance Profiles of Permutation Neighborhood Operators</a>.<br>
-Vincent A. Cicirello.<br>
-In <i>Proceedings of the 8th International Conference on Bio-inspired Information and Communications Technologies</i>, pages 28-35. EAI, December 2014.<br>
-<a href="/publications/cicirello-bict-2014.pdf">[PDF]</a> <a href="/publications/cicirello2014bict.bib">[BIB]</a> <a href="http://dl.acm.org/citation.cfm?id=2744531">[PUB]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="3"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2010flairs.html">Heuristic Sequencing Crossover: Integrating Problem Dependent Heuristic Knowledge into a Genetic Algorithm</a>.<br>
-Vincent A. Cicirello.<br>
-In <i>Proceedings of the Twenty-Third International Florida Artificial Intelligence Research Society Conference, FLAIRS-23</i>, pages 14-19. AAAI Press, May 2010.<br>
-<a href="/publications/FLAIRS2010.pdf">[PDF]</a> <a href="/publications/cicirello2010flairs.bib">[BIB]</a> <a href="http://www.aaai.org/ocs/index.php/FLAIRS/2010/paper/view/1228">[PUB]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="4"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2006gecco.html">Non-Wrapping Order Crossover: An Order Preserving Crossover Operator that Respects Absolute Position</a>.<br>
-Vincent A. Cicirello.<br>
-In <i>Proceedings of the Genetic and Evolutionary Computation Conference (GECCO'06)</i>, volume 2, pages 1125-1131. ACM Press, July 2006. doi:10.1145/1143997.1144177<br>
-<strong>Nominated for the Genetic Algorithms Track Best Paper Award</strong>.
-<br>
-<a href="/publications/GECCO2006.pdf">[PDF]</a> <a href="/publications/cicirello2006gecco.bib">[BIB]</a> <a href="http://dx.doi.org/10.1145/1143997.1144177">[DOI]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="5"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2000gecco.html">Modeling GA Performance for Control Parameter Optimization</a>.<br>
-Vincent A. Cicirello and Stephen F. Smith.<br>
-In <i>GECCO-2000: Proceedings of the Genetic and Evolutionary Computation Conference</i>, pages 235-242. Morgan Kaufmann Publishers, July 2000.<br>
-<a href="/publications/gecco2000-cicirello.pdf">[PDF]</a> <a href="/publications/cicirello2000gecco.bib">[BIB]</a> <a href="http://dl.acm.org/citation.cfm?id=2933750">[PUB]</a></li>
-</ul>
-</section>
+<article itemprop="mainEntity" itemscope itemtype="https://schema.org/ScholarlyArticle">
+<header>
+<h2><a itemprop="url" href="/publications/applsci-12-05506.pdf"><span itemprop="name headline">Cycle Mutation: Evolving Permutations via Cycle Induction</span></a></h2>
+<h3><span itemprop="author" itemscope itemtype="https://schema.org/Person"><a itemprop="url mainEntityOfPage" href="/"><span itemprop="name">Vincent A. Cicirello</span></a></span></h3>
+<h4><span itemprop="isPartOf" itemscope itemtype="https://schema.org/Periodical"><i><span itemprop="name">Applied Sciences</span></i></span>,
+<span itemprop="isPartOf" itemscope itemtype="https://schema.org/PublicationVolume"><span itemprop="volumeNumber">12</span></span>(<span itemprop="isPartOf" itemscope itemtype="https://schema.org/PublicationIssue"><span itemprop="issueNumber">11</span></span>), Article 5506,
+<time datetime="2022-06" itemprop="datePublished">June 2022</time>. doi:10.3390/app12115506</h4>
+</header>
+<p><span itemprop="encoding" itemscope itemtype="https://schema.org/MediaObject"><a itemprop="contentUrl" href="/publications/applsci-12-05506.pdf">[<span itemprop="encodingFormat">PDF</span>]</a></span> <a href="/publications/cicirello2022applsci.bib">[BIB]</a> <a itemprop="sameAs" href="https://doi.org/10.3390/app12115506">[DOI]</a> <a itemprop="sameAs" href="http://arxiv.org/abs/2205.14125">[arXiv]</a></p>
+<h4>Abstract</h4>
+<div itemprop="description"><p>Evolutionary algorithms solve problems by simulating the evolution of a
+population of candidate solutions. We focus on evolving permutations for
+ordering problems such as the traveling salesperson problem (TSP), as well as
+assignment problems such as the quadratic assignment problem (QAP) and largest
+common subgraph (LCS). We propose cycle mutation, a new mutation operator whose
+inspiration is the well-known cycle crossover operator, and the concept of a
+permutation cycle. We use fitness landscape analysis to explore the problem
+characteristics for which cycle mutation works best. As a prerequisite, we
+develop new permutation distance measures: cycle distance, k-cycle distance,
+and cycle edit distance. The fitness landscape analysis predicts that cycle
+mutation is better suited for assignment and mapping problems than it is for
+ordering problems. We experimentally validate these findings showing cycle
+mutation&#8217;s strengths on problems such as QAP and LCS, and its limitations
+on problems such as the TSP, while also showing that it is less prone to local
+optima than commonly used alternatives. We integrate cycle mutation into the
+open source Chips-n-Salsa library, and the new distance metrics into the open
+source JavaPermutationTools library.</p></div>
 </article>
 <aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPSideBar">
 <div itemscope>
