@@ -76,6 +76,7 @@ nav div a:not(.active) { display: none; }
 <ul>
 <li><a href="#where">Where you can find my software</a></li>
 <li><a href="#research">Research software</a></li>
+<li><a href="#education">Educational software</a></li>
 <li><a href="#actions">Tools for workflow automation</a></li>
 <li><a href="#ghstats">Summary of my activity on GitHub</a></li>
 </ul>
@@ -93,6 +94,7 @@ GitHub" src="/images/mark-github-16.svg" width="20" height="20"> GitHub</a>
 <li><a href="https://gist.github.com/cicirello">GitHub gists</a></li>
 </ul></li>
 <li><a href="https://search.maven.org/search?q=g:org.cicirello"><img alt="Maven Central artifacts" src="/images/maven.svg" width="20" height="20"> Maven Central artifacts</a></li>
+<li><a href="https://pypi.org/user/cicirello/"><img alt="PyPI packages" src="/images/pypi.svg" width="20" height="20"> Python packages on PyPI</a></li>
 <li><a href="https://hub.docker.com/u/cicirello"><img alt="Docker Hub containers" src="/images/docker.svg" width="20" height="20"> Containers on Docker Hub</a></li>
 </ul>
 <p><a href="#top"><em>Top of the page</em></a></p>
@@ -178,6 +180,14 @@ Ziggurat algorithm for generating Gaussian distributed random numbers.
 <li>Language: Java</li>
 <li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
 </ul></li>
+<li><strong>cycle-mutation-experiments</strong>: Experiments with the new cycle mutation operator.
+<ul>
+<li>Code to reproduce the experiments of: <a href="https://doi.org/10.3390/app12115506"><img src="/images/doi-app-2022.svg" alt="Appl. Sci.: 10.3390/app12115506" height="20" width="200"></a>.</li>
+<li>Source code: <a href="https://github.com/cicirello/cycle-mutation-experiments">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/cycle-mutation-experiments"><img src="https://img.shields.io/maven-central/v/org.cicirello/cycle-mutation-experiments.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
 <li><strong>self-tuning-lam-experiments</strong>: Experiments with simulated annealing
 using the Self-Tuning Lam annealing schedule, comparing its behavior and performance with
 that of the Modified Lam annealing schedule.
@@ -213,6 +223,27 @@ from the master node, etc.
 </ul>
 <p><a href="#top"><em>Top of the page</em></a></p>
 </section>
+<section id="education">
+<h3>Educational Software</h3>
+<p>Here is a list of software I've implemented in support of computer
+science education.</p>
+<ul>
+<li><strong>Interactive Bin Packing</strong>: This application
+provides a self-guided tutorial on combinatorial optimization, the bin packing problem,
+and constructive heuristics for bin packing. It also enables the user to interact with bin
+packing instances to explore their own problem solving strategies, or to test their
+knowledge of the various constructive heuristics covered by the tutorial. The application
+is not a solver for bin packing. Interactive Bin Packing is a tool for learning about the bin
+packing problem, as well as for learning about heuristic techniques for solving instances of the problem.
+<ul>
+<li>Source code: <a href="https://github.com/cicirello/InteractiveBinPacking">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/interactive-bin-packing"><img src="https://img.shields.io/maven-central/v/org.cicirello/interactive-bin-packing.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
+</ul>
+<p><a href="#top"><em>Top of the page</em></a></p>
+</section>
 <section id="actions">
 <h3>Tools for Workflow Automation</h3>
 <p>While developing software for my research, on occasion I implement
@@ -226,6 +257,24 @@ Actions for Workflow Automation</a>, focused specifically on the GitHub
 Actions that I've implemented for this purpose. A few of these GitHub Actions
 are the following.</p>
 <ul>
+<li><strong>jacoco-badge-generator</strong>:
+The <a href="https://actions.cicirello.org/jacoco-badge-generator/">jacoco-badge-generator</a>
+parses a jacoco.csv file from a JaCoCo coverage report, computes C0 and C1 coverage percentages
+from <a href="https://www.jacoco.org/jacoco/trunk/doc/counters.html">JaCoCo's
+Instructions and Branches counters</a>, and generates badges for one or both of
+these (user configurable) to provide an easy to read visual summary of the code coverage
+of your test cases. The jacoco-badge-generator provides two modes of operation: as a GitHub
+Action within GitHub's workflow automation framework, as well as a command-line utility that can be used
+as part of a local build script. The jacoco-badge-generator (as a GitHub Action) can also optionally
+be used as part of a pull-request check. Specifically, you can configure it to fail the workflow run
+if coverage decreased relative to prior run, and/or if coverage is below a target threshold.
+<ul>
+<li><a href="https://actions.cicirello.org/jacoco-badge-generator/">Info page</a></li>
+<li>Latest GitHub Action release: <a href="https://github.com/marketplace/actions/jacoco-badge-generator"><img src="https://img.shields.io/github/v/release/cicirello/jacoco-badge-generator?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
+<li>Latest command-line utility release: <a href="https://pypi.org/project/jacoco-badge-generator/"><img src="https://img.shields.io/pypi/v/jacoco-badge-generator?logo=pypi" alt="PyPI" height="20"></a></li>
+<li>Source code: <a href="https://github.com/cicirello/jacoco-badge-generator">GitHub Repository</a></li>
+<li>License: <a href="https://github.com/cicirello/jacoco-badge-generator/blob/main/LICENSE">MIT</a>.</li>
+</ul></li>
 <li><strong>user-statistician</strong>:
 The <a href="https://actions.cicirello.org/user-statistician/">user-statistician
 GitHub Action</a> generates a detailed visual summary of your activity on GitHub
@@ -235,23 +284,6 @@ in the form of an SVG, suitable to display on your <a href="https://docs.github.
 <li>Latest release: <a href="https://github.com/marketplace/actions/user-statistician"><img src="https://img.shields.io/github/v/release/cicirello/user-statistician?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
 <li>Source code: <a href="https://github.com/cicirello/user-statistician">GitHub Repository</a></li>
 <li>License: <a href="https://github.com/cicirello/user-statistician/blob/main/LICENSE">MIT</a>.</li>
-</ul></li>
-<li><strong>jacoco-badge-generator</strong>:
-The <a href="https://actions.cicirello.org/jacoco-badge-generator/">jacoco-badge-generator
-GitHub Action</a> parses a jacoco.csv file from a JaCoCo coverage report,
-computes C0 and C1 coverage percentages
-from <a href="https://www.jacoco.org/jacoco/trunk/doc/counters.html">JaCoCo's
-Instructions and Branches counters</a>, and generates badges for one or both of
-these (configurable with action inputs) to provide an easy to read visual
-summary of the code coverage of your test cases. The jacoco-badge-generator
-can also optionally be used as part of a pull-request check. Specifically, you
-can configure it to fail the workflow run if coverage decreased relative to
-prior run, and/or if coverage is below a target threshold.
-<ul>
-<li><a href="https://actions.cicirello.org/jacoco-badge-generator/">Info page</a></li>
-<li>Latest release: <a href="https://github.com/marketplace/actions/jacoco-badge-generator"><img src="https://img.shields.io/github/v/release/cicirello/jacoco-badge-generator?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
-<li>Source code: <a href="https://github.com/cicirello/jacoco-badge-generator">GitHub Repository</a></li>
-<li>License: <a href="https://github.com/cicirello/jacoco-badge-generator/blob/main/LICENSE">MIT</a>.</li>
 </ul></li>
 <li><strong>generate-sitemap</strong>:
 The <a href="https://actions.cicirello.org/generate-sitemap/">generate-sitemap GitHub Action</a> generates an XML sitemap
