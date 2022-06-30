@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="https://schema.org/WebPage" itemref="pageAuthor topNav">
+<head>
+<meta charset=utf-8>
+<link rel="canonical" href="https://www.cicirello.org/software/research/">
+<link itemprop="url" href="https://www.cicirello.org/software/research/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' https://img.shields.io/; style-src 'sha256-Jm8dnViZtfY7vF9SYXPaRY4DEhbbM1rF5cND3bq8g7Q='; base-uri 'none'; form-action 'none';">
+<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin">
+<title>Open Source Research Software - Vincent A. Cicirello - Professor of Computer Science</title>
+<meta name="title" content="Open Source Research Software - Vincent A. Cicirello - Professor of Computer Science">
+<meta itemprop="name" content="Open Source Research Software - Vincent A. Cicirello - Professor of Computer Science">
+<meta name="description" content="Open source software from the research of Vincent A. Cicirello, including Java libraries for evolutionary
+computation and other metaheuristics, and code to reproduce experimental results from published papers.">
+<meta itemprop="description" content="Open source software from the research of Vincent A. Cicirello, including Java libraries for evolutionary
+computation and other metaheuristics, and code to reproduce experimental results from published papers.">
+<style>
+header, nav, footer, article, aside, section { display: block; }
+footer { clear: both; }
+body { background-color: #f6f0bb; font-family: "Times New Roman", Georgia, serif; }
+#siteheader, aside, footer { background-color: #bfd9bf; }
+#siteheader, aside, footer, article { border: 2px solid #4CAF50; border-radius: 25px; margin-bottom: 5px; padding: 8px; }
+h1, h2, h3, h4, h5, h6, strong { color: #862d2d; }
+#siteheader h2 { font-size: 2em; text-align: center; }
+img.respimg { max-width: 100%; height: auto; }
+a { color: #005500; }
+a:visited { color:#862d2d; }
+#toggle { position: absolute; left: -100vw; display: none; }
+nav { margin: 0px; padding: 0; overflow: hidden; }
+nav div, #menu-icon { float: left; margin-right: 8px; }
+nav div a, #menu-icon { display: block; background-color: #f6f0bb; border: 2px solid #4CAF50; text-decoration: none; text-align: center; color: #1c2833; }
+nav div a { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 12px; }
+#menu-icon { cursor: pointer; display: none; }
+nav div a:visited { color: #1c2833; }
+nav div a:hover:not(.active), #menu-icon:hover:not(.active) { background-color: #305030; color: white; }
+nav div a.active { background-color: #4CAF50; }
+aside { float: left; width: 235px; }
+aside h4 { display: inline; }
+article { float: right; width: calc(100% - 280px); }
+article li { margin-bottom: 12px; margin-top: 12px; }
+.publist li { margin-bottom: 16px; }
+.publist ul { margin-bottom: 32px; }
+section { margin-top: 30px; }
+#pubyears { list-style-type: none; margin: 0px; padding: 0px; overflow: auto; }
+#pubyears li { float: left; margin: 0px 12px 12px 0px; }
+#copyright { text-align: center; color: #862d2d; }
+@media screen and (max-width:600px){
+article, aside { clear:both; width:calc(100% - 20px); }
+nav div a:not(.active) { display: none; }
+#toggle:checked ~ div a:not(.active) { display: block; }
+#menu-icon { display: block; padding: 3px 7px 3px 7px; border-radius: 4px; }
+}
+</style>
+<meta name="monetization" content="$ilp.uphold.com/RHNKxp4ZeLNE">
+<link rel="icon" href="/images/favicon.svg" sizes="any" type="image/svg+xml">
+</head>
+<body>
+<header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader" id="siteheader">
+<div itemscope>
+<h2><a href="/"><img src="/images/vac.svg" alt="Vincent A. Cicirello, Ph.D. - Professor of Computer Science" width="1280" height="640" class="respimg"></a></h2>
+<nav itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement" id="topNav">
+<input type="checkbox" id="toggle">
+<label for="toggle" id="menu-icon">&#9776;</label>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/"><span itemprop="name">Home</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/CollectionPage"><a itemprop="url" href="/publications/"><span itemprop="name">Publications</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/research/"><span itemprop="name">Research</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/software/"><span itemprop="name">Open Source Software</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/datasets/"><span itemprop="name">Datasets</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/teaching/"><span itemprop="name">Teaching</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/professional/"><span itemprop="name">Professional Activities</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/search/"><span itemprop="name">Site Search</span></a></div>
+</nav>
+</div>
+</header>
+<article id="top" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
+<h2>Open Source Research Software</h2>
+<p>On this page, you will find information about my open source research software. This includes software
+implemented as part of my research on evolutionary computation, artificial intelligence, machine learning,
+and algorithms, including Java libraries for evolutionary computation and other metaheuristics, and code
+to reproduce experimental results from my published papers. It is organized into the following sections:</p>
+<ul>
+<li><a href="#libraries">Research Software Libraries</a></li>
+<li><a href="#reproducible">Reproducible Research Results</a></li>
+</ul>
+<p>You can find my research software at the following sites:</p>
+<ul>
+<li><a href="https://github.com/cicirello"><img alt="GitHub Profile" src="/images/mark-github-16.svg" width="20" height="20"> GitHub</a></li>
+<li><a href="https://search.maven.org/search?q=g:org.cicirello"><img alt="Maven Central" src="/images/maven.svg" width="20" height="20"> Maven Central Repository</a></li>
+</ul>
+<section id="libraries">
+<h3>Research Software Libraries</h3>
+<p>The following is a list of my research software that I have released
+in the form of libraries and frameworks to enable ease of reuse by others.</p>
+<ul>
+<li><strong>Chips-n-Salsa - A Java library of customizable,
+hybridizable, iterative, parallel, stochastic, and self-adaptive
+local search algorithms</strong>: The library includes
+implementations of several stochastic local search algorithms,
+including simulated annealing, hill climbers, as well as
+constructive search algorithms such as stochastic sampling.
+The library most extensively supports simulated annealing. It
+includes several classes for representing solutions to a variety
+of optimization problems. For example, the library includes a
+BitVector class that implements vectors of bits, as well as
+classes for representing solutions to problems where we are
+searching for an optimal vector of integers or reals. For each
+of the built-in representations, the library provides the most
+common mutation operators for generating random neighbors of
+candidate solutions. Additionally, the library provides extensive
+support for permutation optimization problems, including
+implementations of many different mutation operators for
+permutations, and utilizing the efficiently implemented
+Permutation class of the JavaPermutationTools (JPT) library.
+<ul>
+<li><a href ="https://chips-n-salsa.cicirello.org/">Project page</a>, including API documentation.</li>
+<li>Source code: <a href="https://github.com/cicirello/Chips-n-Salsa">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/chips-n-salsa"><img src="https://img.shields.io/maven-central/v/org.cicirello/chips-n-salsa.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Repository of <a href="https://github.com/cicirello/chips-n-salsa-examples">example programs</a> illustrating usage of the library.</li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
+<li><strong>JavaPermutationTools: A Java library for
+computation on permutations and sequences</strong>: The JavaPermutationTools
+(JPT) library provides Java classes that enable representing and generating
+permutations and sequences, as well as performing computation on permutations
+and sequences, such as implementations of a variety of permutation distance
+metrics as well as distance metrics on sequences (i.e., Strings, arrays,
+and other ordered data types).
+<ul>
+<li><a href ="https://jpt.cicirello.org/">Project page</a>, including API documentation.</li>
+<li>Source code: <a href="https://github.com/cicirello/JavaPermutationTools">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/jpt"><img src="https://img.shields.io/maven-central/v/org.cicirello/jpt.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Repository of <a href="https://github.com/cicirello/jpt-examples">example programs</a> illustrating usage of the library.</li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
+<li><strong>&rho;&mu;: A Java library of Randomization enHancements and Other Math Utilities</strong>:
+&rho;&mu; includes implementations of various algorithms for efficiently randomly sampling
+combinations of indexes into arrays and other sequential structures. It also includes efficient
+implementations of random number generation from distributions other than uniform, such as Gaussian,
+Cauchy, etc. Additionally, it includes implementations of other math functions that are either needed
+by the randomization utilities, or which are needed by some of our other projects.
+<ul>
+<li><a href ="https://rho-mu.cicirello.org/">Project page</a>, including API documentation.</li>
+<li>Source code: <a href="https://github.com/cicirello/rho-mu">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/rho-mu"><img src="https://img.shields.io/maven-central/v/org.cicirello/rho-mu.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
+<li><strong>org.cicirello.core: A Java library of utilities and data structures</strong>: This
+library provides some of the core utilities and data structures used in several of our other libraries and
+projects, including but not limited to <a href="https://chips-n-salsa.cicirello.org/">Chips-n-Salsa</a>
+and <a href="https://jpt.cicirello.org/">JavaPermutationTools</a>, as well as various projects
+that use those libraries.
+<ul>
+<li><a href ="https://core.cicirello.org/">Project page</a>, including API documentation.</li>
+<li>Source code: <a href="https://github.com/cicirello/core">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/core"><img src="https://img.shields.io/maven-central/v/org.cicirello/core.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
+<li><strong>Ziggurat Gaussian</strong>: Java implementation of the
+Ziggurat algorithm for generating Gaussian distributed random numbers.
+<ul>
+<li>Source code: <a href="https://github.com/cicirello/ZigguratGaussian">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/ziggurat"><img src="https://img.shields.io/maven-central/v/org.cicirello/ziggurat.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
+<li><strong>Performance Tests for Small Clusters</strong>: Code developed to
+test the performance of a small 8 node cluster of raspberry pis. Implementations
+of a few simple parallel algorithms for testing the performance of a small
+cluster. Uses Java RMI for communication between master node and the worker
+nodes. Also includes useful bash scripts such as for starting the RMI
+servers on the worker nodes, shutting down and rebooting worker nodes
+from the master node, etc.
+<ul>
+<li>Source code: <a href="https://github.com/cicirello/ClusterPerformanceTests">GitHub Repository</a></li>
+<li><a href ="/software/ClusterPerformanceTests.zip">Zip of Java source.</a></li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
+</ul>
+<p><a href="#top"><em>Top of the page</em></a></p>
+</section>
+<section id="reproducible">
+<h3>Reproducible Research Results</h3>
+<p>The following is a list of software that can be used to reproduce the experimental results
+from some of my published journal articles and conference papers.</p>
+<ul>
+<li><strong>cycle-mutation-experiments</strong>: Experiments with the new cycle mutation operator.
+<ul>
+<li>Code to reproduce the experiments of: <a href="https://doi.org/10.3390/app12115506"><img src="/images/doi-app-2022.svg" alt="Appl. Sci.: 10.3390/app12115506" height="20" width="200"></a>.</li>
+<li>Source code: <a href="https://github.com/cicirello/cycle-mutation-experiments">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/cycle-mutation-experiments"><img src="https://img.shields.io/maven-central/v/org.cicirello/cycle-mutation-experiments.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
+<li><strong>self-tuning-lam-experiments</strong>: Experiments with simulated annealing
+using the Self-Tuning Lam annealing schedule, comparing its behavior and performance with
+that of the Modified Lam annealing schedule.
+<ul>
+<li>Code to reproduce the experiments of: <a href="https://doi.org/10.3390/app11219828"><img src="/images/doi-app-2021.svg" alt="Appl. Sci.: 10.3390/app11219828" height="20" width="200"></a>.</li>
+<li>Source code: <a href="https://github.com/cicirello/self-tuning-lam-experiments">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/self-tuning-lam-experiments"><img src="https://img.shields.io/maven-central/v/org.cicirello/self-tuning-lam-experiments.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
+<li><strong>modified-lam-experiments</strong>: Experiments with
+simulated annealing and an optimized version of the modified
+lam adaptive annealing schedule.
+<ul>
+<li>Code to reproduce the experiments of: <a href="https://doi.org/10.4108/eai.16-12-2020.167653"><img src="/images/doi-inis-2021.svg" alt="EAI INIS: 10.4108/eai.16-12-2020.167653" height="20" width="250"></a>.</li>
+<li>Source code: <a href="https://github.com/cicirello/modified-lam-experiments">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/modified-lam-experiments"><img src="https://img.shields.io/maven-central/v/org.cicirello/modified-lam-experiments.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
+</ul></li>
+</ul>
+<p><a href="#top"><em>Top of the page</em></a></p>
+</section>
+</article>
+<aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPSideBar">
+<div itemscope>
+<div id="pageAuthor" itemprop="author copyrightHolder" itemscope itemtype="https://schema.org/Person">
+<div id="vacData">
+<h3><a itemprop="mainEntityOfPage url" href="/"><span itemprop="name">Vincent A. Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span></a></h3>
+<h4>Current Position:</h4><br>
+<span itemprop="jobTitle">Professor of Computer Science</span><br><br>
+<h4>Mailing Address:</h4><br>
+School of Business<br>
+Stockton University<br>
+101 Vera King Farris Dr<br>
+Galloway, NJ 08205<br><br>
+<h4>E-mail:</h4>
+<a rel="nofollow" href="/e/">contact</a>
+<br><br>
+<h4>Phone:</h4>
+(609) 626-3526<br><br>
+<h4>Profiles:</h4><br>
+<a itemprop="sameAs" href="https://www.linkedin.com/in/vacicirello"><img src="/images/in.svg" width="32" height="32" alt="LinkedIn"></a>
+<a itemprop="sameAs" href="https://github.com/cicirello"><img alt="Explore my open source projects on
+GitHub" src="/images/mark-github-16.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://scholar.google.com/citations?user=wq4N1CoAAAAJ"><img alt="Google Scholar" src="/images/gs.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://orcid.org/0000-0003-1072-8559"><img alt="ORCID" src="/images/orcid.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://dblp.org/pid/57/5754"><img alt="DBLP" src="/images/dblp.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://dl.acm.org/author_page.cfm?id=81100638594"><img alt="ACM Digital Library" src="/images/acm.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://ieeexplore.ieee.org/author/37272496500"><img alt="IEEE Xplore" src="/images/ieee.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://www.researchgate.net/profile/Vincent-Cicirello"><img alt="ResearchGate" src="/images/rg.svg" width="32" height="32"></a>
+</div></div></div>
+</aside>
+<footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
+<small>
+<a href="/policy/privacy/">Privacy Policy</a>
+</small>
+<div id="copyright"><small>Copyright &copy; 1996-2022 Vincent A. Cicirello.</small></div>
+</footer>
+</body>
+</html>

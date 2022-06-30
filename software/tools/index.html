@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="https://schema.org/WebPage" itemref="pageAuthor topNav">
+<head>
+<meta charset=utf-8>
+<link rel="canonical" href="https://www.cicirello.org/software/tools/">
+<link itemprop="url" href="https://www.cicirello.org/software/tools/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' https://img.shields.io/; style-src 'sha256-Jm8dnViZtfY7vF9SYXPaRY4DEhbbM1rF5cND3bq8g7Q='; base-uri 'none'; form-action 'none';">
+<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin">
+<title>Open Source Tools - Vincent A. Cicirello - Professor of Computer Science</title>
+<meta name="title" content="Open Source Tools - Vincent A. Cicirello - Professor of Computer Science">
+<meta itemprop="name" content="Open Source Tools - Vincent A. Cicirello - Professor of Computer Science">
+<meta name="description" content="Open source tools for automating software development workflows, and other utilities. This includes GitHub Actions
+and Docker containers for automating various activities within software development workflows on GitHub, as well as
+a variety of command-line utilities.">
+<meta itemprop="description" content="Open source tools for automating software development workflows, and other utilities. This includes GitHub Actions
+and Docker containers for automating various activities within software development workflows on GitHub, as well as
+a variety of command-line utilities.">
+<style>
+header, nav, footer, article, aside, section { display: block; }
+footer { clear: both; }
+body { background-color: #f6f0bb; font-family: "Times New Roman", Georgia, serif; }
+#siteheader, aside, footer { background-color: #bfd9bf; }
+#siteheader, aside, footer, article { border: 2px solid #4CAF50; border-radius: 25px; margin-bottom: 5px; padding: 8px; }
+h1, h2, h3, h4, h5, h6, strong { color: #862d2d; }
+#siteheader h2 { font-size: 2em; text-align: center; }
+img.respimg { max-width: 100%; height: auto; }
+a { color: #005500; }
+a:visited { color:#862d2d; }
+#toggle { position: absolute; left: -100vw; display: none; }
+nav { margin: 0px; padding: 0; overflow: hidden; }
+nav div, #menu-icon { float: left; margin-right: 8px; }
+nav div a, #menu-icon { display: block; background-color: #f6f0bb; border: 2px solid #4CAF50; text-decoration: none; text-align: center; color: #1c2833; }
+nav div a { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 12px; }
+#menu-icon { cursor: pointer; display: none; }
+nav div a:visited { color: #1c2833; }
+nav div a:hover:not(.active), #menu-icon:hover:not(.active) { background-color: #305030; color: white; }
+nav div a.active { background-color: #4CAF50; }
+aside { float: left; width: 235px; }
+aside h4 { display: inline; }
+article { float: right; width: calc(100% - 280px); }
+article li { margin-bottom: 12px; margin-top: 12px; }
+.publist li { margin-bottom: 16px; }
+.publist ul { margin-bottom: 32px; }
+section { margin-top: 30px; }
+#pubyears { list-style-type: none; margin: 0px; padding: 0px; overflow: auto; }
+#pubyears li { float: left; margin: 0px 12px 12px 0px; }
+#copyright { text-align: center; color: #862d2d; }
+@media screen and (max-width:600px){
+article, aside { clear:both; width:calc(100% - 20px); }
+nav div a:not(.active) { display: none; }
+#toggle:checked ~ div a:not(.active) { display: block; }
+#menu-icon { display: block; padding: 3px 7px 3px 7px; border-radius: 4px; }
+}
+</style>
+<meta name="monetization" content="$ilp.uphold.com/RHNKxp4ZeLNE">
+<link rel="icon" href="/images/favicon.svg" sizes="any" type="image/svg+xml">
+</head>
+<body>
+<header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader" id="siteheader">
+<div itemscope>
+<h2><a href="/"><img src="/images/vac.svg" alt="Vincent A. Cicirello, Ph.D. - Professor of Computer Science" width="1280" height="640" class="respimg"></a></h2>
+<nav itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement" id="topNav">
+<input type="checkbox" id="toggle">
+<label for="toggle" id="menu-icon">&#9776;</label>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/"><span itemprop="name">Home</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/CollectionPage"><a itemprop="url" href="/publications/"><span itemprop="name">Publications</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/research/"><span itemprop="name">Research</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/software/"><span itemprop="name">Open Source Software</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/datasets/"><span itemprop="name">Datasets</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/teaching/"><span itemprop="name">Teaching</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/professional/"><span itemprop="name">Professional Activities</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/search/"><span itemprop="name">Site Search</span></a></div>
+</nav>
+</div>
+</header>
+<article id="top" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
+<h2>Open Source Tools</h2>
+<p>On this page, you will find information about a variety of utilities I've implemented for varying purposes
+and which I have released as open source software. It is organized on this page into the following sections:</p>
+<ul>
+<li><a href="#actions">GitHub Actions for Workflow Automation</a></li>
+<li>Command-line Utilities (coming soon)</li>
+<li>Docker containers (coming soon)</li>
+</ul>
+<p>You can find these open source tools at the following sites:</p>
+<ul>
+<li><a href="https://github.com/cicirello"><img alt="GitHub Profile" src="/images/mark-github-16.svg" width="20" height="20"> GitHub</a></li>
+<li><a href="https://pypi.org/user/cicirello/"><img alt="PyPI packages" src="/images/pypi.svg" width="20" height="20"> Python packages on PyPI</a></li>
+<li><a href="https://hub.docker.com/u/cicirello"><img alt="Docker Hub containers" src="/images/docker.svg" width="20" height="20"> Containers on Docker Hub</a></li>
+</ul>
+<section id="actions">
+<h3>GitHub Actions for Workflow Automation</h3>
+<p>While developing software for my research, on occasion I implement
+tools to automate parts of my workflow. When these seem like they would
+be useful to others, I share them as open source. Since we use GitHub to
+develop our research software, our choice for CI/CD and other automation
+is <a href="https://github.com/features/actions">GitHub Actions</a>, which
+is GitHub's built in workflow automation framework. I've deployed a
+website, <a href="https://actions.cicirello.org/">Open Source GitHub
+Actions for Workflow Automation</a>, focused specifically on the GitHub
+Actions that I've implemented for this purpose. A few of these GitHub Actions
+are the following.</p>
+<ul>
+<li><strong>jacoco-badge-generator</strong>:
+The <a href="https://actions.cicirello.org/jacoco-badge-generator/">jacoco-badge-generator</a>
+parses a jacoco.csv file from a JaCoCo coverage report, computes C0 and C1 coverage percentages
+from <a href="https://www.jacoco.org/jacoco/trunk/doc/counters.html">JaCoCo's
+Instructions and Branches counters</a>, and generates badges for one or both of
+these (user configurable) to provide an easy to read visual summary of the code coverage
+of your test cases. The jacoco-badge-generator provides two modes of operation: as a GitHub
+Action within GitHub's workflow automation framework, as well as a command-line utility that can be used
+as part of a local build script. The jacoco-badge-generator (as a GitHub Action) can also optionally
+be used as part of a pull-request check. Specifically, you can configure it to fail the workflow run
+if coverage decreased relative to prior run, and/or if coverage is below a target threshold.
+<ul>
+<li><a href="https://actions.cicirello.org/jacoco-badge-generator/">Info page</a></li>
+<li>Latest GitHub Action release: <a href="https://github.com/marketplace/actions/jacoco-badge-generator"><img src="https://img.shields.io/github/v/release/cicirello/jacoco-badge-generator?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
+<li>Latest command-line utility release: <a href="https://pypi.org/project/jacoco-badge-generator/"><img src="https://img.shields.io/pypi/v/jacoco-badge-generator?logo=pypi" alt="PyPI" height="20"></a></li>
+<li>Source code: <a href="https://github.com/cicirello/jacoco-badge-generator">GitHub Repository</a></li>
+<li>License: <a href="https://github.com/cicirello/jacoco-badge-generator/blob/main/LICENSE">MIT</a>.</li>
+</ul></li>
+<li><strong>user-statistician</strong>:
+The <a href="https://actions.cicirello.org/user-statistician/">user-statistician
+GitHub Action</a> generates a detailed visual summary of your activity on GitHub
+in the form of an SVG, suitable to display on your <a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">GitHub Profile README</a>.
+<ul>
+<li><a href="https://actions.cicirello.org/user-statistician/">Info page</a></li>
+<li>Latest release: <a href="https://github.com/marketplace/actions/user-statistician"><img src="https://img.shields.io/github/v/release/cicirello/user-statistician?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
+<li>Source code: <a href="https://github.com/cicirello/user-statistician">GitHub Repository</a></li>
+<li>License: <a href="https://github.com/cicirello/user-statistician/blob/main/LICENSE">MIT</a>.</li>
+</ul></li>
+<li><strong>generate-sitemap</strong>:
+The <a href="https://actions.cicirello.org/generate-sitemap/">generate-sitemap GitHub Action</a> generates an XML sitemap
+for a website hosted on GitHub Pages.
+<ul>
+<li><a href="https://actions.cicirello.org/generate-sitemap/">Info page</a></li>
+<li>Latest release: <a href="https://github.com/marketplace/actions/generate-sitemap"><img src="https://img.shields.io/github/v/release/cicirello/generate-sitemap?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
+<li>Source code: <a href="https://github.com/cicirello/generate-sitemap">GitHub Repository</a></li>
+<li>License: <a href="https://github.com/cicirello/generate-sitemap/blob/master/LICENSE">MIT</a>.</li>
+</ul></li>
+<li><strong>count-action-users</strong>:
+The <a href="https://actions.cicirello.org/count-action-users/">count-action-users GitHub Action</a> is a meta-action for use by
+maintainers of GitHub Actions to monitor and report the number of users of the GitHub Actions that they maintain. It generates a Shields endpoint
+for each Action that they maintain with the count of the number of workflows that use it.
+<ul>
+<li><a href="https://actions.cicirello.org/count-action-users/">Info page</a></li>
+<li>Latest release: <a href="https://github.com/marketplace/actions/count-action-users"><img src="https://img.shields.io/github/v/release/cicirello/count-action-users?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
+<li>Source code: <a href="https://github.com/cicirello/count-action-users">GitHub Repository</a></li>
+<li>License: <a href="https://github.com/cicirello/count-action-users/blob/main/LICENSE">MIT</a>.</li>
+</ul></li>
+<li><strong>javadoc-cleanup</strong>:
+The <a href="https://actions.cicirello.org/javadoc-cleanup/">javadoc-cleanup
+GitHub Action</a> enables creating mobile-friendly and SEO ready, documentation
+sites by post-processing javadocs in GitHub Actions. The javadoc-cleanup GitHub
+action is a utility to tidy up javadocs prior to deployment to an API documentation
+website, assumed hosted on (but not limited to) GitHub Pages.
+<ul>
+<li><a href="https://actions.cicirello.org/javadoc-cleanup/">Info page</a></li>
+<li>Latest release: <a href="https://github.com/marketplace/actions/javadoc-cleanup"><img src="https://img.shields.io/github/v/release/cicirello/javadoc-cleanup?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
+<li>Source code: <a href="https://github.com/cicirello/javadoc-cleanup">GitHub Repository</a></li>
+<li>License: <a href="https://github.com/cicirello/javadoc-cleanup/blob/master/LICENSE">MIT</a>.</li>
+</ul></li>
+</ul>
+<p><a href="#top"><em>Top of the page</em></a></p>
+</section>
+</article>
+<aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPSideBar">
+<div itemscope>
+<div id="pageAuthor" itemprop="author copyrightHolder" itemscope itemtype="https://schema.org/Person">
+<div id="vacData">
+<h3><a itemprop="mainEntityOfPage url" href="/"><span itemprop="name">Vincent A. Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span></a></h3>
+<h4>Current Position:</h4><br>
+<span itemprop="jobTitle">Professor of Computer Science</span><br><br>
+<h4>Mailing Address:</h4><br>
+School of Business<br>
+Stockton University<br>
+101 Vera King Farris Dr<br>
+Galloway, NJ 08205<br><br>
+<h4>E-mail:</h4>
+<a rel="nofollow" href="/e/">contact</a>
+<br><br>
+<h4>Phone:</h4>
+(609) 626-3526<br><br>
+<h4>Profiles:</h4><br>
+<a itemprop="sameAs" href="https://www.linkedin.com/in/vacicirello"><img src="/images/in.svg" width="32" height="32" alt="LinkedIn"></a>
+<a itemprop="sameAs" href="https://github.com/cicirello"><img alt="Explore my open source projects on
+GitHub" src="/images/mark-github-16.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://scholar.google.com/citations?user=wq4N1CoAAAAJ"><img alt="Google Scholar" src="/images/gs.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://orcid.org/0000-0003-1072-8559"><img alt="ORCID" src="/images/orcid.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://dblp.org/pid/57/5754"><img alt="DBLP" src="/images/dblp.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://dl.acm.org/author_page.cfm?id=81100638594"><img alt="ACM Digital Library" src="/images/acm.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://ieeexplore.ieee.org/author/37272496500"><img alt="IEEE Xplore" src="/images/ieee.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://www.researchgate.net/profile/Vincent-Cicirello"><img alt="ResearchGate" src="/images/rg.svg" width="32" height="32"></a>
+</div></div></div>
+</aside>
+<footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
+<small>
+<a href="/policy/privacy/">Privacy Policy</a>
+</small>
+<div id="copyright"><small>Copyright &copy; 1996-2022 Vincent A. Cicirello.</small></div>
+</footer>
+</body>
+</html>

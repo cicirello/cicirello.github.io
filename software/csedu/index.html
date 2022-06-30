@@ -2,22 +2,18 @@
 <html lang=en itemscope itemtype="https://schema.org/WebPage" itemref="pageAuthor topNav">
 <head>
 <meta charset=utf-8>
-<link rel="canonical" href="https://www.cicirello.org/software/">
-<link itemprop="url" href="https://www.cicirello.org/software/">
+<link rel="canonical" href="https://www.cicirello.org/software/csedu/">
+<link itemprop="url" href="https://www.cicirello.org/software/csedu/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'sha256-Jm8dnViZtfY7vF9SYXPaRY4DEhbbM1rF5cND3bq8g7Q='; base-uri 'none'; form-action 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' https://img.shields.io/; style-src 'sha256-Jm8dnViZtfY7vF9SYXPaRY4DEhbbM1rF5cND3bq8g7Q='; base-uri 'none'; form-action 'none';">
 <meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin">
-<title>Open Source Software - Vincent A. Cicirello - Professor of Computer Science</title>
-<meta name="title" content="Open Source Software - Vincent A. Cicirello - Professor of Computer Science">
-<meta itemprop="name" content="Open Source Software - Vincent A. Cicirello - Professor of Computer Science">
-<meta name="description" content="Open source software from the research of Vincent A. Cicirello, including Java libraries for evolutionary
-computation and other metaheuristics, and code to reproduce experimental results from published papers.
-Other software includes open source educational applications, as well as tools for automating software
-development workflows, and other utilities.">
-<meta itemprop="description" content="Open source software from the research of Vincent A. Cicirello, including Java libraries for evolutionary
-computation and other metaheuristics, and code to reproduce experimental results from published papers.
-Other software includes open source educational applications, as well as tools for automating software
-development workflows, and other utilities.">
+<title>Open Source Computer Science Education - Vincent A. Cicirello - Professor of Computer Science</title>
+<meta name="title" content="Open Source Computer Science Education - Vincent A. Cicirello - Professor of Computer Science">
+<meta itemprop="name" content="Open Source Computer Science Education - Vincent A. Cicirello - Professor of Computer Science">
+<meta name="description" content="Open source computer science educational software, developed by Vincent A. Cicirello, Professor of Computer Science at
+Stockton University.">
+<meta itemprop="description" content="Open source computer science educational software, developed by Vincent A. Cicirello, Professor of Computer Science at
+Stockton University.">
 <style>
 header, nav, footer, article, aside, section { display: block; }
 footer { clear: both; }
@@ -68,7 +64,7 @@ nav div a:not(.active) { display: none; }
 <div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/"><span itemprop="name">Home</span></a></div>
 <div itemprop="hasPart" itemscope itemtype="https://schema.org/CollectionPage"><a itemprop="url" href="/publications/"><span itemprop="name">Publications</span></a></div>
 <div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/research/"><span itemprop="name">Research</span></a></div>
-<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/software/" class="active"><span itemprop="name">Open Source Software</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/software/"><span itemprop="name">Open Source Software</span></a></div>
 <div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/datasets/"><span itemprop="name">Datasets</span></a></div>
 <div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/teaching/"><span itemprop="name">Teaching</span></a></div>
 <div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/professional/"><span itemprop="name">Professional Activities</span></a></div>
@@ -77,37 +73,33 @@ nav div a:not(.active) { display: none; }
 </div>
 </header>
 <article id="top" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
-<h2>Open Source Software</h2>
-<p>Details on my various open source projects is organized on the following pages:</p>
+<h2>Open Source Computer Science Education</h2>
+<p>On this page, you will find information about open source <a href="#education">educational software</a> on topics
+of computer science, such as self-guided tutorial applications. You can find my computer science educational software
+at the following sites:</p>
 <ul>
-<li><a href="research/">Research Software</a></li>
-<li><a href="csedu/">Computer Science Educational Software</a></li>
-<li><a href="tools/">Open Source Tools</a></li>
+<li><a href="https://github.com/cicirello"><img alt="GitHub Profile" src="/images/mark-github-16.svg" width="20" height="20"> GitHub</a></li>
+<li><a href="https://search.maven.org/search?q=g:org.cicirello"><img alt="Maven Central" src="/images/maven.svg" width="20" height="20"> Maven Central Repository</a></li>
 </ul>
-<p>I may have additional open source projects not included on my website. See
-<a href="https://github.com/cicirello">my GitHub profile</a> for a complete list of my
-<a href="https://github.com/cicirello?tab=repositories">open source repositories</a>.</p>
-<section id="where">
-<h3>Where You Can Find My Software</h3>
-<p>My open source software is available at the following sites:</p>
+<section id="education">
+<h3>Educational Software</h3>
+<p>Here is a list of software I've implemented in support of computer
+science education.</p>
 <ul>
-<li><a href="https://github.com/cicirello"><img alt="Explore my open source projects on
-GitHub" src="/images/mark-github-16.svg" width="20" height="20"> GitHub</a>
+<li><strong>Interactive Bin Packing</strong>: This application
+provides a self-guided tutorial on combinatorial optimization, the bin packing problem,
+and constructive heuristics for bin packing. It also enables the user to interact with bin
+packing instances to explore their own problem solving strategies, or to test their
+knowledge of the various constructive heuristics covered by the tutorial. The application
+is not a solver for bin packing. Interactive Bin Packing is a tool for learning about the bin
+packing problem, as well as for learning about heuristic techniques for solving instances of the problem.
 <ul>
-<li><a href="https://github.com/cicirello">My GitHub profile</a>, with source-code repositories, etc</li>
-<li><a href="https://gist.github.com/cicirello">GitHub gists</a></li>
+<li>Source code: <a href="https://github.com/cicirello/InteractiveBinPacking">GitHub Repository</a></li>
+<li>Latest release: <a href="https://search.maven.org/artifact/org.cicirello/interactive-bin-packing"><img src="https://img.shields.io/maven-central/v/org.cicirello/interactive-bin-packing.svg?label=Maven%20Central&logo=apachemaven" alt="Maven Central" height="20"></a></li>
+<li>Language: Java</li>
+<li>License: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License Version 3 (GPLv3)</a>.</li>
 </ul></li>
-<li><a href="https://search.maven.org/search?q=g:org.cicirello"><img alt="Maven Central artifacts" src="/images/maven.svg" width="20" height="20"> Maven Central artifacts</a></li>
-<li><a href="https://pypi.org/user/cicirello/"><img alt="PyPI packages" src="/images/pypi.svg" width="20" height="20"> Python packages on PyPI</a></li>
-<li><a href="https://hub.docker.com/u/cicirello"><img alt="Docker Hub containers" src="/images/docker.svg" width="20" height="20"> Containers on Docker Hub</a></li>
 </ul>
-<p><a href="#top"><em>Top of the page</em></a></p>
-</section>
-<section id="ghstats">
-<h3><img src="/status/images/userstats.svg" alt="Vincent A. Cicirello's GitHub Activity" width="447" height="795" class="respimg"></h3>
-<p>The above summary of my activity on GitHub is updated nightly
-by the <a href="https://github.com/marketplace/actions/user-statistician">user-statistician
-GitHub Action</a>.</p>
 <p><a href="#top"><em>Top of the page</em></a></p>
 </section>
 </article>
