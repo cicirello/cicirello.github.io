@@ -27,7 +27,15 @@
 			]
 		},
 		{
-			"pageKey": "software",
+			"pageKey": "ossresearch",
+			"imgSrc": [ "https://img.shields.io/" ]
+		},
+		{
+			"pageKey": "ossedu",
+			"imgSrc": [ "https://img.shields.io/" ]
+		},
+		{
+			"pageKey": "osstools",
 			"imgSrc": [ "https://img.shields.io/" ]
 		}
 	]
