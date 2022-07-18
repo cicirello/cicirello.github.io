@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="672" viewBox="0 0 1280 672">
 <rect fill="#bfd9bf" stroke="#4CAF50" stroke-width="80" width="1200" height="592" x="40" y="40"/>
-<g font-family="'Times New Roman',Georgia,serif">
-<text x="50%" y="148" text-anchor="middle" font-size="72px" font-weight="bold" fill="#862d2d">Vincent A. Cicirello, Ph.D.</text>
+<g font-family="Georgia,Times,'Times New Roman',serif">
+<text x="50%" y="148" text-anchor="middle" font-size="70px" font-weight="bold" fill="#862d2d">Vincent A. Cicirello, Ph.D.</text>
 <g transform="translate(1116,84)"><svg width="80" height="80" viewBox="0 0 32 32"><rect style="fill:#f6f0bb;stroke:#862d2d;stroke-width:1.5;" width="30.5" height="30.5" x="0.75" y="0.75" rx="4"/><text x="50%" y="35%" dominant-baseline="central" text-anchor="middle" font-size="20px" fill="#862d2d">VC</text><text x="50%" y="65%" dominant-baseline="central" text-anchor="middle" font-size="20px" fill="#862d2d">A</text></svg></g>
 <text x="360" y="280" font-size="38px" fill="#305030">Researcher and educator in A.I., algorithms,</text>
 <text x="360" y="324" font-size="38px" fill="#305030">evolutionary computation, machine learning,</text>
