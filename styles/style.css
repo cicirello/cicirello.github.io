@@ -17,9 +17,9 @@ nav div a { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 
 nav div a:visited { color: #1c2833; }
 nav div a:hover:not(.active), #menu-icon:hover:not(.active) { background-color: #305030; color: white; }
 nav div a.active { background-color: #4CAF50; }
-aside { float: left; width: 245px; }
+aside { float: left; width: 250px; }
 aside h4 { display: inline; }
-article { float: right; width: calc(100% - 290px); }
+article { float: right; width: calc(100% - 295px); }
 article li { margin-bottom: 12px; margin-top: 12px; }
 .publist li { margin-bottom: 16px; }
 .publist ul { margin-bottom: 32px; }
