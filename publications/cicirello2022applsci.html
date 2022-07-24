@@ -94,6 +94,23 @@ nav div a:not(.active) { display: none; }
 <meta property="og:image" content="https://www.cicirello.org/images/vac.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="672">
+<meta property="og:description" content="Evolutionary algorithms solve problems by simulating the evolution of a
+population of candidate solutions. We focus on evolving permutations for
+ordering problems such as the traveling salesperson problem (TSP), as well as
+assignment problems such as the quadratic assignment problem (QAP) and largest
+common subgraph (LCS). We propose cycle mutation, a new mutation operator whose
+inspiration is the well-known cycle crossover operator, and the concept of a
+permutation cycle. We use fitness landscape analysis to explore the problem
+characteristics for which cycle mutation works best. As a prerequisite, we
+develop new permutation distance measures: cycle distance, k-cycle distance,
+and cycle edit distance. The fitness landscape analysis predicts that cycle
+mutation is better suited for assignment and mapping problems than it is for
+ordering problems. We experimentally validate these findings showing cycle
+mutation&#8217;s strengths on problems such as QAP and LCS, and its limitations
+on problems such as the TSP, while also showing that it is less prone to local
+optima than commonly used alternatives. We integrate cycle mutation into the
+open source Chips-n-Salsa library, and the new distance metrics into the open
+source JavaPermutationTools library.">
 </head>
 <body>
 <header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader" id="siteheader">

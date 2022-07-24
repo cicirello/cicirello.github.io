@@ -93,6 +93,23 @@ nav div a:not(.active) { display: none; }
 <meta property="og:image" content="https://www.cicirello.org/images/vac.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="672">
+<meta property="og:description" content="In this report, I describe the design and implementation of an inexpensive,
+eight node, 32 core, cluster of raspberry pi single board computers, as well as
+the performance of this cluster on two computational tasks, one that requires
+significant data transfer relative to computational time requirements, and one
+that does not. We have two use-cases for the cluster: (a) as an educational
+tool for classroom usage, such as covering parallel algorithms in an algorithms
+course; and (b) as a test system for use during the development of parallel
+metaheuristics, essentially serving as a personal desktop parallel computing
+cluster. Our preliminary results show that the slow 100 Mbps networking of the
+raspberry pi significantly limits such clusters to parallel computational tasks
+that are either long running relative to data communications requirements, or
+that which requires very little internode communications. Additionally,
+although the raspberry pi 3 has a quad-core processor, parallel speedup
+degrades during attempts to utilize all four cores of all cluster nodes for a
+parallel computation, likely due to resource contention with operating system
+level processes. However, distributing a task across three cores of each
+cluster node does enable linear (or near linear) speedup.">
 </head>
 <body>
 <header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader" id="siteheader">
