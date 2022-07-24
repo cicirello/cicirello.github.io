@@ -114,6 +114,43 @@ nav div a:not(.active) { display: none; }
 <meta property="og:image" content="https://www.cicirello.org/images/vac.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="672">
+<meta property="og:description" content="Discrete optimization problems are often of practical real-world importance as
+well as computationally intractable. For example, the traveling salesperson,
+bin packing, and longest common subsequence problems are NP-Hard, as is
+resource constrained scheduling, and many single-machine scheduling problems.
+Polynomial time algorithms for such problems are unlikely to exist, and the
+best known algorithms that guarantee optimal solutions have a worst-case
+exponential runtime. It is thus common to use stochastic local search and other
+metaheuristics. Stochastic local search algorithms begin at a random search
+state, and apply a sequence of neighbor transitions to nearby search states.
+This includes perturbative algorithms like simulated annealing and hill
+climbers, where each search state is a complete candidate feasible solution,
+and a mutation operator makes a small random modification to move to another
+local candidate solution; and also includes constructive algorithms like
+stochastic samplers, where each search state is a partial solution that is
+iteratively transformed into a complete solution. Stochastic local search
+algorithms do not guarantee optimal solutions. However, they often find
+near-optimal solutions in much less time than systematic search. They also
+offer an anytime property, where solution quality improves with runtime. 
+ Chips-n-Salsa is a Java library of customizable, hybridizable, iterative,
+parallel, stochastic, and self-adaptive local search algorithms. Its focus is
+discrete optimization, but also supports continuous optimization. The library
+provides a variety of solution representations, including BitVector and
+IntegerVector classes, indexable vectors of bits and integers, respectively,
+along with corresponding mutation operators. The library utilizes our
+significant prior research on permutation optimization problems, providing an
+extensive set of mutation operators for permutations, including window-limited
+mutation. It uses the JavaPermutationTools (JPT) library for efficiently
+representing solutions to such problems. For continuous problems, Chips-n-Salsa
+provides a RealVector class, Gaussian mutation, Cauchy mutation, and uniform
+mutation. The library includes optimization problems useful for benchmarking
+metaheuristic implementations, such as the well-known OneMax problem, BoundMax
+(generalization of OneMax to integers), the Permutation in a Haystack problem,
+and polynomial root finding.   The repository
+(https://github.com/cicirello/Chips-n-Salsa) contains the library source code,
+and programs with examples of key functionality. API and other documentation is
+hosted on the web (https://chips-n-salsa.cicirello.org/). The library can be
+integrated into projects using maven via GitHub Packages.">
 </head>
 <body>
 <header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader" id="siteheader">

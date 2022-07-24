@@ -94,6 +94,23 @@ nav div a:not(.active) { display: none; }
 <meta property="og:image" content="https://www.cicirello.org/images/vac.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="672">
+<meta property="og:description" content="The runtime behavior of Simulated Annealing (SA), similar to other
+metaheuristics, is controlled by hyperparameters. For SA, hyperparameters
+affect how temperature varies over time, and temperature in turn affects
+SA&#8217;s decisions on whether or not to transition to neighboring states. It
+is typically necessary to tune the hyperparameters ahead of time. However,
+there are adaptive annealing schedules that use search feedback to evolve the
+temperature during the search. A classic and generally effective adaptive
+annealing schedule is the Modified Lam. Although effective, the Modified Lam
+can be sensitive to the scale of the cost function, and is sometimes slow to
+converge to its target behavior. In this paper, we present a novel variation of
+the Modified Lam that we call Self-Tuning Lam, which uses early search feedback
+to auto-adjust its self-adaptive behavior. Using a variety of discrete and
+continuous optimization problems, we demonstrate the ability of the Self-Tuning
+Lam to nearly instantaneously converge to its target behavior independent of
+the scale of the cost function, as well as its run length. Our implementation
+is integrated into Chips-n-Salsa, an open-source Java library for parallel and
+self-adaptive local search.">
 </head>
 <body>
 <header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader" id="siteheader">

@@ -93,6 +93,23 @@ nav div a:not(.active) { display: none; }
 <meta property="og:image" content="https://www.cicirello.org/images/vac.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="672">
+<meta property="og:description" content="In this paper, we propose: (a) a restart schedule for an adaptive simulated
+annealer, and (b) parallel simulated annealing, with an adaptive and
+parameter-free annealing schedule. The foundation of our approach is the
+Modified Lam annealing schedule, which adaptively controls the temperature
+parameter to track a theoretically ideal rate of acceptance of neighboring
+states. A sequential implementation of Modified Lam simulated annealing is
+almost parameter-free. However, it requires prior knowledge of the annealing
+length. We eliminate this parameter using restarts, with an exponentially
+increasing schedule of annealing lengths. We then extend this restart schedule
+to parallel implementation, executing several Modified Lam simulated annealers
+in parallel, with varying initial annealing lengths, and our proposed parallel
+annealing length schedule. To validate our approach, we conduct experiments on
+an NP-Hard scheduling problem with sequence-dependent setup constraints. We
+compare our approach to fixed length restarts, both sequentially and in
+parallel. Our results show that our approach can achieve substantial
+performance gains, throughout the course of the run, demonstrating our approach
+to be an effective anytime algorithm.">
 </head>
 <body>
 <header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader" id="siteheader">
