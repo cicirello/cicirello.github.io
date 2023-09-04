@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Checkout website repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Checkout site generator
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: cicirello/site-generator
         ssh-key: ${{ secrets.DEPLOY_KEY_SITE_GEN }} 
