@@ -2,7 +2,8 @@
 EDITOR = {Vincent A. Cicirello},
 TITLE = {Special Issue on Evolutionary Computation: Theories, Techniques, and Applications},
 JOURNAL = {Applied Sciences},
-YEAR = {2023},
+YEAR = {2024},
+MONTH = {January},
 ACRO = {applsci},
 DOI = {https://www.mdpi.com/journal/applsci/special_issues/Evolutionary_Computation},
 graphicalAbstract = {GraphicalAbstract-SI-on-Evolutionary-Computation.png},
@@ -47,9 +48,47 @@ The special issue covers the following non-exclusive list of topics:</p>
 <li>particle swarm optimization;</li>
 <li>simulated annealing.</li>
 </ul>
-<p>Submissions opened May 2022 with a deadline of July 20, 2023.}
+<p>Submissions opened May 2022 with a deadline of January 30, 2024.}
 }
 % THIS IS A NONSTANDARD TYPE... WILL NOT WORK WITH BIBTEX
+
+@ARTICLE{MONE-2022,
+AUTHOR = {Vincent A. Cicirello},
+TITLE = {On Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection},
+JOURNAL = {Mobile Networks and Applications},
+YEAR = {2023},
+MONTH = {April},
+PAGES = {507-517},
+VOLUME = {28},
+NUMBER = {2},
+otherLink = {https://arxiv.org/abs/2208.11188},
+DOI = {https://doi.org/10.1007/s11036-022-02060-z},
+PUBLINK = {https://rdcu.be/cZgYG},
+ACRO = {mone},
+PDF = {Cicirello-MONE-2022.pdf},
+CODE = {https://github.com/cicirello/MONE2022-experiments},
+ABSTRACT = {In this paper, we explore the theory and expand upon the practice of fitness
+landscape analysis for optimization problems over the space of permutations. Many of the 
+computational and analytical tools for fitness landscape analysis, such as fitness distance
+correlation, require identifying a distance metric for measuring the similarity of different 
+solutions to the problem. We begin with a survey of the available distance metrics for 
+permutations, and then use principal component analysis to classify these metrics. The result 
+of this analysis aligns with existing classifications of permutation problem types produced 
+through less formal means, including the A-permutation, R-permutation, and P-permutation types, 
+which classifies problems by whether absolute position of permutation elements, relative positions 
+of elements, or general precedence of pairs of elements, is the dominant influence 
+over solution fitness. Additionally, the formal analysis identifies subtypes within these problem 
+categories. We see that the classification can assist in identifying appropriate metrics based on 
+optimization problem feature for use in fitness landscape analysis. Using optimization problems 
+of each class, we also demonstrate how the classification scheme can subsequently inform the 
+choice of mutation operator within an evolutionary algorithm. From this, we present a classification
+of a variety of mutation operators as a counterpart to that of the metrics. Our implementations 
+of the permutation metrics, permutation mutation operators, and associated evolutionary algorithm, are 
+available in a pair of open source Java libraries. All of the code necessary to recreate our 
+analysis and experimental results are also available as open source.}
+}
+% PUBLINK: This url is Spring Nature's SharedIt.
+%TITLETAG = {},
 
 @SPECIALISSUE{MDPI-Topic-ML-2023,
 EDITOR = {Andrea Prati and Luis Javier García Villalba and Vincent A. Cicirello},
@@ -121,47 +160,6 @@ The special topic covers the following non-exclusive list of topics:</p>
 }
 % THIS IS A NONSTANDARD TYPE... WILL NOT WORK WITH BIBTEX
 
-@ARTICLE{MONE-2022,
-AUTHOR = {Vincent A. Cicirello},
-TITLE = {On Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection},
-JOURNAL = {Mobile Networks and Applications},
-YEAR = {2022},
-NUMPAGES = {11},
-otherLink = {https://arxiv.org/abs/2208.11188},
-DOI = {https://doi.org/10.1007/s11036-022-02060-z},
-PUBLINK = {https://rdcu.be/cZgYG},
-ACRO = {mone},
-PDF = {Cicirello-MONE-2022.pdf},
-CODE = {https://github.com/cicirello/MONE2022-experiments},
-NOTE = {Special Issue on Foundational Studies in Bio-Inspired Technologies},
-ABSTRACT = {In this paper, we explore the theory and expand upon the practice of fitness
-landscape analysis for optimization problems over the space of permutations. Many of the 
-computational and analytical tools for fitness landscape analysis, such as fitness distance
-correlation, require identifying a distance metric for measuring the similarity of different 
-solutions to the problem. We begin with a survey of the available distance metrics for 
-permutations, and then use principal component analysis to classify these metrics. The result 
-of this analysis aligns with existing classifications of permutation problem types produced 
-through less formal means, including the A-permutation, R-permutation, and P-permutation types, 
-which classifies problems by whether absolute position of permutation elements, relative positions 
-of elements, or general precedence of pairs of elements, is the dominant influence 
-over solution fitness. Additionally, the formal analysis identifies subtypes within these problem 
-categories. We see that the classification can assist in identifying appropriate metrics based on 
-optimization problem feature for use in fitness landscape analysis. Using optimization problems 
-of each class, we also demonstrate how the classification scheme can subsequently inform the 
-choice of mutation operator within an evolutionary algorithm. From this, we present a classification
-of a variety of mutation operators as a counterpart to that of the metrics. Our implementations 
-of the permutation metrics, permutation mutation operators, and associated evolutionary algorithm, are 
-available in a pair of open source Java libraries. All of the code necessary to recreate our 
-analysis and experimental results are also available as open source.}
-}
-% PUBLINK: This url is Spring Nature's SharedIt.
-% VOLUME = {},
-% NUMBER = {},
-% PAGES = {},
-% ARTICLENO = {},
-% MONTH = {},
-% PUBLISHER = {},
-%TITLETAG = {},
 
 @ARTICLE{JOSS2022,
 author = {Vincent A. Cicirello},
