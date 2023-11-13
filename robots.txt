@@ -8,7 +8,11 @@ User-agent: SemanticScholarBot
 Disallow: /
 
 # Cause Internet Archive Wayback Machine to clear history and stop archiving
+
 User-agent: ia_archiver
+Disallow: /
+
+User-agent: archive.org_bot
 Disallow: /
 
 # DERIVED FROM Wikipedia's robots.txt
