@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, strong { color: #862d2d; }
 #siteheader h2 { font-size: 2em; text-align: center; }
 img.respimg { max-width: 100%; height: auto; }
 a { color: #005500; }
-a:visited { color:#862d2d; }
+a:visited, details summary { color:#862d2d; }
 #toggle { position: absolute; left: -100vw; display: none; }
 nav { margin: 0px; padding: 0; overflow: hidden; }
 nav div, #menu-icon { float: left; margin-right: 8px; }
@@ -27,6 +27,8 @@ section { margin-top: 30px; }
 #pubyears { list-style-type: none; margin: 0px; padding: 0px; overflow: auto; }
 #pubyears li { float: left; margin: 0px 12px 12px 0px; }
 #copyright { text-align: center; color: #862d2d; }
+details summary { cursor: pointer; }
+details { margin-bottom: 12pt; }
 @media screen and (max-width:600px){
 article, aside { clear:both; width:calc(100% - 20px); }
 nav div a:not(.active) { display: none; }
