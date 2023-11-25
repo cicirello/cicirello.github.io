@@ -77,6 +77,43 @@ computation. Finally, we empirically analyze the crossover operators on artifici
 fitness landscapes isolating different permutation features.}
 }
 
+@ARTICLE{ASEC2023,
+author = {Vincent A. Cicirello},
+title = {An Analysis of an Open Source Binomial Random Variate Generation Algorithm},
+journal = {Engineering Proceedings},
+year = {2023},
+month = {October},
+volume = {56},
+number = {1},
+articleno = {86},
+numpages = {6},
+doi = {https://doi.org/10.3390/ASEC2023-15349},
+acro = {engproc},
+pdf = {engproc-56-00086.pdf},
+code = {https://github.com/cicirello/btpe-iterations},
+abstract = {The binomial distribution is the probability distribution of the 
+number of successes for a sequence of n independent trials with success 
+probability p. Efficiently generating binomial random variates is important 
+in many modeling and simulation applications, such as in medicine, risk 
+management, and fraud and anomaly detection, among others. A variety of algorithms 
+exist for generating binomial random variates. This paper concerns the 
+algorithm chosen for &rho;&mu;, an open source Java library for efficient 
+randomization, which uses a hybrid of two existing binomial random variate 
+algorithms: the BTPE Algorithm (Binomial, Triangle, Parallelogram, Exponential)
+and the inverse transform for cases that BTPE cannot handle. BTPE uses 
+rejection sampling, and BTPE's authors originally provided an analytical 
+formula for the expected number of iterations in terms of n and p. That 
+expression is complicated to interpret in practical contexts. I explore BTPE 
+by instrumenting &rho;&mu;'s implementation to empirically analyze its 
+acceptance/rejection behavior to gain further insights into its runtime 
+performance. Although the number of iterations depends upon n and p, my 
+experiments show that the average number of iterations is always under two, 
+and that the average number of random uniform variates required to generate a 
+single random binomial is under four (two per iteration). Thus, when analyzing 
+the runtime of a simulation algorithm that includes steps generating random 
+binomials, one can consider such steps to have a constant runtime.}
+}
+
 @ARTICLE{MONE-2022,
 AUTHOR = {Vincent A. Cicirello},
 TITLE = {On Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection},
