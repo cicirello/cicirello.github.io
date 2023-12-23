@@ -5,7 +5,7 @@
 <link rel="canonical" href="https://www.cicirello.org/publications/">
 <link itemprop="url" href="https://www.cicirello.org/publications/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'sha256-75Zx29CfU0V7tuYB37+ZNqKDvo5T9nEdXIqkVNdTpHw='; base-uri 'none'; form-action 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'sha256-vmSFNFIbCP9TMZdUoNRpL3sFgz4E6M0LmxV0Ck3NiyQ='; base-uri 'none'; form-action 'none';">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Publications - Vincent A. Cicirello - Professor of Computer Science</title>
 <meta name="title" content="Publications - Vincent A. Cicirello - Professor of Computer Science">
@@ -54,8 +54,11 @@ nav div a:not(.active) { display: none; }
 #toggle:checked ~ div a:not(.active) { display: block; }
 #menu-icon { display: block; padding: 3px 7px 3px 7px; border-radius: 4px; }
 }
-details, details[open] summary { margin-bottom: 12pt; }
-summary { color:#862d2d; cursor: pointer; }
+details, details[open] summary {margin-bottom:12pt;}
+summary {color:#862d2d; cursor:pointer;}
+table {border-collapse:collapse; border: 2px solid #862d2d;}
+th {text-align:left;color: #862d2d;}
+td, th {padding:5px; border: 1px solid #862d2d;}
 </style>
 <link rel="icon" href="/images/favicon.svg" sizes="any" type="image/svg+xml">
 <meta property="og:url" content="https://www.cicirello.org/publications/">
@@ -129,12 +132,16 @@ computer-aided engineering, and computer science education.</p>
 </details>
 <details>
 <summary>Link label legend</summary>
-The title link for each publication leads to a page with the abstract and
-other information. Links are provided to access the full-text in pdf
-format (PDF links), and to the publisher's definitive version (DOI or PUB links)
-for most papers. Follow the CODE links to source code repositories for papers where
-source code is publicly available such as for reproducing experimental results, etc.
-The BIB links provide bibtex entries.
+<table>
+<tr><th>Link</th><th>Links To</th></tr>
+<tr><td>Title</td><td>Abstract/information page</td></tr>
+<tr><td>[PDF]</td><td>Full-text pdf file</td></tr>
+<tr><td>[BIB]</td><td>BibTeX file</td></tr>
+<tr><td>[DOI]</td><td>Persistent link to publisher's version</td></tr>
+<tr><td>[PUB]</td><td>Publisher's version</td></tr>
+<tr><td>[arXiv]</td><td>Preprint on arXiv.org</td></tr>
+<tr><td>[CODE]</td><td>Source code repository, such as to reproduce experimental results, etc.</td></tr>
+</table>
 </details>
 <h3 id="2024">2024 (<a href="#top"><em>Top of the page</em></a>)</h3>
 <ul>
