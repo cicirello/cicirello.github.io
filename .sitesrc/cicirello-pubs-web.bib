@@ -652,28 +652,17 @@ note = {Melbourne, Florida.  Acceptance rate:~39.3\% (24/61).}
 @techreport{ARXIV2017,
 author = {Vincent A. Cicirello},
 title = {Design, Configuration, Implementation, and Performance of a Simple 32 Core Raspberry Pi Cluster},
-number = {arXiv:1708.05264 [cs.DC]},
-type = {arXiv preprint},
+number = {VAC-TR-17-004},
+institution = {Cicirello.org},
+type = {Technical Report},
 arxiv = {arXiv:1708.05264},
 year = {2017},
 month = {August},
-pdf = {arxiv.1708.05264.pdf},
+pdf = {https://reports.cicirello.org/17/004/VAC-TR-17-004.pdf},
+infopage = {https://reports.cicirello.org/17/004/},
 acro = {arXiv},
 doi = {https://arxiv.org/abs/1708.05264},
-graphicalAbstract = {pi-cluster-graphical-abstract.png},
-code = {https://github.com/cicirello/ClusterPerformanceTests},
-abstract = {In this report, I describe the design and implementation of an inexpensive, eight node, 32 core, cluster of
-raspberry pi single board computers, as well as the performance of this cluster on two computational tasks,
-one that requires significant data transfer relative to computational time requirements, and one that does not.
-We have two use-cases for the cluster: (a) as an educational tool for classroom usage, such as covering
-parallel algorithms in an algorithms course; and (b) as a test system for use during the development of 
-parallel metaheuristics, essentially serving as a personal desktop parallel computing cluster.
-Our preliminary results show that the slow 100 Mbps networking of the raspberry pi significantly limits 
-such clusters to parallel computational tasks that are either long running relative to data communications
-requirements, or that which requires very little internode communications.  Additionally, although the raspberry pi 3 
-has a quad-core processor, parallel speedup degrades during attempts to utilize all four cores of all cluster nodes
-for a parallel computation, likely due to resource contention with operating system level processes. However, 
-distributing a task across three cores of each cluster node does enable linear (or near linear) speedup.}
+code = {https://github.com/cicirello/ClusterPerformanceTests}
 }
 
 @INPROCEEDINGS{SOCS2017,
