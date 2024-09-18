@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang=en itemscope itemtype="https://schema.org/ItemPage" itemref="pageAuthor topNav">
+<head>
+<meta charset=utf-8>
+<link rel="canonical" href="https://www.cicirello.org/publications/cicirello2024spe.html">
+<link itemprop="url" href="https://www.cicirello.org/publications/cicirello2024spe.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'sha256-Yt0hoHbYxc0HN4fk7k00Uk2E7ikDx3s7LVoetg/HRSo='; base-uri 'none'; form-action 'none';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Algorithms for Generating Small Random Samples - Software: Practice and Experience - 2024</title>
+<meta name="title" content="Algorithms for Generating Small Random Samples - Software: Practice and Experience - 2024">
+<meta itemprop="name" content="Algorithms for Generating Small Random Samples - Software: Practice and Experience - 2024">
+<meta name="description" content="We present algorithms for generating small random samples without replacement.
+We consider two cases. We present an algorithm for sampling a pair of distinct
+integers, and an algorithm for sampling a triple of distinct integers. The
+worst-case runtime of both algorithms is constant, while the worst-case
+runtimes of common algorithms for the general case of sampling k elements from
+a set of n increase with n. Java implementations of both algorithms are
+included in the open source library &rho;&mu;.">
+<meta itemprop="description" content="We present algorithms for generating small random samples without replacement.
+We consider two cases. We present an algorithm for sampling a pair of distinct
+integers, and an algorithm for sampling a triple of distinct integers. The
+worst-case runtime of both algorithms is constant, while the worst-case
+runtimes of common algorithms for the general case of sampling k elements from
+a set of n increase with n. Java implementations of both algorithms are
+included in the open source library &rho;&mu;.">
+<meta name="citation_title" content="Algorithms for Generating Small Random Samples">
+<meta name="citation_author" content="Vincent A. Cicirello">
+<meta name="citation_publication_date" content="2024">
+<meta name="citation_date" content="2024">
+<meta name="citation_journal_title" content="Software: Practice and Experience">
+<meta name="citation_firstpage" content="1">
+<meta name="citation_lastpage" content="9">
+<meta name="citation_pdf_url" content="https://www.cicirello.org/publications/cicirello2024spe.pdf">
+<meta name="citation_abstract_html_url" content="https://www.cicirello.org/publications/cicirello2024spe.html">
+<meta name="citation_doi" content="10.1002/spe.3379">
+<style>
+header, nav, footer, article, aside, section { display: block; }
+footer { clear: both; }
+body { background-color: #f6f0bb; font-family: Georgia, Times, "Times New Roman", serif; }
+#siteheader, aside, footer { background-color: #bfd9bf; }
+#siteheader, aside, footer, article { border: 2px solid #4CAF50; border-radius: 25px; margin-bottom: 5px; padding: 8px; }
+h1, h2, h3, h4, h5, h6, strong { color: #862d2d; }
+#siteheader h2 { font-size: 2em; text-align: center; }
+img.respimg { max-width: 100%; height: auto; }
+a { color: #005500; }
+a:visited { color:#862d2d; }
+#toggle { position: absolute; left: -100vw; display: none; }
+nav { margin: 0px; padding: 0; overflow: hidden; }
+nav div, #menu-icon { float: left; margin-right: 8px; }
+nav div a, #menu-icon { display: block; background-color: #f6f0bb; border: 2px solid #4CAF50; text-decoration: none; text-align: center; color: #1c2833; }
+nav div a { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 12px; }
+#menu-icon { cursor: pointer; display: none; }
+nav div a:visited { color: #1c2833; }
+nav div a:hover:not(.active), #menu-icon:hover:not(.active) { background-color: #305030; color: white; }
+nav div a.active { background-color: #4CAF50; }
+aside { float: left; width: 255px; }
+aside h4 { display: inline; }
+article { float: right; width: calc(100% - 300px); }
+article li { margin-bottom: 12px; margin-top: 12px; }
+.publist li { margin-bottom: 16px; }
+.publist ul { margin-bottom: 32px; }
+section { margin-top: 30px; }
+#pubyears { list-style-type: none; margin: 0px; padding: 0px; overflow: auto; }
+#pubyears li { float: left; margin: 0px 12px 12px 0px; }
+#copyright { text-align: center; color: #862d2d; }
+@media screen and (max-width:600px){
+article, aside { clear:both; width:calc(100% - 20px); }
+nav div a:not(.active) { display: none; }
+#toggle:checked ~ div a:not(.active) { display: block; }
+#menu-icon { display: block; padding: 3px 7px 3px 7px; border-radius: 4px; }
+}
+</style>
+<link rel="icon" href="/images/favicon.svg" sizes="any" type="image/svg+xml">
+<meta property="og:url" content="https://www.cicirello.org/publications/cicirello2024spe.html">
+<meta property="og:title" content="Algorithms for Generating Small Random Samples - Software: Practice and Experience - 2024">
+<meta property="og:image" content="https://www.cicirello.org/images/vac.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="672">
+<meta property="og:description" content="We present algorithms for generating small random samples without replacement.
+We consider two cases. We present an algorithm for sampling a pair of distinct
+integers, and an algorithm for sampling a triple of distinct integers. The
+worst-case runtime of both algorithms is constant, while the worst-case
+runtimes of common algorithms for the general case of sampling k elements from
+a set of n increase with n. Java implementations of both algorithms are
+included in the open source library &rho;&mu;.">
+</head>
+<body>
+<header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader" id="siteheader">
+<div itemscope>
+<h2><a href="/"><img src="/images/vac.svg" alt="Vincent A. Cicirello, Ph.D. - Professor of Computer Science" width="1280" height="672" class="respimg"></a></h2>
+<nav itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement" id="topNav">
+<input type="checkbox" id="toggle">
+<label for="toggle" id="menu-icon">&#9776;</label>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/"><span itemprop="name">Home</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/CollectionPage"><a itemprop="url" href="/publications/"><span itemprop="name">Publications</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/research/"><span itemprop="name">Research</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/software/"><span itemprop="name">Open Source Software</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/datasets/"><span itemprop="name">Datasets</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/teaching/"><span itemprop="name">Teaching</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/professional/"><span itemprop="name">Professional Activities</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/dev/"><span itemprop="name">Blog</span></a></div>
+<div itemprop="hasPart" itemscope itemtype="https://schema.org/WebPage"><a itemprop="url" href="/search/"><span itemprop="name">Site Search</span></a></div>
+</nav>
+</div>
+</header>
+<article itemprop="mainEntity" itemscope itemtype="https://schema.org/ScholarlyArticle">
+<header>
+<h2><a itemprop="url" href="/publications/cicirello2024spe.pdf"><span itemprop="name headline">Algorithms for Generating Small Random Samples</span></a></h2>
+<h3><span itemprop="author" itemscope itemtype="https://schema.org/Person"><a itemprop="url mainEntityOfPage" href="/"><span itemprop="name">Vincent A. Cicirello</span></a></span></h3>
+<h4><span itemprop="isPartOf" itemscope itemtype="https://schema.org/Periodical"><i><span itemprop="name">Software: Practice and Experience</span></i></span>,
+: <span itemprop="pageStart">1</span>-<span itemprop="pageEnd">9</span>,
+<time datetime="2024" itemprop="datePublished">2024</time>. doi:10.1002/spe.3379</h4>
+</header>
+<p><span itemprop="encoding" itemscope itemtype="https://schema.org/MediaObject"><a itemprop="contentUrl" href="/publications/cicirello2024spe.pdf">[<span itemprop="encodingFormat">PDF</span>]</a></span> <a href="/publications/cicirello2024spe.bib">[BIB]</a> <a itemprop="sameAs" href="https://doi.org/10.1002/spe.3379">[DOI]</a> <a itemprop="sameAs" href="https://onlinelibrary.wiley.com/share/author/J3S4KWMDVFFZNMFS9RY5?target=10.1002/spe.3379">[PUB]</a> <a itemprop="sameAs" href="https://arxiv.org/abs/2405.12371">[arXiv]</a> <a href="https://github.com/cicirello/small-sample-experiments">[CODE]</a></p>
+<h4>Abstract</h4>
+<div itemprop="description"><p>We present algorithms for generating small random samples without replacement.
+We consider two cases. We present an algorithm for sampling a pair of distinct
+integers, and an algorithm for sampling a triple of distinct integers. The
+worst-case runtime of both algorithms is constant, while the worst-case
+runtimes of common algorithms for the general case of sampling k elements from
+a set of n increase with n. Java implementations of both algorithms are
+included in the open source library &rho;&mu;.</p></div>
+</article>
+<aside itemprop="hasPart" itemscope itemtype="https://schema.org/WPSideBar">
+<div itemscope>
+<div id="pageAuthor" itemprop="author copyrightHolder" itemscope itemtype="https://schema.org/Person">
+<div id="vacData">
+<h3><a itemprop="mainEntityOfPage url" href="/"><span itemprop="name">Vincent A. Cicirello</span>, <span itemprop="honorificSuffix">Ph.D.</span></a></h3>
+<h4>Current Position:</h4><br>
+<span itemprop="jobTitle">Professor of Computer Science</span><br><br>
+<h4>Mailing Address:</h4><br>
+School of Business<br>
+Stockton University<br>
+101 Vera King Farris Dr<br>
+Galloway, NJ 08205<br><br>
+<h4>E-mail:</h4>
+<a rel="nofollow" href="/e/">contact</a>
+<br><br>
+<h4>Phone:</h4>
+(609) 626-3526<br><br>
+<h4>Profiles:</h4><br>
+<a itemprop="sameAs" href="https://www.linkedin.com/in/vacicirello"><img src="/images/in.svg" width="32" height="32" alt="LinkedIn"></a>
+<a itemprop="sameAs" href="https://github.com/cicirello"><img alt="Explore my open source projects on
+GitHub" src="/images/mark-github-16.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://scholar.google.com/citations?user=wq4N1CoAAAAJ"><img alt="Google Scholar" src="/images/gs.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://orcid.org/0000-0003-1072-8559"><img alt="ORCID" src="/images/orcid.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://dblp.org/pid/57/5754"><img alt="DBLP" src="/images/dblp.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://dl.acm.org/author_page.cfm?id=81100638594"><img alt="ACM Digital Library" src="/images/acm.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://ieeexplore.ieee.org/author/37272496500"><img alt="IEEE Xplore" src="/images/ieee.svg" width="32" height="32"></a>
+<a itemprop="sameAs" href="https://www.researchgate.net/profile/Vincent-Cicirello"><img alt="ResearchGate" src="/images/rg.svg" width="32" height="32"></a>
+</div></div></div>
+</aside>
+<footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
+<small>
+<a href="/policy/privacy/">Privacy Policy</a>
+</small>
+<div id="copyright"><small>Copyright &copy; 1996-2024 Vincent A. Cicirello.</small></div>
+</footer>
+</body>
+</html>
