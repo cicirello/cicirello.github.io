@@ -1,3 +1,58 @@
+@INPROCEEDINGS{ECTA2024-Optimize-GA,
+author = {Vincent A. Cicirello},
+title = {Optimizing Genetic Algorithms Using the Binomial Distribution},
+booktitle = {Proceedings of the 16th International Joint Conference on Computational Intelligence},
+month = {November},
+year = {2024},
+pages = {159-169},
+doi = {https://doi.org/10.5220/0013038300003837},
+otherLink = {https://arxiv.org/abs/2412.02009},
+acro = {ecta},
+pdf = {cicirello2024ecta-optimize-ga.pdf},
+code = {https://github.com/cicirello/optimize-ga-operators},
+abstract = {Evolutionary algorithms rely very heavily on randomized behavior.
+Execution speed, therefore, depends strongly on how we implement randomness,
+such as our choice of pseudorandom number generator, or the algorithms 
+used to map pseudorandom values to specific intervals or distributions. In
+this paper, we observe that the standard bit-flip mutation of a genetic 
+algorithm (GA), uniform crossover, and the GA control loop that determines 
+which pairs of parents to cross are all in essence binomial experiments. 
+We then show how to optimize each of these by utilizing a binomial distribution 
+and sampling algorithms to dramatically speed the runtime of a GA relative to the 
+common implementation. We implement our approach in the open-source Java library 
+Chips-n-Salsa. Our experiments validate that the approach is orders of magnitude 
+faster than the common GA implementation, yet produces solutions that are
+statistically equivalent in solution quality.}
+}
+
+@INPROCEEDINGS{ECTA2024-Chips-n-Salsa,
+author = {Vincent A. Cicirello},
+title = {Open Source Evolutionary Computation with Chips-n-Salsa},
+booktitle = {Proceedings of the 16th International Joint Conference on Computational Intelligence},
+month = {November},
+year = {2024},
+pages = {330-337},
+doi = {https://doi.org/10.5220/0013040600003837},
+otherLink = {https://arxiv.org/abs/2412.02004},
+acro = {ecta},
+pdf = {cicirello2024ecta-chips-n-salsa.pdf},
+code = {https://github.com/cicirello/Chips-n-Salsa},
+abstract = {When it was first introduced, the Chips-n-Salsa Java library provided 
+stochastic local search and related algorithms, with a focus on self-adaptation
+and parallel execution. For the past four years, we expanded its scope to include 
+evolutionary computation. This paper concerns the evolutionary algorithms that 
+Chips-n-Salsa now provides, which includes multiple evolutionary models, common 
+problem representations, a wide range of mutation and crossover operators, 
+and a variety of benchmark problems. Well-defined Java interfaces enable easily 
+integrating custom representations and evolutionary operators, as well as defining 
+optimization problems. Chips-n-Salsa's evolutionary algorithms include implementations 
+with adaptive mutation and crossover rates, as well as both sequential and parallel 
+execution. Source code is maintained on GitHub, and immutable artifacts are regularly 
+published to the Maven Central Repository to enable easily importing into projects for 
+reproducible builds. Effective development processes such as test-driven development, 
+as well as a variety of static analysis tools help ensure code quality.}
+}
+
 @article{SPE2024,
   title = {Algorithms for Generating Small Random Samples},
   author = {Vincent A. Cicirello},
