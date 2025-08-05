@@ -145,10 +145,8 @@ Disallow: /
 User-agent: Googlebot-Image
 Disallow: /images/addr.png
 Disallow: /images/vac.jpg
-Disallow: /e/
 
 User-agent: *
 Disallow: /endpoints/
-Disallow: /e/
 
 Sitemap: https://www.cicirello.org/sitemap.xml
