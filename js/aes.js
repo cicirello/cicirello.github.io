@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function ()
 	{
 		const coder = new AesLinkCoder(key);
 
-		document.querySelectorAll('.email')
+		document.querySelectorAll('.liame')
 			.forEach(coder.decode.bind(coder));
 	};
 

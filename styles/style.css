@@ -27,7 +27,7 @@ section { margin-top: 30px; }
 #pubyears { list-style-type: none; margin: 0px; padding: 0px; overflow: auto; }
 #pubyears li { float: left; margin: 0px 12px 12px 0px; }
 #copyright { text-align: center; color: #862d2d; }
-.footer-link { padding: 0 10px 0 10px; }
+.footer-link { padding: 0 10px 10px 10px; }
 @media screen and (max-width:600px){
 article, aside { clear:both; width:calc(100% - 20px); }
 nav div a:not(.active) { display: none; }
