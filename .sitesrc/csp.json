@@ -16,7 +16,8 @@
 		},
 		{
 			"pageKey": "e",
-			"scriptSrc": [ "'self'" ]
+			"scriptSrc": [ "'self'" ],
+      "imgSrc": [ "data:"]
 		},
 		{
 			"pageKey": "searchresults",
