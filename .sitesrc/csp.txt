@@ -1,0 +1,14 @@
+page: default
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; script-src 'sha384-i9On6a8pULeN0XD9l3J0gZMnvbggxt4HiEpfuxzePuYS3uDQJ/7mbPyYPfqe/wSg' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; style-src https://*.doubleclick.net https://*.googlesyndication.com https://fonts.googleapis.com 'unsafe-inline'; font-src fonts.gstatic.com;">
+
+page: 404
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'self';">
+
+page: e
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; script-src 'sha384-8Oo9cM/L+xi0NwVMwcQ3g9+gJR/SeOr/S2FnQOql8uV695YI4TRYL/95cIinqE48'; base-uri 'none'; form-action 'none';">
+
+page: privacy
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'none';">
+
+page: searchresults
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/; base-uri 'none'; form-action 'self';">
