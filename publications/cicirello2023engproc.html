@@ -54,6 +54,32 @@ binomials, one can consider such steps to have a constant runtime.">
 <meta name="citation_pdf_url" content="https://www.cicirello.org/publications/engproc-56-00086.pdf">
 <meta name="citation_abstract_html_url" content="https://www.cicirello.org/publications/cicirello2023engproc.html">
 <meta name="citation_doi" content="10.3390/ASEC2023-15349">
+<meta property="og:url" content="https://www.cicirello.org/publications/cicirello2023engproc.html">
+<meta property="og:title" content="An Analysis of an Open Source Binomial Random Variate Generation Algorithm - Engineering Proceedings - 2023">
+<meta property="og:image" content="https://www.cicirello.org/images/vac.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="672">
+<meta property="og:description" content="The binomial distribution is the probability distribution of the number of
+successes for a sequence of n independent trials with success probability p.
+Efficiently generating binomial random variates is important in many modeling
+and simulation applications, such as in medicine, risk management, and fraud
+and anomaly detection, among others. A variety of algorithms exist for
+generating binomial random variates. This paper concerns the algorithm chosen
+for &rho;&mu;, an open source Java library for efficient randomization, which
+uses a hybrid of two existing binomial random variate algorithms: the BTPE
+Algorithm (Binomial, Triangle, Parallelogram, Exponential) and the inverse
+transform for cases that BTPE cannot handle. BTPE uses rejection sampling, and
+BTPE&#8217;s authors originally provided an analytical formula for the expected
+number of iterations in terms of n and p. That expression is complicated to
+interpret in practical contexts. I explore BTPE by instrumenting
+&rho;&mu;&#8217;s implementation to empirically analyze its
+acceptance/rejection behavior to gain further insights into its runtime
+performance. Although the number of iterations depends upon n and p, my
+experiments show that the average number of iterations is always under two, and
+that the average number of random uniform variates required to generate a
+single random binomial is under four (two per iteration). Thus, when analyzing
+the runtime of a simulation algorithm that includes steps generating random
+binomials, one can consider such steps to have a constant runtime.">
 <style>
 header, nav, footer, article, aside, section { display: block; }
 footer { clear: both; }
@@ -93,32 +119,7 @@ nav div a:not(.active) { display: none; }
 }
 </style>
 <link rel="icon" href="/images/favicon.svg" sizes="any" type="image/svg+xml">
-<meta property="og:url" content="https://www.cicirello.org/publications/cicirello2023engproc.html">
-<meta property="og:title" content="An Analysis of an Open Source Binomial Random Variate Generation Algorithm - Engineering Proceedings - 2023">
-<meta property="og:image" content="https://www.cicirello.org/images/vac.png">
-<meta property="og:image:width" content="1280">
-<meta property="og:image:height" content="672">
-<meta property="og:description" content="The binomial distribution is the probability distribution of the number of
-successes for a sequence of n independent trials with success probability p.
-Efficiently generating binomial random variates is important in many modeling
-and simulation applications, such as in medicine, risk management, and fraud
-and anomaly detection, among others. A variety of algorithms exist for
-generating binomial random variates. This paper concerns the algorithm chosen
-for &rho;&mu;, an open source Java library for efficient randomization, which
-uses a hybrid of two existing binomial random variate algorithms: the BTPE
-Algorithm (Binomial, Triangle, Parallelogram, Exponential) and the inverse
-transform for cases that BTPE cannot handle. BTPE uses rejection sampling, and
-BTPE&#8217;s authors originally provided an analytical formula for the expected
-number of iterations in terms of n and p. That expression is complicated to
-interpret in practical contexts. I explore BTPE by instrumenting
-&rho;&mu;&#8217;s implementation to empirically analyze its
-acceptance/rejection behavior to gain further insights into its runtime
-performance. Although the number of iterations depends upon n and p, my
-experiments show that the average number of iterations is always under two, and
-that the average number of random uniform variates required to generate a
-single random binomial is under four (two per iteration). Thus, when analyzing
-the runtime of a simulation algorithm that includes steps generating random
-binomials, one can consider such steps to have a constant runtime.">
+<script async src="/js/dynamic_loader.min.js" integrity="sha384-i9On6a8pULeN0XD9l3J0gZMnvbggxt4HiEpfuxzePuYS3uDQJ/7mbPyYPfqe/wSg" crossorigin="anonymous"></script>
 </head>
 <body>
 <header itemprop="hasPart" itemscope itemtype="https://schema.org/WPHeader" id="siteheader">
