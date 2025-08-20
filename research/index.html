@@ -50,7 +50,7 @@ nav div a { border-bottom: none; border-radius: 12px 12px 0px 0px; padding: 6px 
 nav div a:visited { color: #1c2833; }
 nav div a:hover:not(.active), #menu-icon:hover:not(.active) { background-color: #305030; color: white; }
 nav div a.active { background-color: #4CAF50; }
-aside { float: left; width: 255px; }
+aside, #sidebar-ad { float: left; width: 255px; }
 aside h4 { display: inline; }
 article { float: right; width: calc(100% - 300px); }
 article li { margin-bottom: 12px; margin-top: 12px; }
@@ -62,7 +62,7 @@ section { margin-top: 30px; }
 #copyright { text-align: center; color: #862d2d; }
 .footer-link { padding: 0 10px 0 10px; }
 @media screen and (max-width:600px){
-article, aside { clear:both; width:calc(100% - 20px); }
+article, aside, #sidebar-ad { clear:both; width:calc(100% - 20px); }
 nav div a:not(.active) { display: none; }
 #toggle:checked ~ div a:not(.active) { display: block; }
 #menu-icon { display: block; padding: 3px 7px 3px 7px; border-radius: 4px; }
@@ -187,6 +187,7 @@ GitHub" src="/images/mark-github-16.svg" width="32" height="32"></a>
 <a itemprop="sameAs" href="https://www.researchgate.net/profile/Vincent-Cicirello"><img alt="ResearchGate" src="/images/rg.svg" width="32" height="32"></a>
 </div></div></div>
 </aside>
+<div id="sidebar-ad"></div>
 <footer itemprop="hasPart" itemscope itemtype="https://schema.org/WPFooter">
 <p><small>
 <a class="footer-link" href="/e/">Contact</a>
