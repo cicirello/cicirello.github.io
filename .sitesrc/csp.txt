@@ -1,5 +1,5 @@
 page: default
-<meta http-equiv="Content-Security-Policy" content="object-src 'none'; script-src 'sha384-i9On6a8pULeN0XD9l3J0gZMnvbggxt4HiEpfuxzePuYS3uDQJ/7mbPyYPfqe/wSg' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; style-src https://*.doubleclick.net https://*.googlesyndication.com https://fonts.googleapis.com 'unsafe-inline'; font-src fonts.gstatic.com;">
+<meta http-equiv="Content-Security-Policy" content="object-src 'none'; script-src 'sha384-i9On6a8pULeN0XD9l3J0gZMnvbggxt4HiEpfuxzePuYS3uDQJ/7mbPyYPfqe/wSg' 'sha384-d4YOhBtxn1YZo6bjT3h8O9J9lOxNJ4OIauaaKOXGw5bBUhDe+lDgB4QJNNwZONeu' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; base-uri 'none'; style-src https://*.doubleclick.net https://*.googlesyndication.com https://fonts.googleapis.com 'unsafe-inline'; font-src fonts.gstatic.com;">
 
 page: 404
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'self';">
