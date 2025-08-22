@@ -1,0 +1,23 @@
+[[AD-1]]
+<div class="container-for-ad">
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="2701150451"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+[[AD-2]]
+<div class="container-for-ad">
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="3571378994"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+[[AD-3]]
+<div class="container-for-ad">
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7239161265"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+[[AD-4]]
+<div class="container-for-ad">
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9856250587"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
