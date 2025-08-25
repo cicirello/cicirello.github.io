@@ -95,7 +95,7 @@ and which I have released as open source software. It is organized on this page 
 <ul>
 <li><a href="#actions">GitHub Actions for Workflow Automation</a></li>
 <li><a href="#cli">Command-line Utilities</a></li>
-<li>Docker containers (coming soon)</li>
+<li><a href="#docker">Docker Containers</a></li>
 </ul>
 <p>You can find these open source tools at the following sites:</p>
 <ul>
@@ -116,8 +116,7 @@ website, <a href="https://actions.cicirello.org/">Open Source GitHub
 Actions for Workflow Automation</a>, focused specifically on the GitHub
 Actions that I've implemented for this purpose. A few of these GitHub Actions
 are the following.</p>
-<ul>
-<li id="jacoco"><strong>jacoco-badge-generator</strong>:
+<p id="jacoco"><strong>jacoco-badge-generator</strong>:
 The <a href="https://actions.cicirello.org/jacoco-badge-generator/">jacoco-badge-generator</a>
 parses a jacoco.csv file from a JaCoCo coverage report, computes C0 and C1 coverage percentages
 from <a href="https://www.jacoco.org/jacoco/trunk/doc/counters.html">JaCoCo's
@@ -127,7 +126,7 @@ of your test cases. The jacoco-badge-generator provides two modes of operation: 
 Action within GitHub's workflow automation framework, as well as a command-line utility that can be used
 as part of a local build script. The jacoco-badge-generator (as a GitHub Action) can also optionally
 be used as part of a pull-request check. Specifically, you can configure it to fail the workflow run
-if coverage decreased relative to prior run, and/or if coverage is below a target threshold.
+if coverage decreased relative to prior run, and/or if coverage is below a target threshold.</p>
 <ul>
 <li><a href="https://actions.cicirello.org/jacoco-badge-generator/">Info page</a></li>
 <li>Latest GitHub Action release: <a href="https://github.com/marketplace/actions/jacoco-badge-generator"><img src="https://img.shields.io/github/v/release/cicirello/jacoco-badge-generator?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
@@ -135,77 +134,106 @@ if coverage decreased relative to prior run, and/or if coverage is below a targe
 <li>Source code: <a href="https://github.com/cicirello/jacoco-badge-generator">GitHub Repository</a></li>
 <li>Language: Python</li>
 <li>License: <a href="https://github.com/cicirello/jacoco-badge-generator/blob/main/LICENSE">MIT</a>.</li>
-</ul></li>
-<li><strong>user-statistician</strong>:
+</ul>
+<p><strong>user-statistician</strong>:
 The <a href="https://actions.cicirello.org/user-statistician/">user-statistician
 GitHub Action</a> generates a detailed visual summary of your activity on GitHub
-in the form of an SVG, suitable to display on your <a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">GitHub Profile README</a>.
+in the form of an SVG, suitable to display on your <a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme">GitHub Profile README</a>.</p>
 <ul>
 <li><a href="https://actions.cicirello.org/user-statistician/">Info page</a></li>
 <li>Latest release: <a href="https://github.com/marketplace/actions/user-statistician"><img src="https://img.shields.io/github/v/release/cicirello/user-statistician?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
 <li>Source code: <a href="https://github.com/cicirello/user-statistician">GitHub Repository</a></li>
 <li>Languages: Python and GraphQL</li>
 <li>License: <a href="https://github.com/cicirello/user-statistician/blob/main/LICENSE">MIT</a>.</li>
-</ul></li>
-<li><strong>generate-sitemap</strong>:
+</ul>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="3571378994"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<p><strong>generate-sitemap</strong>:
 The <a href="https://actions.cicirello.org/generate-sitemap/">generate-sitemap GitHub Action</a> generates an XML sitemap
-for a website hosted on GitHub Pages.
+for a website hosted on GitHub Pages.</p>
 <ul>
 <li><a href="https://actions.cicirello.org/generate-sitemap/">Info page</a></li>
 <li>Latest release: <a href="https://github.com/marketplace/actions/generate-sitemap"><img src="https://img.shields.io/github/v/release/cicirello/generate-sitemap?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
 <li>Source code: <a href="https://github.com/cicirello/generate-sitemap">GitHub Repository</a></li>
 <li>Language: Python</li>
 <li>License: <a href="https://github.com/cicirello/generate-sitemap/blob/master/LICENSE">MIT</a>.</li>
-</ul></li>
-<li><strong>javadoc-cleanup</strong>:
+</ul>
+<p><strong>javadoc-cleanup</strong>:
 The <a href="https://actions.cicirello.org/javadoc-cleanup/">javadoc-cleanup
 GitHub Action</a> enables creating mobile-friendly and SEO ready, documentation
 sites by post-processing javadocs in GitHub Actions. The javadoc-cleanup GitHub
 action is a utility to tidy up javadocs prior to deployment to an API documentation
-website, assumed hosted on (but not limited to) GitHub Pages.
+website, assumed hosted on (but not limited to) GitHub Pages.</p>
 <ul>
 <li><a href="https://actions.cicirello.org/javadoc-cleanup/">Info page</a></li>
 <li>Latest release: <a href="https://github.com/marketplace/actions/javadoc-cleanup"><img src="https://img.shields.io/github/v/release/cicirello/javadoc-cleanup?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
 <li>Source code: <a href="https://github.com/cicirello/javadoc-cleanup">GitHub Repository</a></li>
 <li>Language: Python</li>
 <li>License: <a href="https://github.com/cicirello/javadoc-cleanup/blob/master/LICENSE">MIT</a>.</li>
-</ul></li>
-<li><strong>count-action-users</strong>:
+</ul>
+<p><strong>count-action-users</strong>:
 The <a href="https://actions.cicirello.org/count-action-users/">count-action-users GitHub Action</a> is a meta-action for use by
 maintainers of GitHub Actions to monitor and report the number of users of the GitHub Actions that they maintain. It generates a Shields endpoint
-for each Action that they maintain with the count of the number of workflows that use it.
+for each Action that they maintain with the count of the number of workflows that use it.</p>
 <ul>
 <li><a href="https://actions.cicirello.org/count-action-users/">Info page</a></li>
 <li>Latest release: <a href="https://github.com/marketplace/actions/count-action-users"><img src="https://img.shields.io/github/v/release/cicirello/count-action-users?label=Marketplace&logo=GitHub" alt="GitHub Marketplace" height="20"></a></li>
 <li>Source code: <a href="https://github.com/cicirello/count-action-users">GitHub Repository</a></li>
 <li>Language: Python</li>
 <li>License: <a href="https://github.com/cicirello/count-action-users/blob/main/LICENSE">MIT</a>.</li>
-</ul></li>
 </ul>
 <p><a href="#top"><em>Top of the page</em></a></p>
 </section>
-<div class="container-for-ad"><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="3571378994"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 <section id="cli">
 <h3>Command-line Utilities</h3>
 <p>Here are a few command-line utilities that I originally implemented for my own purpose, but
 have since released and maintain as open source.</p>
-<ul>
-<li><strong>bibliometrics</strong>:
+<p><strong>bibliometrics</strong>:
 The <a href="https://github.com/cicirello/bibliometrics">bibliometrics</a> tool is a command-line utility
 that parses a researcher's Google Scholar profile, and summarizes various bibliometrics, generating an
 SVG that can be shared on a website or other online platform. The bibliometrics that it computes
 include h-index, g-index, i10-index, i100-index, e-index, as well as total number of citations and
 the five-year citation count. See <a href="https://www.cicirello.org/status/images/bibliometrics.svg">my
-bibliometric summary</a> for an example.
+bibliometric summary</a> for an example.</p>
 <ul>
 <li>Latest PyPI release: <a href="https://pypi.org/project/bibliometrics/"><img src="https://img.shields.io/pypi/v/bibliometrics?logo=pypi" alt="PyPI" height="20"></a></li>
 <li>Source code: <a href="https://github.com/cicirello/bibliometrics">GitHub Repository</a></li>
 <li>Language: Python</li>
 <li>License: <a href="https://github.com/cicirello/jacoco-badge-generator/blob/main/LICENSE">MIT</a>.</li>
-</ul></li>
-<li><strong>jacoco-badge-generator</strong>: See <a href="#jacoco">earlier
+</ul>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7239161265"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<p><strong>jacoco-badge-generator</strong>: See <a href="#jacoco">earlier
 on this page</a> for details. This tool can be used as a command line
-tool, or within the GitHub Actions framework.</li>
+tool, or within the GitHub Actions framework.</p>
+<p><a href="#top"><em>Top of the page</em></a></p>
+</section>
+<section id="docker">
+<h3>Docker Containers</h3>
+<p><strong>pyaction</strong>: A Docker container designed to support implementing Github
+Actions with Python. It consists of a python slim Docker image, additionally with curl, gpg,
+git, and the GitHub CLI.</p>
+<ul>
+<li><a href="https://actions.cicirello.org/pyaction/">Info page</a></li>
+<li>Docker Hub: <a href="https://hub.docker.com/r/cicirello/pyaction"><img src="https://img.shields.io/docker/v/cicirello/pyaction?label=Docker%20Hub&logo=docker" alt="Docker Hub" height="20"></a></li>
+<li>GitHub Container Registry: <a href="https://github.com/cicirello/pyaction/pkgs/container/pyaction"><img src="https://img.shields.io/docker/v/cicirello/pyaction?label=ghcr.io&logo=github" alt="GitHub Container Registry" height="20"></a></li>
+<li>Source code: <a href="https://actions.cicirello.org/pyaction/">GitHub Repository</a></li>
+</ul>
+<p><strong>gnu-on-alpine</strong>: A lightweight container to support shell scripting, consisting
+of Alpine Linux to keep the image size small, and a single layer with several GNU tools including
+bash, coreutils, findutils, and gawk.</p>
+<ul>
+<li><a href="https://actions.cicirello.org/gnu-on-alpine/">Info page</a></li>
+<li>Docker Hub: <a href="https://hub.docker.com/r/cicirello/gnu-on-alpine"><img src="https://img.shields.io/docker/v/cicirello/gnu-on-alpine?label=Docker%20Hub&logo=docker" alt="Docker Hub" height="20"></a></li>
+<li>GitHub Container Registry: <a href="https://github.com/cicirello/gnu-on-alpine/pkgs/container/gnu-on-alpine"><img src="https://img.shields.io/docker/v/cicirello/gnu-on-alpine?label=ghcr.io&logo=github" alt="GitHub Container Registry" height="20"></a></li>
+<li>Source code: <a href="https://github.com/cicirello/gnu-on-alpine">GitHub Repository</a></li>
+</ul>
+<p><strong>alpine-plus-plus</strong>: A lightweight container to support shell scripting with git, consisting
+of Alpine Linux to keep the image size small, and a single layer with git, as well as all of the GNU tools from
+gnu-on-alpine.</p>
+<ul>
+<li><a href="https://actions.cicirello.org/alpine-plus-plus/">Info page</a></li>
+<li>Docker Hub: <a href="https://hub.docker.com/r/cicirello/alpine-plus-plus"><img src="https://img.shields.io/docker/v/cicirello/alpine-plus-plus?label=Docker%20Hub&logo=docker" alt="Docker Hub" height="20"></a></li>
+<li>GitHub Container Registry: <a href="https://github.com/cicirello/alpine-plus-plus/pkgs/container/alpine-plus-plus"><img src="https://img.shields.io/docker/v/cicirello/alpine-plus-plus?label=ghcr.io&logo=github" alt="GitHub Container Registry" height="20"></a></li>
+<li>Source code: <a href="https://github.com/cicirello/alpine-plus-plus">GitHub Repository</a></li>
 </ul>
 <p><a href="#top"><em>Top of the page</em></a></p>
 </section>
