@@ -1,35 +1,47 @@
-[[AD-1]]
+[[AD-1-ARTICLE]]
 <div class="container-for-ad">
 <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="2701150451"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-[[AD-2]]
+[[AD-2-ARTICLE]]
 <div class="container-for-ad">
 <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="3571378994"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-[[AD-3]]
+[[AD-3-ARTICLE]]
 <div class="container-for-ad">
 <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7239161265"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-[[AD-4]]
+[[AD-4-ARTICLE]]
 <div class="container-for-ad">
 <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9856250587"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-[[AD-OLD-1]]
+[[AD-1]]
+<div class="container-for-ad">
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9837103127" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
-[[AD-OLD-2]]
+[[AD-2]]
+<div class="container-for-ad">
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7210939788" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
-[[AD-OLD-3]]
+[[AD-3]]
+<div class="container-for-ad">
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7865545903" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+[[AD-4]]
+<div class="container-for-ad">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9105812677" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
