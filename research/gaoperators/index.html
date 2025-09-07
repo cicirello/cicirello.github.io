@@ -10,26 +10,32 @@
 <title>Genetic Operators for Permutation Representation - Research - Vincent A. Cicirello - Professor of Computer Science</title>
 <meta name="title" content="Genetic Operators for Permutation Representation - Research - Vincent A. Cicirello - Professor of Computer Science">
 <meta itemprop="name" content="Genetic Operators for Permutation Representation - Research - Vincent A. Cicirello - Professor of Computer Science">
-<meta name="description" content="The permutation representation for genetic algorithms requires specialized operators. A wide variety of crossover and mutation
-operators for permutations exist in the research literature. In my research on evolutionary computation for optimizing permutation structures,
-I have developed several crossover and mutation operators, including Cycle Mutation,
-Non-Wrapping Order Crossover (NWOX), Uniform Partially Matched Crossover (UPMX),
-Heuristic Sequencing Crossover (HeurX), and window-limited variations of common permutation mutation operators.">
-<meta itemprop="description" content="The permutation representation for genetic algorithms requires specialized operators. A wide variety of crossover and mutation
-operators for permutations exist in the research literature. In my research on evolutionary computation for optimizing permutation structures,
-I have developed several crossover and mutation operators, including Cycle Mutation,
-Non-Wrapping Order Crossover (NWOX), Uniform Partially Matched Crossover (UPMX),
-Heuristic Sequencing Crossover (HeurX), and window-limited variations of common permutation mutation operators.">
+<meta name="description" content="In my research on evolutionary computation for optimizing permutation structures, I have developed
+several crossover and mutation operators, including Cycle Mutation, Non-Wrapping Order Crossover
+(NWOX), Uniform Partially Matched Crossover (UPMX), Heuristic Sequencing Crossover (HeurX), and
+window-limited variations of common permutation mutation operators. I have also performed a
+comprehensive survey and analysis of dozens of crossover and mutation operators for permutations,
+which provides guidance on how to select the evolutionary operators most appropriate to a given
+permutation problem based upon the permutation features that are most important to fitness.">
+<meta itemprop="description" content="In my research on evolutionary computation for optimizing permutation structures, I have developed
+several crossover and mutation operators, including Cycle Mutation, Non-Wrapping Order Crossover
+(NWOX), Uniform Partially Matched Crossover (UPMX), Heuristic Sequencing Crossover (HeurX), and
+window-limited variations of common permutation mutation operators. I have also performed a
+comprehensive survey and analysis of dozens of crossover and mutation operators for permutations,
+which provides guidance on how to select the evolutionary operators most appropriate to a given
+permutation problem based upon the permutation features that are most important to fitness.">
 <meta property="og:url" content="https://www.cicirello.org/research/gaoperators/">
 <meta property="og:title" content="Genetic Operators for Permutation Representation - Research - Vincent A. Cicirello - Professor of Computer Science">
 <meta property="og:image" content="https://www.cicirello.org/images/vac.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="672">
-<meta property="og:description" content="The permutation representation for genetic algorithms requires specialized operators. A wide variety of crossover and mutation
-operators for permutations exist in the research literature. In my research on evolutionary computation for optimizing permutation structures,
-I have developed several crossover and mutation operators, including Cycle Mutation,
-Non-Wrapping Order Crossover (NWOX), Uniform Partially Matched Crossover (UPMX),
-Heuristic Sequencing Crossover (HeurX), and window-limited variations of common permutation mutation operators.">
+<meta property="og:description" content="In my research on evolutionary computation for optimizing permutation structures, I have developed
+several crossover and mutation operators, including Cycle Mutation, Non-Wrapping Order Crossover
+(NWOX), Uniform Partially Matched Crossover (UPMX), Heuristic Sequencing Crossover (HeurX), and
+window-limited variations of common permutation mutation operators. I have also performed a
+comprehensive survey and analysis of dozens of crossover and mutation operators for permutations,
+which provides guidance on how to select the evolutionary operators most appropriate to a given
+permutation problem based upon the permutation features that are most important to fitness.">
 <style>
 header, nav, footer, article, aside, section { display: block; }
 footer { clear: both; }
@@ -96,12 +102,157 @@ nav div a:not(.active) { display: none; }
 </header>
 <article itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
 <h2>Genetic Operators for Permutation Representation</h2>
-<p>The permutation representation for genetic algorithms requires specialized operators. A wide variety of crossover and mutation
-operators for permutations exist in the research literature. In my research on evolutionary computation for optimizing permutation structures,
-I have developed several crossover and mutation operators, including Cycle Mutation,
-Non-Wrapping Order Crossover (NWOX), Uniform Partially Matched Crossover (UPMX),
-Heuristic Sequencing Crossover (HeurX), and window-limited variations of common permutation mutation operators.</p>
+<p>The permutation representation for genetic algorithms requires specialized operators. A wide
+variety of crossover and mutation operators for permutations exist in the research literature.
+In my research on evolutionary computation for optimizing permutation structures, I have developed
+several crossover and mutation operators, including Cycle Mutation, Non-Wrapping Order Crossover
+(NWOX), Uniform Partially Matched Crossover (UPMX), Heuristic Sequencing Crossover (HeurX), and
+window-limited variations of common permutation mutation operators. The remainder of this page
+summarizes the basics of these operators. I have also performed a comprehensive survey and
+analysis of dozens of crossover and mutation operators for permutations, which provides guidance
+on how to select the evolutionary operators most appropriate to a given permutation problem based
+upon the permutation features that are most important to fitness. That survey is
+<a href="/publications/cicirello2023ecta.html">A Survey and Analysis of Evolutionary Operators
+for Permutations</a>.</p>
 <div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9837103127" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<section>
+<h3>Cycle Mutation</h3>
+<p>I developed a new mutation operator called Cycle Mutation for using evolutionary algorithms
+to optimize solutions to problems whose solutions are represented by permutations. There are
+two versions of Cycle Mutation, Cycle(<i>kmax</i>) and Cycle(&alpha;), both of which were
+introduced in the paper <a href="/publications/cicirello2022applsci.html">Cycle Mutation: Evolving
+Permutations via Cycle Induction</a>. Cycle Mutation relies on the concept of a permutation cycle,
+and is inspired by an existing permutation crossover operator called Cycle Crossover.</p>
+<p><strong>Permutation Cycles:</strong> To explain the concept of a permutation cycle, first
+imagine that we have two permutations of the same set, and that we align them, such as in
+this example:</p>
+<pre><code>
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[9, 6, 2, 5, 1, 3, 8, 0, 7, 4]
+</code></pre>
+<p>Next, consider a hypothetical graph, such that each of the elements of the permutation is a vertex
+(e.g., the integers from 0 through 9 in this case), and the edges are defined by elements in
+corresponding positions. In the above example, we'd have edges (0,9), (1,6), (2,2), etc. A permutation
+cycle is just a cycle in this hypothetical graph. The length of a permutation cycle is just the length
+of cycle in graph theoretic terms (i.e., the number of edges in the cyclic path). For example, the
+cycle [2, 2] in the above example is a singleton cycle, or length 1; and the cycle [3, 5, 3] is length
+2. In the Cycle Crossover operator that inspired Cycle Mutation, a pair of parents are aligned and one of
+the permutation cycles of the parents is chosen randomly, by picking an element at random, and the positions
+of the elements of that cycle is exchanged between the parents.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7210939788" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<p><strong>Cycle Mutation:</strong> In Cycle Mutation, we produce a mutant of a chosen permutation by
+inducing a random permutation cycle. In the Cycle(<i>kmax</i>) form of the operator, the length of the
+randomly induced cycle <i>k</i> is chosen at random uniformly from the interval [2, <i>kmax</i>],
+where <i>kmax</i> is a parameter that must be specified. In the Cycle(&alpha;) form of the operator,
+any cycle length from [2, <i>n</i>] is possible, where <i>n</i> is the permutation length. The cycle
+length is chosen randomly such that the probability of choosing <i>k</i> is proportional to
+&alpha;<sup><i>k-2</i></sup>. See the paper for details of how to implement this efficiently, as well
+as some theory underlying the operator, such as the expected cycle length, runtime of the two
+versions, etc. Both forms of cycle mutation are effective for permutation problems where the absolute
+positions of the elements are important to fitness. One benefit of the Cycle(&alpha;) version is that
+corresponding search landscapes are free of local optima.</p>
+</section>
+<section>
+<h3>Non-Wrapping Order Crossover (NWOX)</h3>
+<p>I developed the Non-Wrapping Order Crossover (NWOX) operator for problems where precedences
+among elements of a solution are important to fitness. NWOX is a variation of an operator called
+Order Crossover (OX). The paper where I introduced NWOX is
+<a href="/publications/cicirello2006gecco.html">Non-Wrapping Order Crossover: An Order Preserving
+Crossover Operator that Respects Absolute Position</a>, which was nominated for the Genetic Algorithms
+Track Best Paper Award at GECCO 2006.</p>
+<p>The original OX operator was designed with problems like the traveling person
+(TSP) in mind, as well as other ordering problems. The intention of OX is for child permutations to
+inherit relative ordering of elements from the parents, but it has the tendency for elements that
+had been toward the right half of the parents to end up toward the left half of the children. This
+is fine for the TSP where the permutation represents a cycle with no specific starting point.
+However, for scheduling problems where there is a specific point in time when the schedule begins,
+this matters a lot. NWOX is designed to prevent such cyclic wrapping of elements.</p>
+<p>Both OX and NWOX begin by picking two random cross points, similar to two-point crossover for
+bit vectors. Child 1 gets the elements from the cross region of parent 1 in the same positions
+as the parent; and it gets the remaining elements from parent 2 in the relative order they were
+in parent 2. In the original OX, those relatively ordered elements fill in beginning to the right
+of the cross region and wrapping around to the beginning as necessary. In NWOX, the relatively
+ordered elements are placed left to right, skipping over the cross region as necessary. Here is
+an example. First, consider the parents below, with cross region marked by | |:</p>
+<pre><code>
+[0, 1, 2, 3, | 4, 5, 6, | 7, 8, 9]
+[9, 6, 2, 5, | 1, 3, 8, | 0, 7, 4]
+</code></pre>
+<p>The original OX produces the children:</p>
+<pre><code>
+[3, 8, 0, 7, | 4, 5, 6, | 9, 2, 1]
+[5, 6, 7, 9, | 1, 3, 8, | 0, 2, 4]
+</code></pre>
+<p>NWOX produces the children:</p>
+<pre><code>
+[9, 2, 1, 3, | 4, 5, 6, | 8, 0, 7]
+[0, 2, 4, 5, | 1, 3, 8, | 6, 7, 9]
+</code></pre>
+<p>Based on our <a href="/publications/cicirello2023ecta.html">analysis</a>, the original OX is
+better for problems where edges (i.e., adjacency of elements) is important to fitness, such as the
+TSP problem. However, NXOX is much better
+for problems where element precedences are important to fitness, such as various machine scheduling
+problems.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7865545903" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+</section>
+<section>
+<h3>Uniform Partially Matched Crossover (UPMX)</h3>
+<p>I introduced the Uniform Partially Matched Crossover (UPMX) operator in a paper titled
+<a href="/publications/cicirello2000gecco.html">Modeling GA Performance for Control Parameter
+Optimization</a>. UPMX is a variation of the Partially Matched Crossover (PMX) operator. Whereas
+the original PMX is a two-point-like operator, UPMX is a uniform variant. The original PMX chooses
+two random cross sites, and each permutation position in that region defines a swap (i.e., by the
+elements at corresponding positions). Those swaps are then executed within each parent to form the
+children. My UPMX operator uses a parameter <i>U</i> that specifies the probability that a position
+is chosen, and this is applied to each position along the length of the permutations, much like
+uniform crossover for bit vectors. Once the positions are chosen, UPMX uses those positions to
+define the swaps. Consider these parents, and consider that the highlighted elements are the
+positions that were chosen randomly:</p>
+<pre><code>
+[0, <strong>1</strong>, 2, <strong>3</strong>, 4, 5, 6, <strong>7</strong>, 8, 9]
+[9, <strong>6</strong>, 2, <strong>5</strong>, 1, 3, 8, <strong>0</strong>, 7, 4]
+</code></pre>
+<p>Those chosen points define swaps, in this case: swapping elements 1 and 6, swapping elements 3
+and 5, and swapping elements 7 and 0. We apply these swaps within parent 1 to form child 1, and likewise
+within parent 2 to form child 2 as follows:</p>
+<pre><code>
+[7, 6, 2, 5, 4, 3, 1, 0, 8, 9]
+[9, 1, 2, 3, 6, 5, 8, 7, 0, 4]
+</code></pre>
+<p>UPMX is a good choice for problems where element positions are important to fitness, as well as
+for problems where precedences among elements are important to fitness. See my recent
+<a href="/publications/cicirello2023ecta.html">survey paper</a> for details
+of the analysis that leads to these conclusions.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9105812677" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+</section>
+<section>
+<h3>Window-Limited Mutation Operators</h3>
+<p>I introduced and studied the behavior of window-limited versions of several mutation
+operators for permutations in the paper <a href="/publications/cicirello2014bict.html">On
+the Effects of Window-Limits on the Distance Profiles of Permutation Neighborhood Operators</a>.
+Many mutation operators for permutations involve randomly picking a small number of indexes
+into the permutations, and then performing some operation involving the chosen indexes. For
+example, swap mutation picks a random pair of indexes, and then swaps the two elements at those
+indexes. A window-limited mutation limits the distance between the random indexes such that they
+reside within a window of each other. The window size is a parameter of the operator that must
+be specified at algorithm design time. A window-limited swap with window <i>w=5</i> means that
+the difference between the two random indexes must be at most 5. Any mutation operator that involves
+picking random indexes is a potential candidate for a window-limited variation. I have specifically
+considered window-limited versions of swap mutation, insertion mutation, reversal mutation, block
+move mutation, and scramble mutation.</p>
+</section>
+<section>
+<h3>Heuristic Sequencing Crossover (HeurX)</h3>
+<p>I introduced Heuristic Sequencing Crossover (HeurX) in a paper titled
+<a href="/publications/cicirello2010flairs.html">Heuristic Sequencing Crossover: Integrating Problem
+Dependent Heuristic Knowledge into a Genetic Algorithm</a>. It works very differently than more common
+crossover operators. Rather than recombining elements of two parents to produce two children, it is designed
+to produce one child from <i>M</i> parents, and HeurX is designed specifically with steady-state evolutionary
+algorithms in mind. It utilizes a constructive heuristic for the problem, such as dispatch scheduling heuristics
+for machine scheduling problems. HeurX uses the heuristic to form a child permutation, but the set of parents
+that were chosen from the population are used to constrain the set of permutation elements that the heuristic
+may choose to add next to the permutation. See the original paper for details.</p>
+</section>
 <section class="publist">
 <h3>Selected Publications</h3>
 <ul itemscope itemtype="https://schema.org/ItemList">
