@@ -105,65 +105,198 @@ Some forms of search require the guidance of a heuristic, and the &quot;best&quo
 or may even vary across instances of a problem.  Some of my research has applied machine learning enabling metaheuristics to adapt their choice of
 heuristic.</p>
 <div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9837103127" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<section>
+<h3>Adaptive Simulated Annealing</h3>
+<p><strong>Restart Schedules for Adaptive Simulated Annealing:</strong>
+In <a href="https://www.cicirello.org/publications/cicirello2017SoCS2.html">Variable Annealing
+Length and Parallelism in Simulated Annealing</a>, I introduced a restart-based and parallel extension
+of Modified Lam simulated annealing that eliminates the need to know the annealing length in advance,
+enabling a fully parameter-free SA with strong anytime performance. I introduced two versions of the
+restart schedule. Variable Annealing Length (VAL) is for sequential SA, and consists of an
+exponentially increasing restart schedule. I then generalize it to Parallel VAL (P-VAL), where
+multiple independent Modified Lam annealers run in parallel, each following a coordinated pattern of
+increasing run lengths. This design mitigates the risk of misestimating available computation time:
+short early runs provide rapid improvements, while longer later runs exploit extended time when
+available. Experiments on a difficult NP-hard scheduling problem with sequence-dependent setup times
+show that VAL and P-VAL significantly outperform fixed-length restart strategies during most of the
+run, with P-VAL dominating parallel baselines early and maintaining strong anytime behavior
+throughout. The result is a practical, parallelizable simulated annealing framework that preserves the
+adaptive strengths of Modified Lam while removing its last remaining parameter.</p>
+<p><strong>Self-Tuning Lam Annealing:</strong>
+My article <a href="https://www.cicirello.org/publications/cicirello2021applsci.html">Self-Tuning
+Lam Annealing: Learning Hyperparameters While Problem Solving</a> introduces Self-Tuning Lam
+Annealing, a novel adaptive simulated annealing schedule that automatically learns its own
+hyperparameters during the early phase of a run, enabling rapid convergence to Lam and Delosme&apos;s
+idealized acceptance-rate trajectory regardless of cost-function scale or run length. Building on the
+Modified Lam -- which, despite being described as parameter-free, relies on fixed constants that can
+slow convergence or behave inconsistently across problem domains -- the Self-Tuning Lam uses early
+search feedback to tune the exponential-moving-average acceptance-rate estimator, initial temperature,
+and temperature-adjustment rate. Experiments across discrete, continuous, and NP-hard optimization
+problems show that the method consistently achieves its target behavior almost immediately, improving
+robustness and reducing sensitivity to problem characteristics. The implementation is released as part
+of the Chips-n-Salsa open-source library, along with full experimental data and analysis code to
+support reproducibility.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7210939788" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<p><strong>Optimized Modified Lam Annealing:</strong>
+In <a href="https://www.cicirello.org/publications/cicirello2020inis2.html">Optimizing the Modified
+Lam Annealing Schedule</a>, I present a streamlined, performance-optimized variant of the Modified Lam
+annealing schedule, reducing its computational overhead while preserving its adaptive behavior. By
+relocating the schedule&apos;s expensive exponentiation operations outside the main
+simulated-annealing loop and replacing them with lightweight multiplications, the optimized version
+eliminates roughly 0.5N exponentiations per run, yielding substantial runtime improvements that are
+typically 15-35% faster depending on run length and restart strategy. Experiments across multiple run
+lengths and restart configurations confirm statistically significant speedups, especially for long
+runs or multistart SA, where cached exponentiation results amplify the gains. I integrated both the
+original and optimized schedules into the Chips-n-Salsa library and provide full open-source
+experimental code and data, demonstrating that careful engineering of annealing-schedule internals can
+meaningfully accelerate simulated annealing without altering its search dynamics.</p>
+</section>
+<section>
+<h3>Multi-Heuristic Search</h3>
+<p>In my PhD dissertation, <a href="https://www.cicirello.org/publications/cicirello2003thesis.html">Boosting Stochastic Problem Solvers Through Online Self-Analysis of Performance</a>, I developed a framework called Quality Distribution Based Search Control (QD-BEACON) that uses online-generated statistical models of search performance to effectively combine multiple search heuristics. This research lead to a pair of papers published after my dissertation that focus on two of the primary outcomes of my dissertation research. First, heuristic-guided stochastic search algorithms (such as value-biased stochastic sampling), when given a strong heuristic, sample from the extreme of the distribution of solution qualities for the problem. This enables utilizing extreme value theory to model the performance of the stochastic search algorithm. Second, an analysis of a new form of multiarmed bandit that I named the Max K-Armed Bandit lead to a strategy for allocating trials among a set of heuristics. The allocation strategy utilizes the online-learned extreme value models of the heuristics. The papers presenting these two results are discussed further below.</p>
+<p><strong>Max K-Armed Bandit:</strong>
+My paper <a href="https://www.cicirello.org/publications/cicirello2005aaai.html">The Max
+K-Armed Bandit: A New Model of Exploration Applied to Search Heuristic Selection</a> was awarded the
+2005 AAAI Outstanding Paper Award. In this paper, we introduced the Max K-Armed Bandit, a new
+variation of the multiarmed bandit designed for settings such as multistart stochastic search, where
+the objective is to maximize the best single reward obtained rather than the cumulative reward.
+Building on extreme value theory and assuming that heuristic-biased stochastic search samples from the
+extremes, we derived that the optimal exploration strategy allocates trials to the currently observed
+best heuristic at a rate that grows double exponentially relative to the others, a result formalized
+in both the two-armed and K-armed cases. This motivates a Boltzmann exploration policy with an
+exponentially decaying temperature. Experiments on two NP-hard scheduling domains, weighted tardiness
+sequencing and resource constrained project scheduling with time windows (RCPSP/max), show that this
+double-exponential allocation strategy consistently outperforms both slower and faster allocation
+rates, validating the theoretical model and demonstrating its practical value for heuristic selection
+in stochastic search.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7865545903" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<p><strong>Modeling Search Performance with Extreme Value Theory:</strong>
+The AAAI 2005 paper that introduced the Max K-Armed Bandit relied on our earlier result on modeling
+stochastic search performance with extreme value theory, presented at CP-2004 in the
+paper <a href="https://www.cicirello.org/publications/cicirello2004cp.html">Heuristic Selection for
+Stochastic Search Optimization: Modeling Solution Quality by Extreme Value Theory</a>. In that paper,
+I developed a framework for integrating multiple search heuristics within a stochastic sampling
+algorithm by modeling each heuristic&apos;s solution-quality distribution using extreme value theory
+(EVT). Motivated by the observation that strong heuristics generate &quot;good&quot; solutions that
+are statistically rare (e.g., the average solution given by a stochastic sampler guided by a strong
+domain heuristic was found to be over 9 standard deviations better than the average random
+solution), we treat each iteration&apos;s solution as a sample from the tail of the global
+solution-quality distribution and fit a Generalized Extreme Value (GEV) model to estimate each
+heuristic&apos;s probability of producing an improvement. We also developed a complementary kernel
+density estimator tuned for GEV-like distributions. These online-learned models drive a Boltzmann
+exploration strategy that adaptively selects heuristics across restarts. Validated on the NP-hard
+RCPSP/max scheduling problem, the EVT-motivated approach proves competitive with, and sometimes
+superior to, the best known heuristic algorithms, demonstrating that modeling solution quality via EVT
+enables effective, instance-specific hybridization of multiple heuristics.</p>
+</section>
+<section>
+<h3>Automated Parameter Control</h3>
+<p>At the <i>Thirty-First International Florida Artificial Intelligence Research Society
+Conference</i>, I presented a paper,
+<a href="https://www.cicirello.org/publications/cicirello2018flairs.html">Impact of Random Number
+Generation on Parallel Genetic Algorithms</a>, that explored optimizing genetic algorithm performance
+by optimizing how randomized behavior is implemented. This research especially focused on an adaptive
+genetic algorithm where control parameters evolve during the search. This paper investigates how
+random number generation affects the runtime and efficiency of both sequential and parallel genetic
+algorithms, showing that implementation-level choices can yield surprisingly large performance gains.
+I developed a multi‑population parallel GA (pGA) for the NP-hard weighted tardiness scheduling problem
+with sequence-dependent setups, adapting earlier genetic algorithms with both static and adaptive
+control parameters, and demonstrated that the adaptive pGA achieves linear to slightly superlinear
+speedup relative to its sequential counterpart. A central finding is that genetic algorithms spend so
+much time generating random numbers that replacing Java&apos;s default Random class with faster
+alternatives, such as ThreadLocalRandom or SplittableRandom, and using the ziggurat method instead of
+the polar method for Gaussian mutation, can improve runtime dramatically. A genetic algorithm&apos;s
+speed can vary by as much as 25%, and a pGA by as much as 20%, simply through choice of pseudorandom
+number generator (PRNG). Experiments confirm that careful PRNG selection accelerates both standalone
+random-number workloads and full GA/pGA runs, while preserving solution quality, underscoring that
+PRNG choice is a critical but often overlooked factor in evolutionary computation performance.</p>
+<p>Earlier at the <i>9th International Conference on Bio-inspired Information and Communications
+Technologies</i>, I presented
+<a href="https://www.cicirello.org/publications/cicirello2015bict.html">Genetic Algorithm Parameter
+Control: Application to Scheduling with Sequence-Dependent Setups</a>. In this research, I developed
+a genetic algorithm with adaptive control parameters for the NP-hard problem of weighted tardiness
+scheduling with sequence-dependent setups, eliminating the need for manual parameter tuning. Instead
+of fixing crossover and mutation rates ahead of time, the genetic algorithm encodes these parameters
+within each individual and evolves them during search using Gaussian mutation, allowing the algorithm
+to simultaneously optimize both the scheduling solution and its own internal behavior. Using a
+permutation representation with Non-Wrapping Order Crossover (NWOX) and insertion mutation, the
+adaptive genetic algorithm rapidly converges on effective parameter values and consistently
+outperforms a manually tuned genetic algorithm across benchmark instances, often achieving lower
+tardiness, finding more optimal solutions, and doing so with less computational time. The results show
+that dynamic parameter control not only improves performance but also adapts meaningfully to instance
+characteristics (e.g., tighter vs. looser due dates), demonstrating a practical and efficient alternative to traditional trial-and-error genetic algorithm tuning.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9105812677" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+</section>
+<section>
+<h3>Automated Parameter Tuning</h3>
+<p>I presented the paper,
+<a href="https://www.cicirello.org/publications/cicirello2000gecco.html">Modeling GA Performance for
+Control Parameter Optimization</a>, at GECCO-2000. In this paper, we focused on the classic issue of
+tuning genetic algorithm control parameters (e.g., population size, crossover rate, mutation rate, etc) by using a meta-level genetic algorithm whose fitness evaluations come from a trained neural network rather than costly runs of the actual genetic algorithm. We demonstrated this approach on a genetic algorithm that we designed for the largest common subgraph problem, first hand-tuning its parameters as a baseline, then training a neural network on 1000 randomly sampled parameter sets to predict genetic algorithm accuracy and runtime, and finally letting the meta-level genetic algorithm evolve improved parameter sets using that neural network as a cheap fitness proxy. The resulting parameter sets significantly outperform the hand-tuned baseline, and the optimized genetic algorithm is shown to be competitive with, and for larger graphs substantially faster than, an existing hill-climbing algorithm, all while requiring far fewer actual genetic algorithm evaluations than a standard meta-level genetic algorithm search would need.</p>
+</section>
 <section class="publist">
 <h3>Selected Publications</h3>
 <ul itemscope itemtype="https://schema.org/ItemList">
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="1"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2021applsci.html">Self-Tuning Lam Annealing: Learning Hyperparameters While Problem Solving</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="1"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2024ecta1.html">Open Source Evolutionary Computation with Chips-n-Salsa</a>.<br>
+Vincent A. Cicirello.<br>
+In <i>Proceedings of the 16th International Joint Conference on Computational Intelligence</i>, pages 330-337. November 2024. doi:10.5220/0013040600003837<br>
+<a href="/publications/cicirello2024ecta-chips-n-salsa.pdf">[PDF]</a> <a href="/publications/cicirello2024ecta1.bib">[BIB]</a> <a href="https://doi.org/10.5220/0013040600003837">[DOI]</a> <a href="https://arxiv.org/abs/2412.02004">[arXiv]</a> <a href="https://github.com/cicirello/Chips-n-Salsa">[CODE]</a></li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="2"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2021applsci.html">Self-Tuning Lam Annealing: Learning Hyperparameters While Problem Solving</a>.<br>
 Vincent A. Cicirello.<br>
 <i>Applied Sciences</i>, 11(21), Article 9828,
 November 2021. doi:10.3390/app11219828<br>
 <a href="/publications/applsci-11-09828.pdf">[PDF]</a> <a href="/publications/cicirello2021applsci.bib">[BIB]</a> <a href="https://doi.org/10.3390/app11219828">[DOI]</a> <a href="https://github.com/cicirello/self-tuning-lam-experiments">[CODE]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="2"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2020inis2.html">Optimizing the Modified Lam Annealing Schedule</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="3"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2020inis2.html">Optimizing the Modified Lam Annealing Schedule</a>.<br>
 Vincent A. Cicirello.<br>
 <i>Industrial Networks and Intelligent Systems</i>, 7(25), Article e1,
 December 2020. doi:10.4108/eai.16-12-2020.167653<br>
 <a href="/publications/eai.16-12-2020.167653.pdf">[PDF]</a> <a href="/publications/cicirello2020inis2.bib">[BIB]</a> <a href="https://doi.org/10.4108/eai.16-12-2020.167653">[DOI]</a> <a href="https://github.com/cicirello/modified-lam-experiments">[CODE]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="3"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2020joss.html">Chips-n-Salsa: A Java Library of Customizable, Hybridizable, Iterative, Parallel, Stochastic, and Self-Adaptive Local Search Algorithms</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="4"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2020joss.html">Chips-n-Salsa: A Java Library of Customizable, Hybridizable, Iterative, Parallel, Stochastic, and Self-Adaptive Local Search Algorithms</a>.<br>
 Vincent A. Cicirello.<br>
 <i>Journal of Open Source Software</i>, 5(52), Article 2448,
 August 2020. doi:10.21105/joss.02448<br>
 <a href="/publications/cicirello2020joss.pdf">[PDF]</a> <a href="/publications/cicirello2020joss.bib">[BIB]</a> <a href="https://doi.org/10.21105/joss.02448">[DOI]</a> <a href="https://github.com/cicirello/Chips-n-Salsa">[CODE]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="4"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2018flairs.html">Impact of Random Number Generation on Parallel Genetic Algorithms</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="5"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2018flairs.html">Impact of Random Number Generation on Parallel Genetic Algorithms</a>.<br>
 Vincent A. Cicirello.<br>
 In <i>Proceedings of the Thirty-First International Florida Artificial Intelligence Research Society Conference</i>, pages 2-7. AAAI Press, May 2018.<br>
 <a href="/publications/cicirello-flairs2018.pdf">[PDF]</a> <a href="/publications/cicirello2018flairs.bib">[BIB]</a> <a href="https://aaai.org/ocs/index.php/FLAIRS/FLAIRS18/paper/view/17492">[PUB]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="5"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2017SoCS2.html">Variable Annealing Length and Parallelism in Simulated Annealing</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="6"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2017SoCS2.html">Variable Annealing Length and Parallelism in Simulated Annealing</a>.<br>
 Vincent A. Cicirello.<br>
 In <i>Proceedings of the Tenth International Symposium on Combinatorial Search (SoCS 2017)</i>, pages 2-10. AAAI Press, June 2017. doi:10.1609/socs.v8i1.18424<br>
 <a href="/publications/SoCS2017-Cicirello.pdf">[PDF]</a> <a href="/publications/cicirello2017SoCS2.bib">[BIB]</a> <a href="https://doi.org/10.1609/socs.v8i1.18424">[DOI]</a> <a href="http://arxiv.org/abs/1709.02877">[arXiv]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="6"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2015bict.html">Genetic Algorithm Parameter Control: Application to Scheduling with Sequence-Dependent Setups</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="7"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2015bict.html">Genetic Algorithm Parameter Control: Application to Scheduling with Sequence-Dependent Setups</a>.<br>
 Vincent A. Cicirello.<br>
 In <i>Proceedings of the 9th International Conference on Bio-inspired Information and Communications Technologies</i>, pages 136-143. EAI, December 2015.<br>
 <a href="/publications/cicirello-bict-2015.pdf">[PDF]</a> <a href="/publications/cicirello2015bict.bib">[BIB]</a> <a href="http://dl.acm.org/citation.cfm?id=2954825">[PUB]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="7"><a itemprop="url mainEntityOfPage" href="https://reports.cicirello.org/09/003/">Multi-heuristic Stochastic Sampling Search: Extreme Value Theory and the Max K-Armed Bandit</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="8"><a itemprop="url mainEntityOfPage" href="https://reports.cicirello.org/09/003/">Multi-heuristic Stochastic Sampling Search: Extreme Value Theory and the Max K-Armed Bandit</a>.<br>
 Vincent A. Cicirello.<br>
 Technical Report AI-09-003, Cicirello.org, March 2009.<br>
 <a href="https://reports.cicirello.org/09/003/VAC-TR-09-003.pdf">[PDF]</a> <a href="/publications/cicirello2009report.bib">[BIB]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="8"><a itemprop="url mainEntityOfPage" href="https://reports.cicirello.org/08/001/">Statistical Models of Multistart Randomized Heuristic Search Performance</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="9"><a itemprop="url mainEntityOfPage" href="https://reports.cicirello.org/08/001/">Statistical Models of Multistart Randomized Heuristic Search Performance</a>.<br>
 Vincent A. Cicirello.<br>
 Technical Report AI-08-001, Cicirello.org, May 2008.<br>
 Presented at the <i>40th Symposium on the Interface: Computing Science and Statistics</i> (conference without proceedings), in Durham, NC, sponsored by the National Institute of Statistical Sciences. Full paper here as Technical Report.
 <br>
 <a href="https://reports.cicirello.org/08/001/VAC-TR-08-001.pdf">[PDF]</a> <a href="/publications/cicirello2008rsc.bib">[BIB]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="9"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2007cp.html">On the Design of an Adaptive Simulated Annealing Algorithm</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="10"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2007cp.html">On the Design of an Adaptive Simulated Annealing Algorithm</a>.<br>
 Vincent A. Cicirello.<br>
 In <i>Proceedings of the International Conference on Principles and Practice of Constraint Programming First Workshop on Autonomous Search</i>. AAAI Press, September 2007.<br>
 <a href="/publications/CP2007-Autonomous-Search-Workshop.pdf">[PDF]</a> <a href="/publications/cicirello2007cp.bib">[BIB]</a> <a href="https://archive.a4cp.org/cp2007/CP1A/pdf/Cicirello.pdf">[PUB]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="10"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2005aaai.html">The Max K-Armed Bandit: A New Model of Exploration Applied to Search Heuristic Selection</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="11"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2005aaai.html">The Max K-Armed Bandit: A New Model of Exploration Applied to Search Heuristic Selection</a>.<br>
 Vincent A. Cicirello and Stephen F. Smith.<br>
 In <i>The Proceedings of the Twentieth National Conference on Artificial Intelligence</i>, volume 3, pages 1355-1361. AAAI Press, July 2005.<br>
 <strong>Winner of the AAAI 2005 Outstanding Paper Award.</strong>
 <br>
 <a href="/publications/AAAI2005.pdf">[PDF]</a> <a href="/publications/cicirello2005aaai.bib">[BIB]</a> <a href="https://aaai.org/papers/01355-the-max-k-armed-bandit-a-new-model-of-exploration-applied-to-search-heuristic-selection/">[PUB]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="11"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2004cp.html">Heuristic Selection for Stochastic Search Optimization: Modeling Solution Quality by Extreme Value Theory</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="12"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2004cp.html">Heuristic Selection for Stochastic Search Optimization: Modeling Solution Quality by Extreme Value Theory</a>.<br>
 Vincent A. Cicirello and Stephen F. Smith.<br>
 In <i>Principles and Practice of Constraint Programming - CP 2004: 10th International Conference, Proceedings</i>, volume LNCS 3258 of <i>Lecture Notes in Computer Science</i>, pages 197-211. Springer-Verlag, September/October 2004. doi:10.1007/978-3-540-30201-8_17<br>
 <a href="/publications/CP2004.pdf">[PDF]</a> <a href="/publications/cicirello2004cp.bib">[BIB]</a> <a href="https://doi.org/10.1007/978-3-540-30201-8_17">[DOI]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="12"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2003thesis.html">Boosting Stochastic Problem Solvers Through Online Self-Analysis of Performance</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="13"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2003thesis.html">Boosting Stochastic Problem Solvers Through Online Self-Analysis of Performance</a>.<br>
 Vincent A. Cicirello.<br>
 PhD thesis, The Robotics Institute, School of Computer Science, Carnegie Mellon University, Pittsburgh, PA, July 2003.<br>
 <a href="/publications/cicirello_vincent_2003_1.pdf">[PDF]</a> <a href="/publications/cicirello2003thesis.bib">[BIB]</a></li>
-<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="13"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2000gecco.html">Modeling GA Performance for Control Parameter Optimization</a>.<br>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><meta itemprop="position" content="14"><a itemprop="url mainEntityOfPage" href="/publications/cicirello2000gecco.html">Modeling GA Performance for Control Parameter Optimization</a>.<br>
 Vincent A. Cicirello and Stephen F. Smith.<br>
 In <i>GECCO-2000: Proceedings of the Genetic and Evolutionary Computation Conference</i>, pages 235-242. Morgan Kaufmann Publishers, July 2000.<br>
 <a href="/publications/gecco2000-cicirello.pdf">[PDF]</a> <a href="/publications/cicirello2000gecco.bib">[BIB]</a> <a href="http://dl.acm.org/citation.cfm?id=2933750">[PUB]</a></li>
