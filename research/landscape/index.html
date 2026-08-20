@@ -10,35 +10,44 @@
 <title>Search Landscape Analysis - Research - Vincent A. Cicirello - Professor of Computer Science</title>
 <meta name="title" content="Search Landscape Analysis - Research - Vincent A. Cicirello - Professor of Computer Science">
 <meta itemprop="name" content="Search Landscape Analysis - Research - Vincent A. Cicirello - Professor of Computer Science">
-<meta name="description" content="My research includes fitness landscape analysis of permutation optimization problems, problems where one must find an optimal ordering of
-some discrete set (e.g., scheduling problems).  Permutation problems fall into one of three broad categories, depending upon the structural characteristics
-of greatest influence on solution fitness (absolute positioning of elements, relative positioning of elements, or element precedences).
+<meta name="description" content="One of my research interests is fitness landscapes of permutation optimization problems, problems
+where one must find an optimal ordering of some discrete set (e.g., scheduling problems, mapping problems,
+among others). Permutation problems fall into one of three broad categories, depending upon the
+structural characteristics of greatest influence on solution fitness (absolute positioning of elements,
+relative positioning of elements, or element precedences).
 My research on permutation fitness landscapes has introduced a theoretical framework
-enabling exploring the effects of these structural properties on search performance, including the &quot;Permutation in a Haystack&quot; problem
-which enables specifying permutation fitness landscapes; as well as the &quot;Calculus of Search Landscapes&quot;,
-a tool for search landscape analysis utilizing rates of change of fitness landscape topology, complementing other search landscape analysis tools
-such as fitness-distance correlation.">
-<meta itemprop="description" content="My research includes fitness landscape analysis of permutation optimization problems, problems where one must find an optimal ordering of
-some discrete set (e.g., scheduling problems).  Permutation problems fall into one of three broad categories, depending upon the structural characteristics
-of greatest influence on solution fitness (absolute positioning of elements, relative positioning of elements, or element precedences).
+enabling exploring the effects of these structural properties on search performance,
+including the &quot;Permutation in a Haystack&quot; problem, which enables specifying
+permutation fitness landscapes; as well as the &quot;Calculus of Search Landscapes&quot;,
+a tool for search landscape analysis utilizing rates of change of fitness landscape topology,
+complementing other search landscape analysis tools ...">
+<meta itemprop="description" content="One of my research interests is fitness landscapes of permutation optimization problems, problems
+where one must find an optimal ordering of some discrete set (e.g., scheduling problems, mapping problems,
+among others). Permutation problems fall into one of three broad categories, depending upon the
+structural characteristics of greatest influence on solution fitness (absolute positioning of elements,
+relative positioning of elements, or element precedences).
 My research on permutation fitness landscapes has introduced a theoretical framework
-enabling exploring the effects of these structural properties on search performance, including the &quot;Permutation in a Haystack&quot; problem
-which enables specifying permutation fitness landscapes; as well as the &quot;Calculus of Search Landscapes&quot;,
-a tool for search landscape analysis utilizing rates of change of fitness landscape topology, complementing other search landscape analysis tools
-such as fitness-distance correlation.">
+enabling exploring the effects of these structural properties on search performance,
+including the &quot;Permutation in a Haystack&quot; problem, which enables specifying
+permutation fitness landscapes; as well as the &quot;Calculus of Search Landscapes&quot;,
+a tool for search landscape analysis utilizing rates of change of fitness landscape topology,
+complementing other search landscape analysis tools such as fitness-distance correlation.">
 <meta property="og:url" content="https://www.cicirello.org/research/landscape/">
 <meta property="og:title" content="Search Landscape Analysis - Research - Vincent A. Cicirello - Professor of Computer Science">
 <meta property="og:image" content="https://www.cicirello.org/images/vac.png">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="672">
-<meta property="og:description" content="My research includes fitness landscape analysis of permutation optimization problems, problems where one must find an optimal ordering of
-some discrete set (e.g., scheduling problems).  Permutation problems fall into one of three broad categories, depending upon the structural characteristics
-of greatest influence on solution fitness (absolute positioning of elements, relative positioning of elements, or element precedences).
+<meta property="og:description" content="One of my research interests is fitness landscapes of permutation optimization problems, problems
+where one must find an optimal ordering of some discrete set (e.g., scheduling problems, mapping problems,
+among others). Permutation problems fall into one of three broad categories, depending upon the
+structural characteristics of greatest influence on solution fitness (absolute positioning of elements,
+relative positioning of elements, or element precedences).
 My research on permutation fitness landscapes has introduced a theoretical framework
-enabling exploring the effects of these structural properties on search performance, including the &quot;Permutation in a Haystack&quot; problem
-which enables specifying permutation fitness landscapes; as well as the &quot;Calculus of Search Landscapes&quot;,
-a tool for search landscape analysis utilizing rates of change of fitness landscape topology, complementing other search landscape analysis tools
-such as fitness-distance correlation.">
+enabling exploring the effects of these structural properties on search performance,
+including the &quot;Permutation in a Haystack&quot; problem, which enables specifying
+permutation fitness landscapes; as well as the &quot;Calculus of Search Landscapes&quot;,
+a tool for search landscape analysis utilizing rates of change of fitness landscape topology,
+complementing other search landscape analysis tools such as fitness-distance correlation.">
 <style>
 header, nav, footer, article, aside, section { display: block; }
 footer { clear: both; }
@@ -79,6 +88,11 @@ nav div a:not(.active) { display: none; }
 #toggle:checked ~ div a:not(.active) { display: block; }
 #menu-icon { display: block; padding: 3px 7px 3px 7px; border-radius: 4px; }
 }
+table {border-collapse:collapse; border: 2px solid #862d2d;}
+th {text-align:left;color: #862d2d;}
+td, th {padding:5px; border: 1px solid #862d2d;}
+.table-scroll {overflow-x: auto; -webkit-overflow-scrolling: touch;}
+.table-scroll table {width: max-content;}
 </style>
 <link rel="icon" href="/images/favicon.svg" sizes="any" type="image/svg+xml">
 <script async src="/js/dynamic_loader.min.js" integrity="sha384-i9On6a8pULeN0XD9l3J0gZMnvbggxt4HiEpfuxzePuYS3uDQJ/7mbPyYPfqe/wSg" crossorigin="anonymous"></script>
@@ -105,22 +119,404 @@ nav div a:not(.active) { display: none; }
 </header>
 <article itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
 <h2>Search Landscape Analysis</h2>
-<p>Recently, I have been exploring the fitness landscapes of permutation optimization problems, problems where one must find an optimal ordering of
-some discrete set (e.g., scheduling problems, mapping problems, among others).
-Such permutation problems fall into one of three broad categories, depending upon the structural characteristics
-of greatest influence on solution fitness (absolute positioning of elements, relative positioning of elements, or element precedences), although some problems
-may span more than one of these categories.  For example, the fitness of solutions to the traveling salesperson problem (TSP) is completely dependent
-upon the costs of the edges between cities, and not at all dependent upon where in the tour the edge appears.  Thus, the TSP is an example of an R-Permutation
-problem, one where fitness depends upon the relative positions of elements.  Mapping problems where one must find an optimal mapping between the elements of two sets,
-such as the largest common subgraph problem, are A-Permutation problems as fitness depends strictly upon the absolute locations of elements within the permutation.
-Many scheduling problems are P-Permutation problems with element precedences playing a substantial role in the fitness of solutions (e.g.,
-perhaps it is important to fitness that task A occurs sometime prior to tasks B, C, and D, but that it otherwise doesn't matter what task immediately follows A).
-Among other things, my research on permutation fitness landscapes has introduced a theoretical framework
-enabling exploring the effects of these structural properties on search performance.  This includes the &quot;Permutation in a Haystack&quot; problem
-which enables specifying permutation fitness landscapes; as well as the &quot;Calculus of Search Landscapes&quot;,
-a new tool for search landscape analysis that focuses on rates of change of fitness landscape topology, complementing other search landscape analysis tools
-such as fitness-distance correlation.</p>
+<p>One of my research interests is fitness landscapes of permutation optimization problems, problems
+where one must find an optimal ordering of some discrete set (e.g., scheduling problems, mapping problems,
+among others). Permutation problems fall into one of three broad categories, depending upon the
+structural characteristics of greatest influence on solution fitness (absolute positioning of elements,
+relative positioning of elements, or element precedences), although some problems may span more than one
+of these categories. For example, the fitness of solutions to the traveling salesperson problem (TSP) is
+completely dependent upon the costs of the edges between cities, and not at all dependent upon where in the
+tour the edge appears. Thus, the TSP is an example of an R-Permutation problem, one where fitness depends
+upon the relative positions of elements. Mapping problems where one must find an optimal mapping between the
+elements of two sets, such as the largest common subgraph problem, are A-Permutation problems as fitness
+depends strictly upon the absolute locations of elements within the permutation. Many scheduling problems
+are P-Permutation problems with element precedences playing a substantial role in the fitness of solutions
+(e.g., perhaps it is important to fitness that task A occurs sometime prior to tasks B, C, and D, but that it
+otherwise doesn't matter what task immediately follows A). Among other things, my research on permutation
+fitness landscapes has introduced a theoretical framework enabling exploring the effects of these structural
+properties on search performance.  This includes the &quot;Permutation in a Haystack&quot; problem, which enables
+specifying permutation fitness landscapes; as well as the &quot;Calculus of Search Landscapes&quot;, a new tool
+for search landscape analysis that focuses on rates of change of fitness landscape topology, complementing other
+search landscape analysis tools such as fitness-distance correlation.</p>
 <div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9837103127" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<section>
+<h3>Permutation in a Haystack</h3>
+<p>My article <a href="https://www.cicirello.org/publications/cicirello2016evc.html">The Permutation
+in a Haystack Problem and the Calculus of Search Landscapes</a> in the <i>IEEE Transactions on Evolutionary
+Computation</i> introduced the Permutation in a Haystack problem as a unifying framework for studying
+permutation-based search landscapes across a variety of problem classes. The core idea is simple: define
+a target permutation, P<sub>N</sub> = [0, 1, &hellip;, N - 1], and treat optimization as minimizing a chosen
+permutation distance function to this figurative &quot;needle&quot; in the haystack. Obviously, the optimal
+solution to this problem is simply p = P<sub>N</sub>. However, the choice of distance function affects the
+terrain of the landscape and thus search performance. By varying the distance metric, the Permutation in a
+Haystack problem allows researchers to emulate the structural properties of real permutation problems such as TSP,
+scheduling, ranking, and assignment. This provides a controlled environment for analyzing how mutation operators,
+crossover operators, etc behave under different landscape topologies.</p>
+</section>
+<section>
+<h3>Calculus of Search Landscapes</h3>
+<p>A second major contribution of my article <a href="https://www.cicirello.org/publications/cicirello2016evc.html">The
+Permutation in a Haystack Problem and the Calculus of Search Landscapes</a> is the Calculus of Search Landscapes,
+a general methodology for analyzing local fitness behavior by examining rates of change rather than relying solely
+on global measures like fitness-distance correlation (FDC). While FDC can be informative, it does not tell the whole
+story, especially in landscapes where correlation is misleading or insufficient for predicting operator effectiveness.
+The search landscape calculus approach evaluates how fitness changes under specific neighborhood operators,
+enabling fine-grained insight into operator dynamics across different encodings &mdash; not only permutations but
+also bit-strings and real-valued optimization. This differential perspective reveals when operators are likely to
+make productive moves, when they stagnate, and how landscape topology interacts with mutation behavior. The article
+later validates the predictive power of this approach through simulated annealing experiments, demonstrating that
+local rate-of-change analysis can successfully identify promising operators for a given landscape.</p>
+</section>
+<section>
+<h3>Permutation Distance Metrics for Fitness Landscape Analysis</h3>
+<p>At the <i>11th International Conference on Bioinspired Information and Communication
+Technologies (BICT 2019)</i>, I presented
+a paper <a href="https://www.cicirello.org/publications/cicirello2019bict.html">Classification of Permutation
+Distance Metrics for Fitness Landscape Analysis</a> where I presented a comprehensive survey and formal
+classification of permutation distance metrics, motivated by the central role distance plays in fitness
+landscape analysis tools such as fitness-distance correlation (FDC) and the search landscape calculus. Fitness
+landscape analysis tools such as FDC and search landscape calculus require distance metrics, and the features
+that define similarity between permutations are highly problem-dependent. To address this, the study analyzes
+a wide range of permutation metrics, including exact match distance, interchange distance, edge distance,
+R-type distances, Kendall tau distance, reinsertion distance, deviation distance, squared deviation distance,
+and Lee distance, and applies principal component analysis (PCA) to reveal their underlying structure. The
+resulting classification aligns cleanly with the established A-Permutation, R-Permutation, and P-Permutation
+problem types, while also identifying meaningful subtypes such as undirected versus directed R-Permutation
+metrics and cyclic versus acyclic P-Permutation metrics.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7210939788" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<p>Beyond classification, the article demonstrates how these metric groupings can guide both theoretical and
+practical fitness landscape analysis. For example, the PCA shows that Principal Component 1 (PC1) correlates
+extremely strongly to deviation distance, Kendall tau distance, and squared deviation distance, identifying them
+as core P-Permutation metrics, while PC2 isolates adjacency-based metrics such as cyclic and acyclic edge distance
+as R-Permutation measures. PC3 isolates A-Permutation metrics, exact match distance and interchange distance.
+The paper further validates the classification by computing FDC across several example
+landscapes, including symmetric and asymmetric TSP instances, noisy A-Permutation Haystack landscapes, and
+P-Permutation landscapes based on Kendall tau distance and Lee distance, showing that the metrics with highest FDC
+for each landscape correspond precisely to the predicted class. The work concludes by highlighting how this taxonomy
+can assist researchers in selecting appropriate distance metrics and search operators for permutation-encoded
+optimization problems, and provides open-source implementations of all metrics to support reproducibility and
+future research.</p>
+</section>
+<section>
+<h3>Landscape Aware Mutation Operator Selection</h3>
+<p>A major expansion of the BICT 2019 paper in the journal version of this work is the development of a
+counterpart classification for permutation mutation operators, complementing the earlier classification of
+permutation distance metrics. This longer expanded research was published in the journal <i>Mobile Networks
+and Applications</i> in my article <a href="https://www.cicirello.org/publications/cicirello2023mone.html">On
+Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection</a>.
+After demonstrating that distance metrics naturally cluster into A-Permutation, R-Permutation, and P-Permutation
+types, the article shows that mutation operators can be analyzed through the same lens. We apply the classification
+to choosing a mutation operator for use in an evolutionary algorithm, and derive a classification of a wide variety
+of permutation mutation operators. By examining how each operator perturbs absolute positions, adjacencies, or general precedences, and by computing fitness-distance correlation across representative landscapes, the study reveals
+which operators are best aligned with each problem class. For example, operators based on swaps or adjacent swaps
+tend to perform well on A-Permutation and P-Permutation landscapes, while operators that preserve or modify edges
+(such as reversals) are more suitable for R-Permutation problems.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7865545903" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<p>This operator classification can directly inform algorithm design. Using example landscapes for each problem type,
+including circular TSP instances, precedence-driven scheduling landscapes, and A-Permutation Haystack variants,
+the study shows that mutation operators with the strongest FDC for a given landscape correspond precisely to the
+predicted class. The classification can assist in identifying appropriate metrics, and subsequently inform the choice
+of mutation operator within an evolutionary algorithm. This creates a unified framework in which both distance
+metrics and mutation operators are selected based on the structural features that dominate fitness (absolute
+position, adjacency, or precedence). The article concludes by providing open-source implementations of all metrics,
+operators, and experimental code, enabling reproducibility and practical adoption of these classification-driven
+design principles.</p>
+</section>
+<section>
+<h3>Evolutionary Operators for Permutation Problems</h3>
+<p>In my paper <a href="https://www.cicirello.org/publications/cicirello2023ecta.html">A Survey and
+Analysis of Evolutionary Operators for Permutations</a>, which is published in the <i>Proceedings of the
+15th International Joint Conference on Computational Intelligence</i>, I provide a comprehensive survey
+and analysis of evolutionary operators for permutations, covering both mutation and crossover operators
+and examining how each aligns with the structural features that dominate fitness in different permutation
+problem classes. Many crossover and mutation operators have been developed for solving permutation problems
+with evolutionary algorithms, and this survey brings them together into a unified framework. The article
+categorizes operators by the permutation features they preserve (e.g., absolute positions, undirected edges,
+directed edges, pairwise precedences, and cyclic precedences) and analyzes their runtime behavior, disruption
+characteristics, and suitability for the variety of permutation problem types. This includes detailed
+discussions of operators such as Cycle Crossover, Edge Recombination, Precedence Preservative Crossover,
+Order-based crossovers, and a wide range of mutation operators from swap and insertion to 3-opt, block-move,
+cycle mutation, and scramble.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9105812677" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<p>A major contribution of this article is a classification of crossover operators by problem type, complementing
+my earlier classification of mutation operators. The paper emphasizes that different operators inherit different
+structural features from parents, and therefore perform best when matched to the dominant fitness determinants
+of the problem. For example, operators like Edge Recombination and Enhanced Edge Recombination strongly preserve
+undirected edges and are ideal for R-Permutation problems such as the TSP, while operators like NWOX, UOBX, and
+PPX preserve pairwise precedences and are well‑suited for P-Permutation scheduling problems. Cycle Crossover and
+related position-preserving operators align with A-Permutation problems where absolute element positions matter.
+The article empirically validates these classifications through fitness landscape analysis on artificial landscapes
+that isolate specific permutation features. Together, the survey and classification provide a practical guide for
+selecting crossover operators that align with the structural nature of a permutation-encoded optimization problem.</p>
+<p>The key findings from the analysis are summarized in the following two tables. See the article for the
+details of the analysis and the mutation and crossover operators.</p>
+<div class="table-scroll">
+<table>
+<caption>Mutation operator characteristics: &check; means
+effective for feature, and ? means may be effective if carefully tuned.</caption>
+<thead>
+<tr>
+<th>Mutation Operator</th>
+<th>Positions</th>
+<th>Undirected Edges</th>
+<th>Directed Edges</th>
+<th>Precedences</th>
+<th>Cyclic Precedences</th>
+<th>Limited/Special</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Swap</td>
+<td>&check;</td>
+<td>&check;</td>
+<td>&check;</td>
+<td>&check;</td>
+<td>&check;</td>
+<td></td>
+</tr>
+<tr>
+<td>Adjacent Swap</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Insertion</td>
+<td></td>
+<td>&check;</td>
+<td>&check;</td>
+<td>&check;</td>
+<td>&check;</td>
+<td></td>
+</tr>
+<tr>
+<td>Reversal</td>
+<td></td>
+<td>&check;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2-change</td>
+<td></td>
+<td>&check;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3opt</td>
+<td></td>
+<td>&check;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Block-Move</td>
+<td></td>
+<td>&check;</td>
+<td>&check;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Block-Swap</td>
+<td></td>
+<td>&check;</td>
+<td>&check;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cycle(kmax)</td>
+<td>&check;</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>Cycle(α)</td>
+<td>&check;</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>Scramble</td>
+<td></td>
+<td></td>
+<td></td>
+<td>&check;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Uniform Scramble</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td></td>
+</tr>
+<tr>
+<td>Rotation</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>&check;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-scroll">
+<table>
+<caption>Crossover operator characteristics: &check; means
+effective for feature, and ? means may be effective if carefully tuned.</caption>
+<thead>
+<tr>
+<th>Crossover Operator</th>
+<th>Positions</th>
+<th>Undirected Edges</th>
+<th>Directed Edges</th>
+<th>Precedences</th>
+<th>Cyclic Precedences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cycle Crossover (CX)</td>
+<td>&check;</td>
+<td></td>
+<td></td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Edge Recombination (ER)</td>
+<td></td>
+<td>&check;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Enhanced Edge Recombination (EER)</td>
+<td></td>
+<td>&check;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Order Crossover (OX)</td>
+<td></td>
+<td>&check;</td>
+<td>&check;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Non-Wrapping Order Crossover (NWOX)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Uniform Order Based Crossover (UOBX)</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Order Crossover 2 (OX2)</td>
+<td>?</td>
+<td>?</td>
+<td>?</td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Precedence Preservative Crossover (PPX)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>&check;</td>
+<td></td>
+</tr>
+<tr>
+<td>Uniform Precedence Preservative Crossover (UPPX)</td>
+<td></td>
+<td>?</td>
+<td>?</td>
+<td>&check;</td>
+<td></td>
+</tr>
+<tr>
+<td>Partially Matched Crossover (PMX)</td>
+<td>&check;</td>
+<td></td>
+<td></td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Uniform Partially Matched Crossover (UPMX)</td>
+<td>&check;</td>
+<td>?</td>
+<td>?</td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Position Based Crossover (PBX)</td>
+<td>&check;</td>
+<td></td>
+<td></td>
+<td>&check;</td>
+<td>&check;</td>
+</tr>
+<tr>
+<td>Edge Assembly Crossover (EAX)</td>
+<td></td>
+<td>&check;</td>
+<td>&check;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Heuristic Sequencing Crossover (HeurX)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>&check;</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section class="publist">
 <h3>Selected Publications</h3>
 <ul itemscope itemtype="https://schema.org/ItemList">
