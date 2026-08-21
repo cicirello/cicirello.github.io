@@ -91,7 +91,7 @@ nav div a:not(.active) { display: none; }
 table {border-collapse:collapse; border: 2px solid #862d2d;}
 th {text-align:left;color: #862d2d;}
 td, th {padding:5px; border: 1px solid #862d2d;}
-.table-scroll {overflow-x: auto; -webkit-overflow-scrolling: touch;}
+.table-scroll {overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 1em;}
 .table-scroll table {width: max-content;}
 </style>
 <link rel="icon" href="/images/favicon.svg" sizes="any" type="image/svg+xml">
@@ -126,20 +126,31 @@ structural characteristics of greatest influence on solution fitness (absolute p
 relative positioning of elements, or element precedences), although some problems may span more than one
 of these categories. For example, the fitness of solutions to the traveling salesperson problem (TSP) is
 completely dependent upon the costs of the edges between cities, and not at all dependent upon where in the
-tour the edge appears. Thus, the TSP is an example of an R-Permutation problem, one where fitness depends
-upon the relative positions of elements. Mapping problems where one must find an optimal mapping between the
-elements of two sets, such as the largest common subgraph problem, are A-Permutation problems as fitness
-depends strictly upon the absolute locations of elements within the permutation. Many scheduling problems
-are P-Permutation problems with element precedences playing a substantial role in the fitness of solutions
-(e.g., perhaps it is important to fitness that task A occurs sometime prior to tasks B, C, and D, but that it
-otherwise doesn't matter what task immediately follows A). Among other things, my research on permutation
+tour the edge appears. For mapping problems where one must find an optimal mapping between the elements of two sets,
+such as the largest common subgraph problem, fitness depends strictly upon the absolute locations of elements
+within the permutation. For many scheduling problems, element precedences play a substantial role in the
+fitness of solutions (e.g., it may be important to fitness that task A occurs sometime prior to tasks B, C, and
+D, but otherwise doesn't matter what task immediately follows A).</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9837103127" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<p>Among other things, my research on permutation
 fitness landscapes has introduced a theoretical framework enabling exploring the effects of these structural
-properties on search performance.  This includes the &quot;Permutation in a Haystack&quot; problem, which enables
+properties on search performance. This includes the &quot;Permutation in a Haystack&quot; problem, which enables
 specifying permutation fitness landscapes; as well as the &quot;Calculus of Search Landscapes&quot;, a new tool
 for search landscape analysis that focuses on rates of change of fitness landscape topology, complementing other
-search landscape analysis tools such as fitness-distance correlation.</p>
-<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9837103127" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
-<section>
+search landscape analysis tools such as fitness-distance correlation. I have also deeply analyzed the fitness
+landscape properties of mutation and crossover operators. The remainder of this page is organized as follows:</p>
+<ul>
+<li><a href="#haystack">Permutation in a Haystack</a></li>
+<li><a href="#calculus">Calculus of Search Landscapes</a></li>
+<li><a href="#metrics">Permutation Distance Metrics for Fitness Landscape Analysis</a></li>
+<li><a href="#mutation">Landscape Aware Mutation Operator Selection</a></li>
+<li><a href="#operators">Evolutionary Operators for Permutation Problems</a></li>
+<li><ul>
+<li><a href="#tab-mutation">Table 1: Mutation operator landscape characteristics</a></li>
+<li><a href="#tab-crossover">Table 2: Crossover operator landscape characteristics</a></li>
+</ul></li>
+</ul>
+<section id="haystack">
 <h3>Permutation in a Haystack</h3>
 <p>My article <a href="https://www.cicirello.org/publications/cicirello2016evc.html">The Permutation
 in a Haystack Problem and the Calculus of Search Landscapes</a> in the <i>IEEE Transactions on Evolutionary
@@ -153,7 +164,7 @@ Haystack problem allows researchers to emulate the structural properties of real
 scheduling, ranking, and assignment. This provides a controlled environment for analyzing how mutation operators,
 crossover operators, etc behave under different landscape topologies.</p>
 </section>
-<section>
+<section id="calculus">
 <h3>Calculus of Search Landscapes</h3>
 <p>A second major contribution of my article <a href="https://www.cicirello.org/publications/cicirello2016evc.html">The
 Permutation in a Haystack Problem and the Calculus of Search Landscapes</a> is the Calculus of Search Landscapes,
@@ -166,8 +177,9 @@ also bit-strings and real-valued optimization. This differential perspective rev
 make productive moves, when they stagnate, and how landscape topology interacts with mutation behavior. The article
 later validates the predictive power of this approach through simulated annealing experiments, demonstrating that
 local rate-of-change analysis can successfully identify promising operators for a given landscape.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7210939788" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 </section>
-<section>
+<section id="metrics">
 <h3>Permutation Distance Metrics for Fitness Landscape Analysis</h3>
 <p>At the <i>11th International Conference on Bioinspired Information and Communication
 Technologies (BICT 2019)</i>, I presented
@@ -183,7 +195,6 @@ and Lee distance, and applies principal component analysis (PCA) to reveal their
 resulting classification aligns cleanly with the established A-Permutation, R-Permutation, and P-Permutation
 problem types, while also identifying meaningful subtypes such as undirected versus directed R-Permutation
 metrics and cyclic versus acyclic P-Permutation metrics.</p>
-<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="7210939788" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 <p>Beyond classification, the article demonstrates how these metric groupings can guide both theoretical and
 practical fitness landscape analysis. For example, the PCA shows that Principal Component 1 (PC1) correlates
 extremely strongly to deviation distance, Kendall tau distance, and squared deviation distance, identifying them
@@ -197,7 +208,7 @@ can assist researchers in selecting appropriate distance metrics and search oper
 optimization problems, and provides open-source implementations of all metrics to support reproducibility and
 future research.</p>
 </section>
-<section>
+<section id="mutation">
 <h3>Landscape Aware Mutation Operator Selection</h3>
 <p>A major expansion of the BICT 2019 paper in the journal version of this work is the development of a
 counterpart classification for permutation mutation operators, complementing the earlier classification of
@@ -222,7 +233,7 @@ position, adjacency, or precedence). The article concludes by providing open-sou
 operators, and experimental code, enabling reproducibility and practical adoption of these classification-driven
 design principles.</p>
 </section>
-<section>
+<section id="operators">
 <h3>Evolutionary Operators for Permutation Problems</h3>
 <p>In my paper <a href="https://www.cicirello.org/publications/cicirello2023ecta.html">A Survey and
 Analysis of Evolutionary Operators for Permutations</a>, which is published in the <i>Proceedings of the
@@ -237,7 +248,6 @@ characteristics, and suitability for the variety of permutation problem types. T
 discussions of operators such as Cycle Crossover, Edge Recombination, Precedence Preservative Crossover,
 Order-based crossovers, and a wide range of mutation operators from swap and insertion to 3-opt, block-move,
 cycle mutation, and scramble.</p>
-<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9105812677" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 <p>A major contribution of this article is a classification of crossover operators by problem type, complementing
 my earlier classification of mutation operators. The paper emphasizes that different operators inherit different
 structural features from parents, and therefore perform best when matched to the dominant fitness determinants
@@ -248,11 +258,12 @@ related position-preserving operators align with A-Permutation problems where ab
 The article empirically validates these classifications through fitness landscape analysis on artificial landscapes
 that isolate specific permutation features. Together, the survey and classification provide a practical guide for
 selecting crossover operators that align with the structural nature of a permutation-encoded optimization problem.</p>
+<div class="container-for-ad"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6813707428591829" data-ad-slot="9105812677" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
 <p>The key findings from the analysis are summarized in the following two tables. See the article for the
 details of the analysis and the mutation and crossover operators.</p>
 <div class="table-scroll">
-<table>
-<caption>Mutation operator characteristics: &check; means
+<table id="tab-mutation">
+<caption><strong>Table 1:</strong> Mutation operator landscape characteristics: &check; means
 effective for feature, and ? means may be effective if carefully tuned.</caption>
 <thead>
 <tr>
@@ -387,8 +398,8 @@ effective for feature, and ? means may be effective if carefully tuned.</caption
 </table>
 </div>
 <div class="table-scroll">
-<table>
-<caption>Crossover operator characteristics: &check; means
+<table id="tab-crossover">
+<caption><strong>Table 2:</strong> Crossover operator landscape characteristics: &check; means
 effective for feature, and ? means may be effective if carefully tuned.</caption>
 <thead>
 <tr>
